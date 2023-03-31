@@ -1,0 +1,15 @@
+body {
+	margin: 0 auto;
+	.App {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		main {
+			flex-grow: 1;
+			width: 80%;
+			margin: 20px auto;
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+	}
+}
