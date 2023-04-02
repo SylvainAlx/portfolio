@@ -1,15 +1,21 @@
+@import "variables";
+
 body {
 	margin: 0 auto;
+  background-color: $bgc-main;
+  color: $color-text;
+  font-family: $font-main2;
 	.App {
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
 			flex-grow: 1;
-			width: 80%;
+			//width: 100%;
 			margin: 20px auto;
-			border: 1px solid black;
-			border-radius: 10px;
 		}
 	}
 }

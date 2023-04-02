@@ -1,0 +1,23 @@
+.spaceship {
+  position: relative;
+  height: 100%;
+  width: 400px;
+  .background {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .room {
+    transition: all 0.3s;
+    &:hover{
+      cursor: pointer;
+      transform: scale(0.30);
+    }
+  }
+  .pont {
+    position: absolute;
+    transform: scale(0.24);
+    top: 51px;
+    left: 60px;
+  }
+} 

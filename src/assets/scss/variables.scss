@@ -1,1 +1,9 @@
-$color-main1 : rgb(9, 116, 116);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+$color-main1 : rgb(129, 129, 129);
+$color-text: #fff;
+$bgc-main : #000;
+
+$font-main : 'Roboto Mono', monospace;
+$font-main2: 'Cutive Mono', monospace;

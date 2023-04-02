@@ -1,5 +1,11 @@
 @import "variables";
 
 .home {
-  background-color: $color-main1;
+  .bridge {
+    img {
+      width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+  }
 }
