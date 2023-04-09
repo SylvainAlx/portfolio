@@ -1,26 +1,39 @@
 import { useEffect, useState } from "react";
+import { rooms } from "../utils/rooms";
 import "../assets/scss/Home.scss";
-import Legend from "../components/legend/Legend";
-import Spaceship from "../components/spaceship/Spaceship";
 
 const Home = () => {
-  const url = "src/assets/images/spaceship-floor0.png";
-  const [room, setRoom] = useState({});
-
-  useEffect(() => {
-    console.log(room);
-  }, [room]);
-
-  const children = [
-    {
-      name: "pont",
-      url: "src/assets/images/bridge.png",
-    },
-  ];
   return (
     <main className="home">
-      <Legend room={room} />
-      <Spaceship url={url} children={children} setRoom={setRoom} />
+      {rooms.map((room, i) => {
+        return (
+          <div key={i} className={`room ${room.className}`}>
+            <h3>{room.title}</h3>
+            <div className="sections">
+              <section>
+                <h4>{room.section_1}</h4>
+                <div className="list">
+                  {room.section_1_text !== undefined &&
+                    room.section_1_text.map((e, i) => {
+                      return <p key={i}>{e}</p>;
+                    })}
+                </div>
+              </section>
+              {room.section_2 !== undefined && (
+                <section>
+                  <h4>{room.section_2}</h4>
+                  <div className="list">
+                    {room.section_2_text !== undefined &&
+                      room.section_2_text.map((e, i) => {
+                        return <p key={i}>{e}</p>;
+                      })}
+                  </div>
+                </section>
+              )}
+            </div>
+          </div>
+        );
+      })}
     </main>
   );
 };
