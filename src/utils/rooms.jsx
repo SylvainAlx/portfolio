@@ -19,6 +19,10 @@ export const rooms = [
     ],
   },
   {
+    className: "engine",
+    title: "Salle des machines",
+  },
+  {
     className: "crew",
     title: "Quartier de l'équipage",
   },
@@ -27,15 +31,19 @@ export const rooms = [
     title: "Laboratoire",
   },
   {
-    className: "music",
-    title: "Salle de musique",
+    className: "observatory",
+    title: "Observatoire",
   },
   {
     className: "photo",
     title: "Studio photo",
   },
   {
-    className: "engine",
-    title: "Salle des machines",
+    className: "music",
+    title: "Salle de musique",
+  },
+  {
+    className: "greenhouse",
+    title: "Serre",
   },
 ];

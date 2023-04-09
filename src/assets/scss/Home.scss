@@ -23,8 +23,9 @@
     overflow: hidden;
     &:hover {
       opacity: 1;
-      height: 200px;
+      height: 300px;
     }
+    
     h3 {
       line-height: 50px;
       width: 100%;
@@ -60,10 +61,37 @@
   }
   .bridge {
     width: 100%;
-    background: url("src/assets/images/bridge2.png") center;
+    background: url("src/assets/images/bridge.jpg") center;
+    background-size: cover;
+  }
+  .crew {
+    background: url("src/assets/images/crew.jpg") center;
+    background-size: cover;
+  }
+  .laboratory {
+    background: url("src/assets/images/laboratory.jpg") center;
+    background-size: cover;
+  }
+  .observatory {
+    background: url("src/assets/images/observatory.jpg") center;
+    background-size: cover;
+  }
+  .music {
+    background: url("src/assets/images/music.jpg") center;
     background-size: cover;
   }
   .engine {
+    background: url("src/assets/images/engine.jpg") center;
+    background-size: cover;
+  }
+  .greenhouse {
     width: 100%;
+    background: url("src/assets/images/greenhouse.jpg") center;
+    background-size: cover;
+  }
+  .photo {
+    width: 100%;
+    background: url("src/assets/images/photo.jpg") center;
+    background-size: cover;
   }
 }
