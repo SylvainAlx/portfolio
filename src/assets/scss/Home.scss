@@ -5,93 +5,11 @@
   min-width: 300px;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  //flex-grow: 1;
   //width: 100%;
   margin: 20px auto;
   border-radius: 10px;
+  //box-shadow: $box-shadow;
 
-  .room {
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px $border1 solid;
-    flex-grow: 1;
-    background-color: $bgc2;
-    opacity: 0.5;
-    transition: all 0.3s;
-    overflow: hidden;
-    &:hover {
-      opacity: 1;
-      height: 300px;
-    }
-    
-    h3 {
-      line-height: 50px;
-      width: 100%;
-      background-color: $bgc2alpha;
-      font-size: 1.5rem;
-      text-align: center;
-      margin: 0;
-      margin-bottom: 10px;
-    }
-    .sections {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 10px;
-      section {
-        padding: 0 7px;
-        background-color: $bgc2alpha;
-        border-radius: 10px;
-        transition: all 0.3s;
-        &:hover {
-          background-color: $bgc1;
-        }
-        h4 {
-          font-size: 0.7rem;
-        }
-        .list {
-          font-size: 0.4rem;
-        }
-      }
-      
-    }
-  }
-  .bridge {
-    width: 100%;
-    background: url("src/assets/images/bridge.jpg") center;
-    background-size: cover;
-  }
-  .crew {
-    background: url("src/assets/images/crew.jpg") center;
-    background-size: cover;
-  }
-  .laboratory {
-    background: url("src/assets/images/laboratory.jpg") center;
-    background-size: cover;
-  }
-  .observatory {
-    background: url("src/assets/images/observatory.jpg") center;
-    background-size: cover;
-  }
-  .music {
-    background: url("src/assets/images/music.jpg") center;
-    background-size: cover;
-  }
-  .engine {
-    background: url("src/assets/images/engine.jpg") center;
-    background-size: cover;
-  }
-  .greenhouse {
-    width: 100%;
-    background: url("src/assets/images/greenhouse.jpg") center;
-    background-size: cover;
-  }
-  .photo {
-    width: 100%;
-    background: url("src/assets/images/photo.jpg") center;
-    background-size: cover;
-  }
+  
 }
