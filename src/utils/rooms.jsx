@@ -1,7 +1,7 @@
 export const rooms = [
   {
     className: "bridge",
-    title: "Pont",
+    title: "Salle de contrôle",
     description: "Parcours et ambitions",
     section_1: "d'où je viens",
     section_1_text: [
@@ -18,6 +18,8 @@ export const rooms = [
       "developpeur Front-End",
       "intégrateur web",
     ],
+    button: "TÉLÉCHARGER MON CV",
+    button_link: "",
   },
   {
     className: "engine",
@@ -34,6 +36,9 @@ export const rooms = [
     title: "Laboratoire",
     description: "En cours d'apprentissage",
   },
+];
+
+export const otherRooms = [
   {
     className: "observatory",
     title: "Observatoire",

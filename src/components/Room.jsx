@@ -1,4 +1,5 @@
 import "../assets/scss/Room.scss";
+import Button from "./Button";
 
 const Room = (props) => {
   const { room } = props;
@@ -30,6 +31,7 @@ const Room = (props) => {
             </div>
           </section>
         )}
+        <Button text={room.button} link={room.button_link} />
       </div>
     </div>
   );

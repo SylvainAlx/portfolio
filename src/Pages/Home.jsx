@@ -1,28 +1,36 @@
 import { useEffect, useState } from "react";
-import { rooms } from "../utils/rooms";
+import { rooms, otherRooms } from "../utils/rooms";
 import Room from "../components/Room";
+import Nav from "../components/Nav";
 import "../assets/scss/Home.scss";
 
 const Home = () => {
-  const [itemsToShow, setItemsToShow] = useState([]);
-  const [index, setIndex] = useState(0);
+  const [roomsToShow, setRoomsToShow] = useState([]);
+  const [room, setRoom] = useState(0);
+  const [showNext, setShowNext] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      if (index < rooms.length) {
-        setItemsToShow([...itemsToShow, rooms[index]]);
-        setIndex(index + 1);
+      if (room < rooms.length) {
+        setRoomsToShow([...roomsToShow, rooms[room]]);
+        setRoom(room + 1);
       } else {
         clearInterval(timer);
       }
     }, 100);
     return () => clearInterval(timer);
-  }, [itemsToShow]);
+  }, [roomsToShow]);
 
   return (
     <main className="home">
-      {itemsToShow !== undefined &&
-        itemsToShow.map((room, i) => {
+      {roomsToShow !== undefined &&
+        roomsToShow.map((room, i) => {
+          return <Room key={i} room={room} />;
+        })}
+      <Nav showNext={showNext} setShowNext={setShowNext} />
+      {showNext &&
+        otherRooms !== undefined &&
+        otherRooms.map((room, i) => {
           return <Room key={i} room={room} />;
         })}
     </main>
