@@ -1,13 +1,15 @@
 import Header from "./layouts/Header";
-import Home from "./Pages/Home";
 import Footer from "./layouts/Footer";
+import Bridge from "./components/rooms/Bridge";
 import "./assets/scss/App.scss";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <main>
+        <Bridge />
+      </main>
       <Footer />
     </div>
   );
