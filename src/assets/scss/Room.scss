@@ -41,7 +41,7 @@
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   p {
     width: 80%;
@@ -94,31 +94,7 @@
     }
     
   }
-  .button {
-    display: flex;
-    gap: 5px;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0 10px;
-    line-height: 30px;
-    text-align: center;
-    background-color: $bgc3;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-family: $font3;
-    &:hover {
-      cursor: pointer;
-    }
-  }
   
-  .buttonContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-  }
 }
 
 

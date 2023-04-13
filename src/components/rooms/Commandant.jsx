@@ -8,7 +8,7 @@ const Commandant = () => {
         roomName="Quartiers du commandant"
         description="Sylvain ALEXANDRE"
       />
-      <h1>Développeur web mais pas uniquement !</h1>
+      <h1>Développeur web, mais pas uniquement !</h1>
       <p>
         Je vous propose un petit tour d'horizon de mon parcours de vie, à
         l'image d'une visite d'un grand vaisseau qui trace son chemin
