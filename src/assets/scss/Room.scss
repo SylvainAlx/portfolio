@@ -3,37 +3,42 @@
 
 .room {
   width: 100%;
+  padding: 20px 0;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
   overflow: hidden;
+  background-color:$bgcBlackAlpha;
 
   
   header {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     h5 {
-      margin: 0 auto;
-      font-size: 0.5rem;
+      padding: 0 10px;
+      margin: 10px auto;
+      font-size: 0.9rem;
+      text-align: center;
       border-radius: 50px;
+      background-color: $bgc4;
 
     }
     h3 {
-      font-size: 1.4rem;
-      font-family: $font3;
+      font-size: 2rem;
       text-align: center;
       margin: 0 auto;
     }
   }
   .roomImage {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-right: 10px;
     
     img {
@@ -69,7 +74,29 @@
     
   }
   .button {
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
     line-height: 30px;
+    text-align: center;
+    background-color: $bgc3;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: $font3;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
   }
 }
 .bridge {

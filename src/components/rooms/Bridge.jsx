@@ -1,8 +1,11 @@
 import RoomHeader from "./RoomHeader";
-import Button from "../Button";
-import "../../assets/scss/room.scss";
+import "../../assets/scss/Room.scss";
+import { AiFillFileText } from "react-icons/ai";
 
 const Bridge = () => {
+  const handleClick = (e) => {
+    window.open(props.link, "_blank");
+  };
   return (
     <div className="room bridge">
       <RoomHeader
@@ -22,7 +25,7 @@ const Bridge = () => {
           </ul>
         </section>
         <section>
-          <h4>d'où je viens</h4>
+          <h4>postes visés</h4>
           <ul>
             <li>développeur web fullstack React/Node.js</li>
             <li>developpeur WordPress</li>
@@ -31,7 +34,10 @@ const Bridge = () => {
           </ul>
         </section>
       </div>
-      <Button text={"télécharger mon CV"} />
+      <div className="button" onClick={handleClick}>
+        <AiFillFileText />
+        télécharger mon CV
+      </div>
     </div>
   );
 };

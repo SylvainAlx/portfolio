@@ -2,9 +2,9 @@
 
 body {
 	margin: 0 auto;
-  background: url("src/assets/images/ep_naturalblack.png");
+  background: url("src/assets/images/ep_naturalblack.png") fixed;
   color: $text1;
-  font-family: $font1;
+  font-family: $font3;
 	.App {
     position:relative;
 		//height: 100vh;
