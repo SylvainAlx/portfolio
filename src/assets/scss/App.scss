@@ -1,5 +1,14 @@
 @import "variables";
 
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 body {
 	margin: 0 auto;
   background: url("src/assets/images/ep_naturalblack.png") fixed;
@@ -10,6 +19,16 @@ body {
 		//height: 100vh;
 		display: flex;
 		flex-direction: column;
+
+    .Separator {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: $bgc4;
+    }
 		
 	}
 }

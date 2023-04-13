@@ -1,4 +1,4 @@
-import RoomHeader from "./RoomHeader";
+import RoomHeader from "../RoomHeader";
 import "../../assets/scss/Room.scss";
 import { AiFillFileText } from "react-icons/ai";
 
@@ -16,22 +16,40 @@ const Bridge = () => {
       <div className="sections">
         <section>
           <h4>d'où je viens</h4>
-          <ul>
-            <li>2023 - BAC+2 Developpeur web full-stack</li>
-            <li>2017-2022 - Assistant d'éducation</li>
-            <li>2017-2019 - Photographe freelance</li>
-            <li>2011-2016 - Technicien Canal+</li>
-            <li>2010 - BAC+2 Audiovisuel</li>
+          <ul className="list">
+            <li>
+              <b>2023</b>- BAC+2 Developpeur web full-stack
+            </li>
+            <li>
+              <b>2017-2022</b>- Assistant d'éducation
+            </li>
+            <li>
+              <b>2017-2019</b>- Photographe freelance
+            </li>
+            <li>
+              <b>2011-2016</b>- Technicien Canal+
+            </li>
+            <li>
+              <b>2010</b>- BAC+2 Audiovisuel
+            </li>
           </ul>
         </section>
         <section>
           <h4>postes visés</h4>
-          <ul>
-            <li>développeur web fullstack React/Node.js</li>
-            <li>developpeur WordPress</li>
-            <li>developpeur Front-End</li>
-            <li>intégrateur web</li>
-          </ul>
+          <ol className="list">
+            <li>
+              <b>{"< "}</b>développeur web fullstack<b>{" />"}</b>
+            </li>
+            <li>
+              <b>{"< "}</b>developpeur Front-End<b>{" />"}</b>
+            </li>
+            <li>
+              <b>{"< "}</b>intégrateur web<b>{" />"}</b>
+            </li>
+            <li>
+              <b>{"< "}</b>developpeur WordPress<b>{" />"}</b>
+            </li>
+          </ol>
         </section>
       </div>
       <div className="button" onClick={handleClick}>

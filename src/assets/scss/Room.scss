@@ -4,7 +4,6 @@
 .room {
   width: 100%;
   padding: 20px 0;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,10 +23,10 @@
     h5 {
       padding: 0 10px;
       margin: 10px auto;
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       text-align: center;
       border-radius: 50px;
-      background-color: $bgc4;
+      color: $bgc4;
 
     }
     h3 {
@@ -35,6 +34,18 @@
       text-align: center;
       margin: 0 auto;
     }
+  }
+
+  em {
+    color: $text2;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+  p {
+    width: 80%;
+    font-size: 1.4rem;
   }
   .roomImage {
     width: 150px;
@@ -65,10 +76,20 @@
       border-radius: 10px;
       transition: all 0.3s;
       h4 {
-        font-size: 0.7rem;
+        margin: 5px auto;
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: unset;
       }
       .list {
-        font-size: 0.6rem;
+        padding: 0;
+        li {
+          font-size: 1.2rem;
+          list-style: none;
+          b {
+            color: $text2;
+          }
+        }
       }
     }
     
@@ -84,7 +105,7 @@
     text-align: center;
     background-color: $bgc3;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: $font3;
     &:hover {
       cursor: pointer;
@@ -98,8 +119,6 @@
     justify-content: space-around;
     gap: 20px;
   }
-}
-.bridge {
 }
 
 

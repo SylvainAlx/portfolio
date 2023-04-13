@@ -1,4 +1,4 @@
-import RoomHeader from "./RoomHeader";
+import RoomHeader from "../RoomHeader";
 import { AiFillGithub, AiFillMail, AiFillLinkedin } from "react-icons/ai";
 
 const Communication = () => {
