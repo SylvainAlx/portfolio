@@ -4,7 +4,7 @@ const Commandant = () => {
   return (
     <div className="room commandant">
       <RoomHeader
-        image="src/assets/images/portrait.jpg"
+        image="/images/portrait.jpg"
         roomName="Quartiers du commandant"
         description="Sylvain ALEXANDRE"
       />

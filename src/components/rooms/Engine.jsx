@@ -18,7 +18,7 @@ const Engine = () => {
   return (
     <div className="room engine animated">
       <RoomHeader
-        image="src/assets/images/engine.jpg"
+        image="/images/engine.jpg"
         roomName="Salle des machines"
         description="Technologies utilisées"
       />

@@ -9,7 +9,7 @@ const Bridge = () => {
   return (
     <div className="room bridge animated">
       <RoomHeader
-        image="src/assets/images/bridge.jpg"
+        image="/images/bridge.jpg"
         roomName="Salle de contrôle"
         description="Parcours et ambitions"
       />

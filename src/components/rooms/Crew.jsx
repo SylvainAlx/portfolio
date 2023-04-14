@@ -4,7 +4,7 @@ const Crew = () => {
   return (
     <div className="room crew animated">
       <RoomHeader
-        image="src/assets/images/crew.jpg"
+        image="/images/crew.jpg"
         roomName="Quartier de l'équipage"
         description="Mes réalisations"
       />

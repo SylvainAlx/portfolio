@@ -8,7 +8,7 @@ const Communication = () => {
   return (
     <div className="room communcation animated">
       <RoomHeader
-        image="src/assets/images/communication.jpg"
+        image="/images/communication.jpg"
         roomName="Salle des communications"
         description="Me contacter"
       />
