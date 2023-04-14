@@ -2,7 +2,7 @@ import RoomHeader from "../RoomHeader";
 
 const Crew = () => {
   return (
-    <div className="room crew">
+    <div className="room crew animated">
       <RoomHeader
         image="src/assets/images/crew.jpg"
         roomName="Quartier de l'équipage"

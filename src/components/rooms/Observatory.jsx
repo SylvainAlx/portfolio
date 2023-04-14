@@ -2,7 +2,7 @@ import RoomHeader from "../RoomHeader";
 
 const Observatory = () => {
   return (
-    <div className="room observatory">
+    <div className="room observatory animated">
       <RoomHeader
         image="src/assets/images/observatory.jpg"
         roomName="Observatoire"

@@ -2,7 +2,7 @@ import RoomHeader from "../RoomHeader";
 
 const Photography = () => {
   return (
-    <div className="room photography">
+    <div className="room photography animated">
       <RoomHeader
         image="src/assets/images/photo.jpg"
         roomName="Studio photo"

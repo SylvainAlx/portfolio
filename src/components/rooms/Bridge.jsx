@@ -7,14 +7,14 @@ const Bridge = () => {
     window.open(props.link, "_blank");
   };
   return (
-    <div className="room bridge">
+    <div className="room bridge animated">
       <RoomHeader
         image="src/assets/images/bridge.jpg"
         roomName="Salle de contrôle"
         description="Parcours et ambitions"
       />
       <div className="sections">
-        <section>
+        <section className="animated">
           <h4>d'où je viens</h4>
           <ul className="list">
             <li>
@@ -34,7 +34,7 @@ const Bridge = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section className="animated">
           <h4>postes visés</h4>
           <ol className="list">
             <li>
@@ -52,7 +52,7 @@ const Bridge = () => {
           </ol>
         </section>
       </div>
-      <div className="button" onClick={handleClick}>
+      <div className="button animated" onClick={handleClick}>
         <AiFillFileText />
         télécharger mon CV
       </div>

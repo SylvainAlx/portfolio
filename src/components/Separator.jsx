@@ -1,9 +1,9 @@
-import { MdWorkspaces } from "react-icons/md";
+import { CgScrollV } from "react-icons/cg";
 
 const Separator = () => {
   return (
     <div className="Separator">
-      <MdWorkspaces />
+      <CgScrollV />
     </div>
   );
 };

@@ -8,31 +8,37 @@ import Laboratory from "./components/rooms/Laboratory";
 import Observatory from "./components/rooms/Observatory";
 import Photography from "./components/rooms/Photography";
 import "./assets/scss/App.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
-  const [showNext, setShowNext] = useState(false);
+  useEffect(() => {
+    const animatedElements = document.querySelectorAll(".animated");
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+    function handleScroll() {
+      animatedElements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementBottom = element.getBoundingClientRect().bottom;
 
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
+        if (elementTop < window.innerHeight && elementBottom > 0) {
+          element.classList.add("animate");
+        } else {
+          element.classList.remove("animate");
+        }
+      });
+    }
 
-  const handleClick = () => {
-    setShowNext(!showNext);
-  };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div
-      style={{ overflowY: "scroll" }}
-      className="App"
-      onScroll={handleScroll}
-    >
+    <div className="App">
       <main>
         <Commandant />
         <Separator />
-        <h1>Scroll Position: {scrollPosition}</h1>
         <Communication />
         <Separator />
         <Bridge />
@@ -43,16 +49,9 @@ const App = () => {
         <Separator />
         <Laboratory />
         <Separator />
-        <div className="button learnMore" onClick={handleClick}>
-          En savoir plus
-        </div>
-        {showNext && (
-          <>
-            <Photography />
-            <Separator />
-            <Observatory />
-          </>
-        )}
+        <Photography />
+        <Separator />
+        <Observatory />
       </main>
     </div>
   );
