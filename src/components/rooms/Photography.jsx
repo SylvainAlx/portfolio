@@ -1,4 +1,5 @@
 import RoomHeader from "../RoomHeader";
+import UnderConstruction from "../UnderConstruction";
 
 const Photography = () => {
   return (
@@ -8,6 +9,7 @@ const Photography = () => {
         roomName="Studio photo"
         description="Ma pratique de la photographie"
       />
+      <UnderConstruction />
     </div>
   );
 };

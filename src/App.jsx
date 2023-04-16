@@ -1,14 +1,15 @@
 import Separator from "./components/Separator";
-import Commandant from "./components/rooms/Commandant";
 import Bridge from "./components/rooms/Bridge";
 import Communication from "./components/rooms/Communication";
 import Engine from "./components/rooms/Engine";
 import Crew from "./components/rooms/Crew";
+import Hold from "./components/rooms/Hold";
 import Laboratory from "./components/rooms/Laboratory";
 import Observatory from "./components/rooms/Observatory";
 import Photography from "./components/rooms/Photography";
 import "./assets/scss/App.scss";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import Header from "./components/Header";
 
 const App = () => {
   useEffect(() => {
@@ -36,8 +37,10 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header />
       <main>
-        <Commandant />
+        <Separator />
+        <Crew />
         <Separator />
         <Communication />
         <Separator />
@@ -45,7 +48,7 @@ const App = () => {
         <Separator />
         <Engine />
         <Separator />
-        <Crew />
+        <Hold />
         <Separator />
         <Laboratory />
         <Separator />

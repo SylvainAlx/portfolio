@@ -4,7 +4,10 @@ import { AiFillFileText } from "react-icons/ai";
 
 const Bridge = () => {
   const handleClick = (e) => {
-    window.open(props.link, "_blank");
+    window.open(
+      `./documents/CV_Sylvain_ALEXANDRE_developpeur_web.pdf`,
+      "_blank"
+    );
   };
   return (
     <div className="room bridge animated">
