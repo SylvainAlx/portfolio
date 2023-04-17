@@ -5,7 +5,7 @@ const Hold = () => {
   return (
     <div className="room hold animated">
       <RoomHeader
-        image="/images/hold.jpg"
+        image="/images/hold.webp"
         roomName="Soute"
         description="Mes réalisations"
       />

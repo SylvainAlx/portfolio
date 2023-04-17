@@ -12,7 +12,7 @@ const Communication = () => {
   return (
     <div className="room communcation animated">
       <RoomHeader
-        image="/images/communication.jpg"
+        image="/images/communication.webp"
         roomName="Salle des communications"
         description="Me contacter"
       />

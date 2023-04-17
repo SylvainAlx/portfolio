@@ -5,7 +5,7 @@ const Photography = () => {
   return (
     <div className="room photography animated">
       <RoomHeader
-        image="/images/photo.jpg"
+        image="/images/photo.webp"
         roomName="Studio photo"
         description="Ma pratique de la photographie"
       />

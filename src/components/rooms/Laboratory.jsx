@@ -5,7 +5,7 @@ const Laboratory = () => {
   return (
     <div className="room laboratory animated">
       <RoomHeader
-        image="/images/laboratory.jpg"
+        image="/images/laboratory.webp"
         roomName="Laboratoire"
         description="En cours d'apprentissage"
       />

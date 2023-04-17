@@ -2,9 +2,9 @@ import RoomHeader from "../RoomHeader";
 
 const Crew = () => {
   return (
-    <div className="room commandant">
+    <div className="room crew">
       <RoomHeader
-        image="/images/portrait.jpg"
+        image="/images/portrait.webp"
         roomName="Quartiers de l'équipage"
         description="Sylvain ALEXANDRE"
       />

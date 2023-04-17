@@ -1,17 +1,27 @@
 @import "variables";
 
-@keyframes rotate {
+@keyframes slide {
   from {
-    transform: rotate(0);
+    margin-bottom: -100px;
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    margin-bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
 body {
 	margin: 0 auto;
-  background: url("/images/ep_naturalblack.png") fixed;
+  background: url("/images/space.png") fixed;
   color: $text1;
   font-family: $font3;
 	.App {
@@ -19,6 +29,7 @@ body {
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
+    
 
     .topHeader {
       
@@ -27,13 +38,15 @@ body {
       justify-content: flex-end;
       align-items: center;
       min-height: 300px;
-      background: url("/images/spaceship2.jpg") center;
+      background: url("/images/spaceship.webp") center;
       background-size: cover;
+      overflow: hidden;
         
       h2 {
         margin: 0 auto;
         font-size: 4rem;
         font-family: $font4;
+        animation: 1s slide;
       }
     }
     
@@ -83,6 +96,15 @@ body {
     .animated.animate {
       opacity: 1;
       transform: translateX(0);
+    }
+    .crew {
+      animation: fade 2s;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8rem;
     }
 	}
 }

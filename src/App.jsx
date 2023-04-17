@@ -10,6 +10,7 @@ import Photography from "./components/rooms/Photography";
 import "./assets/scss/App.scss";
 import { useEffect } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -56,6 +57,7 @@ const App = () => {
         <Separator />
         <Observatory />
       </main>
+      <Footer />
     </div>
   );
 };
