@@ -1,4 +1,6 @@
-@import "variables";
+@import "_variables";
+@import "_mixins";
+@import "_animations";
 
 .room {
   width: 100%;
@@ -9,6 +11,18 @@
   flex-grow: 1;
   overflow: hidden;
   background-color:$bgcBlackAlpha;
+  transition: all 0.8s ease;
+  @include laptop {
+    border: $bgcBlackAlpha 1px solid;
+    box-sizing: border-box;
+    width: 300px;
+    height: 278px;
+    min-height: 0;
+    &:hover {
+      border: 3px solid $bgc4;
+      border-radius: 10px;
+    }
+  }
 
   
   header {
@@ -32,6 +46,9 @@
       font-size: 2rem;
       text-align: center;
       margin: 0 auto;
+      @include laptop {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -115,5 +132,92 @@
   }
   
 }
+.spaceship {
+  padding: 0;
+  position: relative;
+  animation: fade 2s;
+  grid-area: spaceship;
+  h2 {
+    margin: 5px 0;
+    position: absolute;
+    bottom: 0;
+    font-family: $font4;
+    font-size: 3rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+    &:hover {
+      width: 120%;
+    }
+  }
 
+}
+
+.crew {
+  grid-area: crew;
+  @include laptop {
+    &:hover {
+      min-height: 610px;
+    }
+  }
+}
+.communication {
+  grid-area: communication;
+  @include laptop {
+    &:hover {
+      min-height: 370px;
+    }
+  }
+}
+.bridge {
+  grid-area: bridge;
+  @include laptop {
+    &:hover {
+      min-height: 750px;
+    }
+  }
+}
+.engine {
+  grid-area: engine;
+  @include laptop {
+    &:hover {
+      min-height: 620px;
+    }
+  }
+}
+.hold {
+  grid-area: hold;
+  @include laptop {
+    &:hover {
+      min-height: 360px;
+    }
+  }
+}
+.laboratory {
+  grid-area: laboratory;
+  @include laptop {
+    &:hover {
+      min-height: 360px;
+    }
+  }
+}
+.observatory {
+  grid-area: observatory;
+  @include laptop {
+    &:hover {
+      min-height: 360px;
+    }
+  }
+}
+.photography {
+  grid-area: photography;
+  @include laptop {
+    &:hover {
+      min-height: 360px;
+    }
+  }
+}
 

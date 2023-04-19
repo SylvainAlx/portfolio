@@ -8,11 +8,12 @@ import Laboratory from "./components/rooms/Laboratory";
 import Observatory from "./components/rooms/Observatory";
 import Photography from "./components/rooms/Photography";
 import "./assets/scss/App.scss";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 const App = () => {
+  const width = window.innerWidth;
   useEffect(() => {
     const animatedElements = document.querySelectorAll(".animated");
 
@@ -28,8 +29,14 @@ const App = () => {
         }
       });
     }
-
-    window.addEventListener("scroll", handleScroll);
+    if (width >= 1000) {
+      animatedElements.forEach((element) => {
+        element.classList.remove("animated");
+        element.classList.add("animate");
+      });
+    } else {
+      window.addEventListener("scroll", handleScroll);
+    }
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -49,6 +56,13 @@ const App = () => {
         <Separator />
         <Engine />
         <Separator />
+        {width >= 1000 && (
+          <div className="spaceship room">
+            <h2>PORTFOLIO</h2>
+            <div id="dot"></div>
+            <img src="/images/spaceship.webp" />
+          </div>
+        )}
         <Hold />
         <Separator />
         <Laboratory />

@@ -1,23 +1,7 @@
-@import "variables";
+@import "_variables";
+@import "_mixins";
+@import "_animations";
 
-@keyframes slide {
-  from {
-    margin-bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    margin-bottom: 0;
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 body {
 	margin: 0 auto;
@@ -30,7 +14,7 @@ body {
 		display: flex;
 		flex-direction: column;
     
-
+    
     .topHeader {
       
       display: flex;
@@ -41,6 +25,9 @@ body {
       background: url("/images/spaceship.webp") center;
       background-size: cover;
       overflow: hidden;
+      @include laptop {
+        display: none;
+      }
         
       h2 {
         margin: 0 auto;
@@ -50,6 +37,20 @@ body {
       }
     }
     
+    main {
+      @include laptop {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        grid-template-areas: 
+        "spaceship crew communication"
+        "bridge engine hold"
+        "laboratory observatory photography";
+        transition: all 1s;
+      }
+    };
 
     .Separator {
       margin: 20px;
@@ -59,7 +60,11 @@ body {
       justify-content: center;
       font-size: 2rem;
       color: $bgc4;
+      @include laptop {
+        display: none;
+      }
     }
+
     .button {
       min-height: 30px;
       display: flex;
@@ -74,8 +79,13 @@ body {
       border-radius: 50px;
       font-size: 1.2rem;
       font-family: $font3;
-      &:hover {
-        cursor: pointer;
+      transition: all 0.5s;
+      
+      @include laptop {
+        &:hover {
+          cursor: pointer;
+          background-color: $text2;
+        }
       }
     }
     
