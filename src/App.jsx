@@ -29,7 +29,7 @@ const App = () => {
         }
       });
     }
-    if (width >= 1000) {
+    if (width >= 1300) {
       animatedElements.forEach((element) => {
         element.classList.remove("animated");
         element.classList.add("animate");
@@ -54,22 +54,20 @@ const App = () => {
         <Separator />
         <Bridge />
         <Separator />
-        <Engine />
-        <Separator />
-        {width >= 1000 && (
-          <div className="spaceship room">
-            <h2>PORTFOLIO</h2>
-            <div id="dot"></div>
-            <img src="/images/spaceship.webp" />
-          </div>
-        )}
         <Hold />
+        <Separator />
+        <div className="spaceship room">
+          <h2>PORTFOLIO</h2>
+          <div id="dot"></div>
+          <img src="./images/spaceship.webp" />
+        </div>
+        <Engine />
         <Separator />
         <Laboratory />
         <Separator />
         <Photography />
-        <Separator />
-        <Observatory />
+        {/* <Separator />
+        <Observatory /> */}
       </main>
       <Footer />
     </div>

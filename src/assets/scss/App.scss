@@ -39,15 +39,14 @@ body {
     
     main {
       @include laptop {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        width: 98%;
+        margin: 50px auto;
         display: grid;
         gap: 20px;
         justify-content: center;
         grid-template-areas: 
-        "spaceship crew communication"
-        "bridge engine hold"
-        "laboratory observatory photography";
+        "spaceship crew communication bridge"
+        "hold engine laboratory photography";
         transition: all 1s;
       }
     };

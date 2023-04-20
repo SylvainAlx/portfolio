@@ -15,7 +15,7 @@
   @include laptop {
     border: $bgcBlackAlpha 1px solid;
     box-sizing: border-box;
-    width: 300px;
+    width: 320px;
     height: 278px;
     min-height: 0;
     &:hover {
@@ -96,6 +96,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    @include laptop {
+      min-width: 275px;
+    }
     h4 {
       width: 100%;
       margin: 5px auto;
@@ -133,6 +136,7 @@
   
 }
 .spaceship {
+  display: none;
   padding: 0;
   position: relative;
   animation: fade 2s;
@@ -149,9 +153,9 @@
     height: 100%;
     object-fit: cover;
     transition: all 0.5s;
-    &:hover {
-      width: 120%;
-    }
+  }
+  @include laptop {
+    display: block;
   }
 
 }
