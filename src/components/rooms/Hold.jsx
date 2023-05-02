@@ -1,7 +1,15 @@
 import RoomHeader from "../RoomHeader";
-import UnderConstruction from "../UnderConstruction";
+import Work from "../work";
 
 const Hold = () => {
+  const portfolio = {
+    title: "Portfolio",
+    image: "./images/Portfolio.webp",
+    technos: ["React", "SASS", "Vite"],
+    github: "https://github.com/SylvainAlx/portfolio",
+    web: "https://sylvainalx.github.io/portfolio/",
+  };
+
   return (
     <div className="room hold animated">
       <RoomHeader
@@ -9,7 +17,7 @@ const Hold = () => {
         roomName="Soute"
         description="Mes réalisations"
       />
-      <UnderConstruction />
+      <Work data={portfolio} />
     </div>
   );
 };

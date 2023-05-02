@@ -1,6 +1,5 @@
 import RoomHeader from "../RoomHeader";
-import { AiFillGithub, AiFillMail, AiFillLinkedin } from "react-icons/ai";
-import { IoLocationSharp } from "react-icons/io5";
+import Button from "../Button";
 
 const Communication = () => {
   const handleClick = (e) => {
@@ -17,36 +16,14 @@ const Communication = () => {
         description="Me contacter"
       />
       <div className="buttonContainer">
-        <div
-          className="button animated"
-          name="mail"
-          id="sylval49@gmail.com"
-          onClick={handleClick}
-        >
-          <AiFillMail />
-        </div>
-        <div
-          className="button animated"
-          id="https://github.com/SylvainAlx"
-          onClick={handleClick}
-        >
-          <AiFillGithub />
-        </div>
-        <div
-          className="button animated"
-          id="https://www.linkedin.com/in/sylvain-alx/"
-          onClick={handleClick}
-        >
-          <AiFillLinkedin />
-        </div>
-      </div>
-      <div
-        className="button animated"
-        id="https://www.google.fr/maps/place/Angers/"
-        onClick={handleClick}
-      >
-        <IoLocationSharp />
-        Angers, France
+        <Button name="mail" id="sylval49@gmail.com" />
+        <Button name="github" id="https://github.com/SylvainAlx" />
+        <Button name="linkedin" id="https://www.linkedin.com/in/sylvain-alx/" />
+        <Button
+          name="place"
+          id="https://www.google.fr/maps/place/Angers/"
+          text="Angers, France"
+        />
       </div>
     </div>
   );

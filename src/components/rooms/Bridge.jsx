@@ -41,13 +41,13 @@ const Bridge = () => {
           <h4>postes visés</h4>
           <ol className="list">
             <li>
-              <b>{"< "}</b>développeur web fullstack<b>{" />"}</b>
-            </li>
-            <li>
               <b>{"< "}</b>developpeur Front-End<b>{" />"}</b>
             </li>
             <li>
               <b>{"< "}</b>intégrateur web<b>{" />"}</b>
+            </li>
+            <li>
+              <b>{"< "}</b>développeur web fullstack<b>{" />"}</b>
             </li>
             <li>
               <b>{"< "}</b>developpeur WordPress<b>{" />"}</b>

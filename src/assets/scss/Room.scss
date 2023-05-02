@@ -13,13 +13,13 @@
   background-color:$bgcBlackAlpha;
   transition: all 0.8s ease;
   @include laptop {
-    border: $bgcBlackAlpha 1px solid;
+    border: transparent 1px solid;
     box-sizing: border-box;
-    width: 320px;
+    width: 315px;
     height: 278px;
     min-height: 0;
     &:hover {
-      border: 3px solid $bgc4;
+      border: 1px solid $bgc4;
       border-radius: 10px;
     }
   }
@@ -74,7 +74,17 @@
       object-fit: cover;
       border-radius: 50%;
     }
-
+  }
+  .hashtag {
+    margin-top: 5px;
+    padding: 1px 10px;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: $bgc2alpha;
+    &::before {
+      content: "#";
+      color: $text2
+    }
   }
   
   .sections {
@@ -124,14 +134,26 @@
       align-items: center;
       color: $text2;
       font-size: 1.3rem;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.1);
+        .icon {
+          color: $bgc4;
+        }
+      }
       
       .icon {
         font-size: 2rem;
         color: $text1;
+        transition: all 0.5s;
       }
+    }  
+  }
+  .work {
+    padding-bottom: 10px;
+    img {
+      width: 98%;
     }
-    
-    
   }
   
 }
@@ -156,12 +178,18 @@
   }
   @include laptop {
     display: block;
+    h2 {
+      left: 50px;
+    }
   }
 
 }
 
 .crew {
   grid-area: crew;
+  h1 {
+    text-align: center;
+  }
   @include laptop {
     &:hover {
       min-height: 610px;
@@ -172,7 +200,7 @@
   grid-area: communication;
   @include laptop {
     &:hover {
-      min-height: 370px;
+      min-height: 390px;
     }
   }
 }
@@ -188,7 +216,7 @@
   grid-area: engine;
   @include laptop {
     &:hover {
-      min-height: 620px;
+      min-height: 550px;
     }
   }
 }
@@ -196,7 +224,7 @@
   grid-area: hold;
   @include laptop {
     &:hover {
-      min-height: 360px;
+      min-height: 600px;
     }
   }
 }
@@ -204,7 +232,7 @@
   grid-area: laboratory;
   @include laptop {
     &:hover {
-      min-height: 360px;
+      min-height: 400px;
     }
   }
 }
