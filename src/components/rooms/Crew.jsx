@@ -1,3 +1,4 @@
+import Hashtag from "../Hashtag";
 import RoomHeader from "../RoomHeader";
 
 const Crew = () => {
@@ -9,10 +10,16 @@ const Crew = () => {
         description="Sylvain ALEXANDRE"
       />
       <h1>Développeur web, mais pas uniquement !</h1>
+      <div className="buttonContainer">
+        <Hashtag content={"créatif"} />
+        <Hashtag content={"autonome"} />
+        <Hashtag content={"passionné"} />
+      </div>
       <p>
-        Bienvenue à bord du <em>Portfolio</em>. Je vous propose un petit tour
-        d'horizon original de mon parcours de vie, mes recherches et mes
-        passions. Bonne visite !
+        Je vous propose un petit tour d'horizon original de mon parcours de vie.
+        Vous y trouverez <em>mes qualifications</em> en tant que développeur,{" "}
+        <em>mes réalisations</em> ainsi que certaines de <em>mes passions</em>.
+        Bonne visite !
       </p>
     </div>
   );

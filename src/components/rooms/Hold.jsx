@@ -1,5 +1,5 @@
 import RoomHeader from "../RoomHeader";
-import Work from "../work";
+import Work from "../Work";
 
 const Hold = () => {
   const portfolio = {

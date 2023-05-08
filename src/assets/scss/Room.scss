@@ -81,9 +81,14 @@
     border-radius: 50px;
     font-size: 1rem;
     background-color: $bgc2alpha;
-    &::before {
-      content: "#";
-      color: $text2
+    &:hover {
+      cursor: default;
+      .hashtagIcon {
+        color: $text2;
+      }
+    }
+    .hashtagIcon {
+      transition: all 0.3s;
     }
   }
   
@@ -136,6 +141,7 @@
       font-size: 1.3rem;
       transition: all 0.5s;
       &:hover {
+        cursor: default;
         transform: scale(1.1);
         .icon {
           color: $bgc4;
@@ -169,6 +175,9 @@
     bottom: 0;
     font-family: $font4;
     font-size: 3rem;
+    b {
+      color: $bgc4;
+    }
   }
   img {
     width: 100%;
@@ -179,7 +188,9 @@
   @include laptop {
     display: block;
     h2 {
-      left: 50px;
+      left: 0;
+      font-size: 2rem;
+      text-align: center;
     }
   }
 
@@ -189,10 +200,11 @@
   grid-area: crew;
   h1 {
     text-align: center;
+    font-size: 1.5rem;
   }
   @include laptop {
     &:hover {
-      min-height: 610px;
+      min-height: 700px;
     }
   }
 }

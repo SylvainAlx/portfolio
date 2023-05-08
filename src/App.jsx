@@ -57,7 +57,9 @@ const App = () => {
         <Hold />
         <Separator />
         <div className="spaceship room">
-          <h2>PORTFOLIO</h2>
+          <h2>
+            Bienvenue à bord du <b>Portfolio</b>
+          </h2>
           <div id="dot"></div>
           <img src="./images/spaceship.webp" />
         </div>

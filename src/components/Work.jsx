@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Hashtag from "./Hashtag";
 
 const Work = (props) => {
   return (
@@ -7,11 +8,7 @@ const Work = (props) => {
       <img src={props.data.image} alt={`image ${props.data.title}`} />
       <div className="buttonContainer">
         {props.data.technos.map((hashtag, i) => {
-          return (
-            <div className="hashtag animated" key={i}>
-              {hashtag}
-            </div>
-          );
+          return <Hashtag key={i} content={hashtag} />;
         })}
       </div>
       <div className="buttonContainer">
