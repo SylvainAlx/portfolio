@@ -1,9 +1,17 @@
 import Hashtag from "../Hashtag";
 import RoomHeader from "../RoomHeader";
+import { dotState } from "../../utils/state";
+import { useRecoilState } from "recoil";
 
 const Crew = () => {
+  const [dotPosition, setDotPosition] = useRecoilState(dotState);
+
   return (
-    <div className="room crew">
+    <div
+      className="room crew"
+      onMouseEnter={() => setDotPosition({ x: 100, y: 90 })}
+      onMouseLeave={() => setDotPosition({ x: 0, y: 0 })}
+    >
       <RoomHeader
         image="/images/portrait.webp"
         roomName="Quartiers de l'équipage"

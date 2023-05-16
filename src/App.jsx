@@ -11,13 +11,15 @@ import "./assets/scss/App.scss";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { useRecoilState } from "recoil";
+import { dotState } from "./utils/state";
 
 const App = () => {
   const width = window.innerWidth;
+  const [dotPosition, setDotPosition] = useRecoilState(dotState);
   useEffect(() => {
     const animatedElements = document.querySelectorAll(".animated");
-
-    function handleScroll() {
+    const handleScroll = () => {
       animatedElements.forEach((element) => {
         const elementTop = element.getBoundingClientRect().top;
         const elementBottom = element.getBoundingClientRect().bottom;
@@ -28,7 +30,7 @@ const App = () => {
           element.classList.remove("animate");
         }
       });
-    }
+    };
     if (width >= 1300) {
       animatedElements.forEach((element) => {
         element.classList.remove("animated");
@@ -60,7 +62,12 @@ const App = () => {
           <h2>
             Bienvenue à bord du <b>Portfolio</b>
           </h2>
-          <div id="dot"></div>
+          {dotPosition.x !== 0 && (
+            <div
+              id="dot"
+              style={{ left: dotPosition.x, top: dotPosition.y }}
+            ></div>
+          )}
           <img src="./images/spaceship.webp" />
         </div>
         <Engine />

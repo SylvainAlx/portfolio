@@ -35,6 +35,10 @@ body {
         font-family: $font4;
         animation: 1s slide;
       }
+      p {
+        font-size: 23px;
+        margin: 0 auto;
+      }
     }
     
     main {
@@ -89,12 +93,13 @@ body {
     }
     
     .buttonContainer {
+      max-width: 300px;
       margin: 10px 0;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      gap: 15px;
+      gap: 19px;
     }
 
 		.animated {

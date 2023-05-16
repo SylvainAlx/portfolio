@@ -23,7 +23,6 @@
       border-radius: 10px;
     }
   }
-
   
   header {
     width: 100%;
@@ -155,12 +154,28 @@
       }
     }  
   }
-  .work {
-    padding-bottom: 10px;
-    img {
-      width: 98%;
+  .workContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    overflow: auto;
+    .work {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      p {
+        font-size: 15px;
+        text-align: center;
+        color: $bgc4;
+      }
+      img {
+        width: 98%;
+      }
     }
+
   }
+  
   
 }
 .spaceship {
@@ -191,6 +206,14 @@
       left: 0;
       font-size: 2rem;
       text-align: center;
+    }
+    #dot {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      background-color: $bgc4;
+      animation: dot 1s infinite;
     }
   }
 
@@ -236,7 +259,7 @@
   grid-area: hold;
   @include laptop {
     &:hover {
-      min-height: 600px;
+      min-height: 650px;
     }
   }
 }
