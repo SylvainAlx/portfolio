@@ -3,7 +3,7 @@ import { SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 const Laboratory = () => {
   return (
-    <div className="room laboratory animated">
+    <div className="room animated" id="laboratory">
       <RoomHeader
         image="/images/laboratory.webp"
         roomName="Laboratoire"

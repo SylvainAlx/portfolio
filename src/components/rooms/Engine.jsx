@@ -11,7 +11,7 @@ import {
 
 const Engine = () => {
   return (
-    <div className="room engine animated">
+    <div className="room animated" id="engine">
       <RoomHeader
         image="/images/engine.webp"
         roomName="Salle des machines"

@@ -8,7 +8,7 @@ import Laboratory from "./components/rooms/Laboratory";
 import Observatory from "./components/rooms/Observatory";
 import Photography from "./components/rooms/Photography";
 import "./assets/scss/App.scss";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useRecoilState } from "recoil";
@@ -16,7 +16,7 @@ import { dotState } from "./utils/state";
 
 const App = () => {
   const width = window.innerWidth;
-  const [dotPosition, setDotPosition] = useRecoilState(dotState);
+
   useEffect(() => {
     const animatedElements = document.querySelectorAll(".animated");
     const handleScroll = () => {
@@ -58,25 +58,13 @@ const App = () => {
         <Separator />
         <Hold />
         <Separator />
-        <div className="spaceship room">
-          <h2>
-            Bienvenue à bord du <b>Portfolio</b>
-          </h2>
-          {dotPosition.x !== 0 && (
-            <div
-              id="dot"
-              style={{ left: dotPosition.x, top: dotPosition.y }}
-            ></div>
-          )}
-          <img src="./images/spaceship.webp" />
-        </div>
         <Engine />
         <Separator />
         <Laboratory />
         <Separator />
         <Photography />
-        {/* <Separator />
-        <Observatory /> */}
+        <Separator />
+        <Observatory />
       </main>
       <Footer />
     </div>

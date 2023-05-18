@@ -8,7 +8,8 @@ const Crew = () => {
 
   return (
     <div
-      className="room crew"
+      className="room"
+      id="crew"
       onMouseEnter={() => setDotPosition({ x: 100, y: 90 })}
       onMouseLeave={() => setDotPosition({ x: 0, y: 0 })}
     >

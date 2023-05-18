@@ -16,18 +16,8 @@ body {
     
     
     .topHeader {
-      
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      min-height: 300px;
-      background: url("/images/spaceship.webp") center;
-      background-size: cover;
-      overflow: hidden;
-      @include laptop {
-        display: none;
-      }
         
       h2 {
         margin: 0 auto;
@@ -39,22 +29,45 @@ body {
         font-size: 23px;
         margin: 0 auto;
       }
+      .navbar {
+        z-index: 100;
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        .burgerMenu {
+          font-size: 30px;
+          color: $bgc4;
+          transition: all 0.3s;
+        }
+        .active {
+          color: $bgc3;
+        }
+        nav {
+          padding: 5px;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: space-around;
+          background-color: $bgc3;
+          a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: $text1;
+            text-decoration: none;
+            font-size: 20px;
+            img {
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              filter: grayscale(80%);
+            }
+          }
+        }
+      }
     }
     
-    main {
-      @include laptop {
-        width: 98%;
-        margin: 50px auto;
-        display: grid;
-        gap: 20px;
-        justify-content: center;
-        grid-template-areas: 
-        "spaceship crew communication bridge"
-        "hold engine laboratory photography";
-        transition: all 1s;
-      }
-    };
-
     .Separator {
       margin: 20px;
       display: flex;
@@ -63,9 +76,6 @@ body {
       justify-content: center;
       font-size: 2rem;
       color: $bgc4;
-      @include laptop {
-        display: none;
-      }
     }
 
     .button {

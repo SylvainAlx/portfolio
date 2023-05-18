@@ -3,7 +3,7 @@ import UnderConstruction from "../UnderConstruction";
 
 const Observatory = () => {
   return (
-    <div className="room observatory animated">
+    <div className="room animated" id="observatory">
       <RoomHeader
         image="/images/observatory.webp"
         roomName="Observatoire"

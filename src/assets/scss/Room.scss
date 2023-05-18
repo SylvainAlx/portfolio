@@ -12,17 +12,6 @@
   overflow: hidden;
   background-color:$bgcBlackAlpha;
   transition: all 0.8s ease;
-  @include laptop {
-    border: transparent 1px solid;
-    box-sizing: border-box;
-    width: 315px;
-    height: 278px;
-    min-height: 0;
-    &:hover {
-      border: 1px solid $bgc4;
-      border-radius: 10px;
-    }
-  }
   
   header {
     width: 100%;
@@ -45,9 +34,6 @@
       font-size: 2rem;
       text-align: center;
       margin: 0 auto;
-      @include laptop {
-        font-size: 1.6rem;
-      }
     }
   }
 
@@ -110,9 +96,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    @include laptop {
-      min-width: 275px;
-    }
     h4 {
       width: 100%;
       margin: 5px auto;
@@ -173,118 +156,5 @@
         width: 98%;
       }
     }
-
-  }
-  
-  
-}
-.spaceship {
-  display: none;
-  padding: 0;
-  position: relative;
-  animation: fade 2s;
-  grid-area: spaceship;
-  h2 {
-    margin: 5px 0;
-    position: absolute;
-    bottom: 0;
-    font-family: $font4;
-    font-size: 3rem;
-    b {
-      color: $bgc4;
-    }
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.5s;
-  }
-  @include laptop {
-    display: block;
-    h2 {
-      left: 0;
-      font-size: 2rem;
-      text-align: center;
-    }
-    #dot {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      border-radius: 50px;
-      background-color: $bgc4;
-      animation: dot 1s infinite;
-    }
-  }
-
-}
-
-.crew {
-  grid-area: crew;
-  h1 {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  @include laptop {
-    &:hover {
-      min-height: 700px;
-    }
   }
 }
-.communication {
-  grid-area: communication;
-  @include laptop {
-    &:hover {
-      min-height: 390px;
-    }
-  }
-}
-.bridge {
-  grid-area: bridge;
-  @include laptop {
-    &:hover {
-      min-height: 750px;
-    }
-  }
-}
-.engine {
-  grid-area: engine;
-  @include laptop {
-    &:hover {
-      min-height: 550px;
-    }
-  }
-}
-.hold {
-  grid-area: hold;
-  @include laptop {
-    &:hover {
-      min-height: 650px;
-    }
-  }
-}
-.laboratory {
-  grid-area: laboratory;
-  @include laptop {
-    &:hover {
-      min-height: 400px;
-    }
-  }
-}
-.observatory {
-  grid-area: observatory;
-  @include laptop {
-    &:hover {
-      min-height: 360px;
-    }
-  }
-}
-.photography {
-  grid-area: photography;
-  @include laptop {
-    &:hover {
-      min-height: 360px;
-    }
-  }
-}
-

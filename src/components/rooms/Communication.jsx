@@ -9,7 +9,7 @@ const Communication = () => {
     name !== null ? window.open(`mailto:${link}`) : window.open(link, "_blank");
   };
   return (
-    <div className="room communication animated">
+    <div className="room animated" id="communication">
       <RoomHeader
         image="/images/communication.webp"
         roomName="Salle des communications"

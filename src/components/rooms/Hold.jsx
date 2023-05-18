@@ -5,7 +5,7 @@ const Hold = () => {
   const portfolio = {
     title: "Portfolio",
     description: "Vous êtes dessus !",
-    image: "./images/Portfolio.webp",
+    image: "/",
     technos: ["React", "SASS", "Vite"],
     github: "https://github.com/SylvainAlx/portfolio",
     web: "https://sylvainalx.github.io/portfolio/",
@@ -21,7 +21,7 @@ const Hold = () => {
   };
 
   return (
-    <div className="room hold animated">
+    <div className="room animated" id="hold">
       <RoomHeader
         image="/images/hold.webp"
         roomName="Soute"
