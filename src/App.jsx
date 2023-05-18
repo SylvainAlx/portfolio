@@ -11,8 +11,6 @@ import "./assets/scss/App.scss";
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { useRecoilState } from "recoil";
-import { dotState } from "./utils/state";
 
 const App = () => {
   const width = window.innerWidth;

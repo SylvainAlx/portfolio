@@ -1,18 +1,9 @@
 import Hashtag from "../Hashtag";
 import RoomHeader from "../RoomHeader";
-import { dotState } from "../../utils/state";
-import { useRecoilState } from "recoil";
 
 const Crew = () => {
-  const [dotPosition, setDotPosition] = useRecoilState(dotState);
-
   return (
-    <div
-      className="room"
-      id="crew"
-      onMouseEnter={() => setDotPosition({ x: 100, y: 90 })}
-      onMouseLeave={() => setDotPosition({ x: 0, y: 0 })}
-    >
+    <div className="room" id="crew">
       <RoomHeader
         image="/images/portrait.webp"
         roomName="Quartiers de l'équipage"
@@ -26,8 +17,8 @@ const Crew = () => {
       </div>
       <p>
         Je vous propose un petit tour d'horizon original de mon parcours de vie.
-        Vous y trouverez <em>mes qualifications</em> en tant que développeur,{" "}
-        <em>mes réalisations</em> ainsi que certaines de <em>mes passions</em>.
+        Vous y trouverez <b>mes qualifications</b> en tant que développeur,{" "}
+        <b>mes réalisations</b> ainsi que certaines de <b>mes passions</b>.
         Bonne visite !
       </p>
     </div>

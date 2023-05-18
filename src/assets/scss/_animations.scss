@@ -19,14 +19,3 @@
     opacity: 1;
   }
 }
-
-@keyframes dot {
-  from {
-    opacity: 1;
-    background-color: $bgc4;
-  }
-  to {
-    opacity: 0;
-    background-color: $bgc3;
-  }
-}

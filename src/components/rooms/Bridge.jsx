@@ -16,7 +16,7 @@ const Bridge = () => {
         roomName="Salle de contrôle"
         description="Parcours et ambitions"
       />
-      <div className="sections">
+      <div className="sectionContainer">
         <section className="animated">
           <h4>d'où je viens</h4>
           <ul className="list">

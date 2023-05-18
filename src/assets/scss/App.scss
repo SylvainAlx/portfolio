@@ -27,7 +27,7 @@ body {
       }
       p {
         font-size: 23px;
-        margin: 0 auto;
+        margin: 10px auto 0;
       }
       .navbar {
         z-index: 100;
@@ -35,33 +35,62 @@ body {
         top: 5px;
         left: 5px;
         .burgerMenu {
+          width: 50px;
+          height: 50px;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           font-size: 30px;
           color: $bgc4;
           transition: all 0.3s;
+          &:hover {
+            cursor: pointer;
+          }
         }
         .active {
           color: $bgc3;
+          transform: rotate(90deg);
+        }
+        .show {
+          margin-left: 0;
+          opacity: 1;
+        }
+        .hidden {
+          margin-left: -200px;
+          opacity: 0;
         }
         nav {
-          padding: 5px;
+          padding: 10px;
+          min-width: 200px;
           border-radius: 5px;
           display: flex;
           flex-direction: column;
           gap: 10px;
           justify-content: space-around;
           background-color: $bgc3;
+          transition: all 0.3s;
+          
           a {
+            padding: 3px;
             display: flex;
             align-items: center;
             gap: 10px;
             color: $text1;
             text-decoration: none;
             font-size: 20px;
+            transition: all 0.2s;
+            &:hover {
+              background-color: $bgcBlackAlpha;
+              img {
+                filter: none;
+              }
+            }
             img {
               width: 30px;
               height: 30px;
               border-radius: 30px;
-              filter: grayscale(80%);
+              filter: grayscale(100%);
             }
           }
         }
@@ -93,13 +122,11 @@ body {
       font-size: 1.2rem;
       font-family: $font3;
       transition: all 0.5s;
-      
-      @include laptop {
-        &:hover {
-          cursor: pointer;
-          background-color: $text2;
-        }
+      &:hover {
+        cursor: pointer;
+        background-color: $text2;
       }
+      
     }
     
     .buttonContainer {
