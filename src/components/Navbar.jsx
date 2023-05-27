@@ -3,8 +3,22 @@ import { ImMenu } from "react-icons/im";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const handleNavigationClick = (event) => {
+    event.preventDefault(); // Empêche le comportement par défaut du lien
+
+    const targetId = event.target.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth", // Défilement fluide
+        block: "start", // Défilement jusqu'au début de l'élément
+      });
+    }
+  };
+
   return (
-    <div className="navbar">
+    <div className="navbar" onMouseLeave={() => setShowNav(false)}>
       <div
         className={`burgerMenu ${showNav ? "active" : ""}`}
         onClick={() => setShowNav(!showNav)}
@@ -15,37 +29,33 @@ const Navbar = () => {
         onClick={() => setShowNav(!showNav)}
         className={showNav ? "show" : "hidden"}
       >
-        <a href="#crew">
+        <a href="#crew" onClick={handleNavigationClick}>
           <img src="./images/portrait.webp" />
-          Quartier de l'équipage
+          Sylvain ALEXANDRE
         </a>
-        <a href="#communication">
+        <a href="#communication" onClick={handleNavigationClick}>
           <img src="./images/communication.webp" />
-          Salle des communications
+          Me contacter
         </a>
-        <a href="#bridge">
+        <a href="#bridge" onClick={handleNavigationClick}>
           <img src="./images/bridge.webp" />
-          Salle de contrôle
+          Parcours et ambitions
         </a>
-        <a href="#hold">
-          <img src="./images/hold.webp" />
-          Soute
-        </a>
-        <a href="#engine">
+        <a href="#engine" onClick={handleNavigationClick}>
           <img src="./images/engine.webp" />
-          Salle des machine
+          Mes réalisations
         </a>
-        <a href="#laboratory">
+        <a href="#laboratory" onClick={handleNavigationClick}>
           <img src="./images/laboratory.webp" />
-          Laboratoire
+          En cours d'apprentissage
         </a>
-        <a href="#photography">
+        <a href="#photography" onClick={handleNavigationClick}>
           <img src="./images/photo.webp" />
-          Studio photo
+          Ma pratique de la photographie
         </a>
-        <a href="#observatory">
+        <a href="#observatory" onClick={handleNavigationClick}>
           <img src="./images/observatory.webp" />
-          Observatoire
+          Ma passion pour l'astronomie
         </a>
       </nav>
     </div>

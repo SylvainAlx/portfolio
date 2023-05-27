@@ -1,9 +1,7 @@
 import Separator from "./components/Separator";
 import Bridge from "./components/rooms/Bridge";
 import Communication from "./components/rooms/Communication";
-import Engine from "./components/rooms/Engine";
 import Crew from "./components/rooms/Crew";
-import Hold from "./components/rooms/Hold";
 import Laboratory from "./components/rooms/Laboratory";
 import Observatory from "./components/rooms/Observatory";
 import Photography from "./components/rooms/Photography";
@@ -11,6 +9,7 @@ import "./assets/scss/App.scss";
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Engine from "./components/rooms/Engine";
 
 const App = () => {
   const width = window.innerWidth;
@@ -53,8 +52,6 @@ const App = () => {
         <Communication />
         <Separator />
         <Bridge />
-        <Separator />
-        <Hold />
         <Separator />
         <Engine />
         <Separator />

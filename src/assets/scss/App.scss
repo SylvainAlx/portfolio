@@ -50,7 +50,7 @@ body {
         }
         .active {
           color: $bgc3;
-          transform: rotate(90deg);
+          transform: rotate(-90deg);
         }
         .show {
           margin-left: 0;

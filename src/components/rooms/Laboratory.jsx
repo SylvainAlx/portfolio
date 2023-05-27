@@ -10,6 +10,7 @@ const Laboratory = () => {
         description="En cours d'apprentissage"
       />
       <section className="technos animated">
+        <h4>Technologies web</h4>
         <div className="techno">
           <SiTypescript className="icon" />
           TypeScript
