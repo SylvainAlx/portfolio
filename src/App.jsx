@@ -28,7 +28,7 @@ const App = () => {
         }
       });
     };
-    if (width >= 1300) {
+    if (width >= 1000) {
       animatedElements.forEach((element) => {
         element.classList.remove("animated");
         element.classList.add("animate");

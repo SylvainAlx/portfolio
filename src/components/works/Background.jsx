@@ -44,8 +44,8 @@ const Background = () => {
         </div>
       </div>
       <div className="buttonContainer">
-        <Button name="github" id={background.github} />
-        {background.web && <Button id={background.web} />}
+        <Button text="code source" name="github" id={background.github} />
+        {background.web && <Button text="voir" id={background.web} />}
       </div>
     </section>
   );

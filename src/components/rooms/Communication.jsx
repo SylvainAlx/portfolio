@@ -16,9 +16,17 @@ const Communication = () => {
         description="Me contacter"
       />
       <div className="buttonContainer">
-        <Button name="mail" id="sylval49@gmail.com" />
-        <Button name="github" id="https://github.com/SylvainAlx" />
-        <Button name="linkedin" id="https://www.linkedin.com/in/sylvain-alx/" />
+        <Button text="email" name="mail" id="sylval49@gmail.com" />
+        <Button
+          text="GitHub"
+          name="github"
+          id="https://github.com/SylvainAlx"
+        />
+        <Button
+          text="LinkedIn"
+          name="linkedin"
+          id="https://www.linkedin.com/in/sylvain-alx/"
+        />
         <Button
           name="place"
           id="https://www.google.fr/maps/place/Angers/"

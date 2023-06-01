@@ -29,8 +29,8 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="buttonContainer">
-        <Button name="github" id={portfolio.github} />
-        {portfolio.web && <Button id={portfolio.web} />}
+        <Button text="code source" name="github" id={portfolio.github} />
+        {portfolio.web && <Button text="voir" id={portfolio.web} />}
       </div>
     </section>
   );

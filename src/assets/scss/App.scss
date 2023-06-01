@@ -14,11 +14,9 @@ body {
 		display: flex;
 		flex-direction: column;
     
-    
     .topHeader {
       display: flex;
       flex-direction: column;
-        
       h2 {
         margin: 0 auto;
         font-size: 4rem;
@@ -44,13 +42,14 @@ body {
           font-size: 30px;
           color: $bgc4;
           transition: all 0.3s;
+          transform: rotate(-90deg);
           &:hover {
             cursor: pointer;
           }
         }
         .active {
           color: $bgc3;
-          transform: rotate(-90deg);
+          transform: rotate(-180deg);
         }
         .show {
           margin-left: 0;
@@ -79,18 +78,21 @@ body {
             color: $text1;
             text-decoration: none;
             font-size: 20px;
-            transition: all 0.2s;
+            transition: all 0.3s;
+            
             &:hover {
               background-color: $bgcBlackAlpha;
               img {
                 filter: none;
               }
+              
             }
             img {
               width: 30px;
               height: 30px;
               border-radius: 30px;
               filter: grayscale(100%);
+             
             }
           }
         }
@@ -106,6 +108,7 @@ body {
       font-size: 2rem;
       color: $bgc4;
     }
+
 
     .button {
       min-height: 30px;
@@ -130,13 +133,13 @@ body {
     }
     
     .buttonContainer {
-      max-width: 300px;
+      max-width: 350px;
       margin: 10px 0;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      gap: 19px;
+      gap: 13px;
     }
 
 		.animated {

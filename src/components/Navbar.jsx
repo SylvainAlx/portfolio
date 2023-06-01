@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ImMenu } from "react-icons/im";
+import { FaSpaceShuttle } from "react-icons/fa";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+
   const handleNavigationClick = (event) => {
     event.preventDefault(); // Empêche le comportement par défaut du lien
 
@@ -23,27 +25,26 @@ const Navbar = () => {
         className={`burgerMenu ${showNav ? "active" : ""}`}
         onClick={() => setShowNav(!showNav)}
       >
-        <ImMenu />
+        <FaSpaceShuttle />
       </div>
       <nav
         onClick={() => setShowNav(!showNav)}
         className={showNav ? "show" : "hidden"}
       >
         <a href="#crew" onClick={handleNavigationClick}>
-          <img src="./images/portrait.webp" />
-          Sylvain ALEXANDRE
+          <img src="./images/portrait.webp" />À propos
         </a>
         <a href="#communication" onClick={handleNavigationClick}>
           <img src="./images/communication.webp" />
-          Me contacter
+          Contact
         </a>
         <a href="#bridge" onClick={handleNavigationClick}>
           <img src="./images/bridge.webp" />
-          Parcours et ambitions
+          Qualifications
         </a>
         <a href="#engine" onClick={handleNavigationClick}>
           <img src="./images/engine.webp" />
-          Mes réalisations
+          Réalisations
         </a>
         <a href="#laboratory" onClick={handleNavigationClick}>
           <img src="./images/laboratory.webp" />
@@ -51,11 +52,11 @@ const Navbar = () => {
         </a>
         <a href="#photography" onClick={handleNavigationClick}>
           <img src="./images/photo.webp" />
-          Ma pratique de la photographie
+          Pratique de la photographie
         </a>
         <a href="#observatory" onClick={handleNavigationClick}>
           <img src="./images/observatory.webp" />
-          Ma passion pour l'astronomie
+          Passion pour l'astronomie
         </a>
       </nav>
     </div>

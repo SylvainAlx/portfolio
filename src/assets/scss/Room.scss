@@ -118,7 +118,7 @@
       flex-direction: column;
       align-items: center;
       color: $text2;
-      font-size: 1.3rem;
+      font-size: 1rem;
       transition: all 0.5s;
       &:hover {
         cursor: default;
@@ -155,10 +155,9 @@
         color: $bgc4;
       }
       img {
-        border: 2px $bgc3 solid;
-        width: 90%;
-        height: 250px;
-        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
         object-fit: cover;
         transition: all 0.3s;
         filter: grayscale(70%);

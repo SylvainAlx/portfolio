@@ -14,7 +14,7 @@ const Bridge = () => {
       <RoomHeader
         image="/images/bridge.webp"
         roomName="Salle de contrôle"
-        description="Parcours et ambitions"
+        description="Qualifications"
       />
       <div className="sectionContainer">
         <section className="animated">
