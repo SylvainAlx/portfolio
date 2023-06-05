@@ -1,6 +1,6 @@
 import RoomHeader from "../RoomHeader";
 import Background from "../works/Background";
-import Portfolio from "../works/portfolio";
+import Portfolio from "../works/Portfolio";
 
 const Engine = () => {
   return (
