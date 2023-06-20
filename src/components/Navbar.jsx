@@ -46,17 +46,17 @@ const Navbar = () => {
           <img src="./images/engine.webp" />
           Réalisations
         </a>
-        <a href="#laboratory" onClick={handleNavigationClick}>
+        {/* <a href="#laboratory" onClick={handleNavigationClick}>
           <img src="./images/laboratory.webp" />
           En cours d'apprentissage
-        </a>
-        <a href="#photography" onClick={handleNavigationClick}>
+        </a> */}
+        {/* <a href="#photography" onClick={handleNavigationClick}>
           <img src="./images/photo.webp" />
           Pratique de la photographie
-        </a>
+        </a> */}
         <a href="#observatory" onClick={handleNavigationClick}>
           <img src="./images/observatory.webp" />
-          Passion pour l'astronomie
+          Mes passions
         </a>
       </nav>
     </div>

@@ -1,6 +1,7 @@
 import RoomHeader from "../RoomHeader";
 import Background from "../works/Background";
 import Portfolio from "../works/Portfolio";
+import TarotManager from "../works/TarotManager";
 
 const Engine = () => {
   return (
@@ -12,6 +13,7 @@ const Engine = () => {
       />
       <div className="sectionContainer">
         <Background />
+        <TarotManager />
         <Portfolio />
       </div>
     </div>

@@ -54,10 +54,10 @@ const App = () => {
         <Bridge />
         <Separator />
         <Engine />
-        <Separator />
-        <Laboratory />
-        <Separator />
-        <Photography />
+        {/* <Separator />
+        <Laboratory /> */}
+        {/* <Separator />
+        <Photography /> */}
         <Separator />
         <Observatory />
       </main>

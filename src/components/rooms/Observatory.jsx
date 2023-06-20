@@ -7,7 +7,7 @@ const Observatory = () => {
       <RoomHeader
         image="/images/observatory.webp"
         roomName="Observatoire"
-        description="Ma passion pour l'astronomie"
+        description="Mes passions"
       />
       <UnderConstruction />
     </div>

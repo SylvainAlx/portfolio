@@ -1,7 +1,10 @@
 import Button from "../Button";
 import { SiSass, SiReact, SiVite } from "react-icons/si";
+import { AiFillCloseCircle } from "react-icons/ai";
+import { useState } from "react";
 
 const Portfolio = () => {
+  const [zoomImage, setZoomImage] = useState(false);
   const portfolio = {
     title: "Portfolio",
     description: "Vous êtes dessus !",
@@ -13,7 +16,19 @@ const Portfolio = () => {
     <section className="work animated">
       <h4>{portfolio.title}</h4>
       <p>{portfolio.description}</p>
-      <img src={portfolio.image} alt={`image ${portfolio.title}`} />
+      <img
+        onClick={() => setZoomImage(!zoomImage)}
+        src={portfolio.image}
+        alt={`image ${portfolio.title}`}
+      />
+      {zoomImage && (
+        <div className="zoomed">
+          <img src={portfolio.image} alt={`image ${portfolio.title}`} />
+          <div onClick={() => setZoomImage(!zoomImage)} className="close">
+            <AiFillCloseCircle />
+          </div>
+        </div>
+      )}
       <div className="technos animated">
         <div className="techno">
           <SiReact className="icon" />

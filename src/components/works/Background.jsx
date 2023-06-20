@@ -6,8 +6,11 @@ import {
   SiNodedotjs,
   SiRedux,
 } from "react-icons/si";
+import { AiFillCloseCircle } from "react-icons/ai";
+import { useState } from "react";
 
 const Background = () => {
+  const [zoomImage, setZoomImage] = useState(false);
   const background = {
     title: "Background",
     description:
@@ -20,7 +23,19 @@ const Background = () => {
     <section className="work animated">
       <h4>{background.title}</h4>
       <p>{background.description}</p>
-      <img src={background.image} alt={`image ${background.title}`} />
+      <img
+        onClick={() => setZoomImage(!zoomImage)}
+        src={background.image}
+        alt={`image ${background.title}`}
+      />
+      {zoomImage && (
+        <div className="zoomed">
+          <img src={background.image} alt={`image ${background.title}`} />
+          <div onClick={() => setZoomImage(!zoomImage)} className="close">
+            <AiFillCloseCircle />
+          </div>
+        </div>
+      )}
       <div className="technos animated">
         <div className="techno">
           <SiReact className="icon" />
