@@ -7,7 +7,7 @@ import {
   SiVercel,
   SiPwa,
 } from "react-icons/si";
-import { AiFillCloseCircle } from "react-icons/ai";
+import PortalExample from "../PortalExample";
 
 const TarotManager = () => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -23,19 +23,11 @@ const TarotManager = () => {
     <section className="work animated">
       <h4>{tarotManager.title}</h4>
       <p>{tarotManager.description}</p>
-      <img
-        src={tarotManager.image}
-        alt={`image ${tarotManager.title}`}
-        onClick={() => setZoomImage(!zoomImage)}
+      <PortalExample
+        work={tarotManager}
+        zoomImage={zoomImage}
+        setZoomImage={setZoomImage}
       />
-      {zoomImage && (
-        <div className="zoomed">
-          <img src={tarotManager.image} alt={`image ${tarotManager.title}`} />
-          <div onClick={() => setZoomImage(!zoomImage)} className="close">
-            <AiFillCloseCircle />
-          </div>
-        </div>
-      )}
       <div className="technos animated">
         <div className="techno">
           <SiNextdotjs className="icon" />

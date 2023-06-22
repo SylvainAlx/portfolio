@@ -1,6 +1,6 @@
 import RoomHeader from "../RoomHeader";
 import "../../assets/scss/Room.scss";
-import { AiFillFileText } from "react-icons/ai";
+import { AiFillFileText, AiOutlineCheck } from "react-icons/ai";
 
 const Bridge = () => {
   const handleClick = (e) => {

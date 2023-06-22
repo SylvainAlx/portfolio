@@ -13,6 +13,38 @@ body {
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
+    .modal {
+      position: fixed;
+      z-index: 10;
+      width: 100vw;
+      height: 100vh;
+      // max-height: 90vh;
+      // top: 10%;
+      // left: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fade 0.5s ease-in;
+      backdrop-filter: blur(4px);
+      img {
+        text-align: center;
+        // height: 100%;
+        max-width: 95vw;
+        max-height: 500px;
+        object-fit: contain;
+        border: 3px solid $bgc4;
+        border-radius: 10px;
+        
+      }
+      .close {
+        margin-top: 50px;
+        color: $bgc4;
+        font-size: 30px;
+        &:hover {
+          cursor: zoom-out;
+        }
+      }
+    }
     
     .topHeader {
       display: flex;
