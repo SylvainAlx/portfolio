@@ -22,7 +22,7 @@ const Observatory = () => {
         <Hobby
           title="photographie"
           description="photographier, les gens, les paysages, de loin ou en macro"
-          image="/images/planet1.webp"
+          image="./images/planet1.webp"
           children={
             <>
               <section>
@@ -61,7 +61,7 @@ const Observatory = () => {
         />
         <Hobby
           title="Musique"
-          image="/images/planet3.webp"
+          image="./images/planet3.webp"
           children={
             <>
               <section>
@@ -97,7 +97,7 @@ const Observatory = () => {
         />
         <Hobby
           title="Écriture"
-          image="/images/planet2.webp"
+          image="./images/planet2.webp"
           children={
             <>
               <section>
@@ -118,7 +118,7 @@ const Observatory = () => {
 
         <Hobby
           title="Jardinage"
-          image="/images/planet4.webp"
+          image="./images/planet4.webp"
           children={
             <>
               <section>
@@ -146,7 +146,7 @@ const Observatory = () => {
         />
         <Hobby
           title="Jeux vidéos"
-          image="/images/planet5.webp"
+          image="./images/planet5.webp"
           children={
             <>
               <section>
