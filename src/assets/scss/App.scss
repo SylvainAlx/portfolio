@@ -27,21 +27,25 @@ body {
       animation: fade 0.5s ease-in;
       backdrop-filter: blur(4px);
       img {
+        margin-top: 50px;
         text-align: center;
-        // height: 100%;
         max-width: 95vw;
         max-height: 500px;
         object-fit: contain;
         border: 3px solid $bgc4;
         border-radius: 10px;
+        &:hover {
+          cursor: zoom-out;
+        }
         
       }
       .close {
-        margin-top: 50px;
+        position: fixed;
+        bottom: 10%;
         color: $bgc4;
         font-size: 30px;
         &:hover {
-          cursor: zoom-out;
+          cursor: pointer;
         }
       }
     }

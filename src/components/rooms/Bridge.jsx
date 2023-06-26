@@ -1,6 +1,6 @@
 import RoomHeader from "../RoomHeader";
 import "../../assets/scss/Room.scss";
-import { AiFillFileText, AiOutlineCheck } from "react-icons/ai";
+import { AiFillFileText } from "react-icons/ai";
 
 const Bridge = () => {
   const handleClick = (e) => {
@@ -48,9 +48,6 @@ const Bridge = () => {
             </li>
             <li>
               <b>{"< "}</b>développeur web fullstack<b>{" />"}</b>
-            </li>
-            <li>
-              <b>{"< "}</b>developpeur WordPress<b>{" />"}</b>
             </li>
           </ol>
         </section>

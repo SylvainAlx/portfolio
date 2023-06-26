@@ -30,7 +30,7 @@ const Button = (props) => {
 
   return (
     <div
-      className="button animated"
+      className="button"
       name={props.name}
       id={props.id}
       onClick={handleClick}

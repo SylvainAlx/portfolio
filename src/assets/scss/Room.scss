@@ -84,6 +84,7 @@
     justify-content: center;
     text-align: center;
   }
+
   section {
     margin: 20px 10px;
     width:37%;
@@ -141,8 +142,83 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
     overflow: auto;
+    gap: 20px;
+    .hobby {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        font-size: 25px;
+      }
+      section {
+        width: 80%;
+        animation: fade 0.3s ease-in;
+        margin: 0;
+        padding: 0;
+        li {
+          font-size: 20px;
+        }
+      }
+      .buttonContainer {
+        padding: 5px;
+      }
+      .planet {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+        }
+        &:hover {
+          .clicker {
+            transform: scale(1.1);
+          }
+        }
+        .spinner {
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          border: 1px solid;
+          display: inline-block;
+          animation: rotation 10s linear infinite;
+          &::after {
+            content: '';  
+            box-sizing: border-box;
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            background: $text1;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: fade 0.3s ease-in;
+          }
+          
+        }
+        .clicker {
+          position: absolute;
+          top: 30px;
+          left: 40px;
+          font-size: 50px;
+          transition: all 0.3s;
+        }
+        .close {
+          position: absolute;
+          top: 18px;
+          left: 24px;
+          font-size: 50px;
+          transition: all 0.3s;
+        }
+      }
+    }
     .work {
       display: flex;
       flex-direction: column;

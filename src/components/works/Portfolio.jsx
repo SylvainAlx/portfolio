@@ -1,5 +1,5 @@
 import Button from "../Button";
-import { SiSass, SiReact, SiVite } from "react-icons/si";
+import { SiSass, SiReact, SiVite, SiGithubpages } from "react-icons/si";
 import { useState } from "react";
 import PortalExample from "../PortalExample";
 
@@ -33,6 +33,10 @@ const Portfolio = () => {
         <div className="techno">
           <SiVite className="icon" />
           Vite
+        </div>
+        <div className="techno">
+          <SiGithubpages className="icon" />
+          GitHub Pages
         </div>
       </div>
       <div className="buttonContainer">

@@ -2,7 +2,7 @@ import { IoIosFlask } from "react-icons/io";
 
 const Hashtag = (props) => {
   return (
-    <div className="hashtag animated">
+    <div className="hashtag">
       <IoIosFlask className="hashtagIcon" />
       {props.content}
     </div>
