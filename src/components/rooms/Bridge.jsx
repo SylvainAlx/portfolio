@@ -38,7 +38,7 @@ const Bridge = () => {
           </ul>
         </section>
         <section className="animated">
-          <h4>postes visés</h4>
+          <h4>disponible pour un les postes suivants</h4>
           <ol className="list">
             <li>
               <b>{"< "}</b>developpeur Front-End<b>{" />"}</b>

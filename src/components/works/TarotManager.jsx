@@ -1,12 +1,6 @@
 import { useState } from "react";
 import Button from "../Button";
-import {
-  SiSass,
-  SiNextdotjs,
-  SiMongodb,
-  SiVercel,
-  SiPwa,
-} from "react-icons/si";
+import { SiSass, SiNextdotjs, SiMongodb, SiVercel } from "react-icons/si";
 import PortalExample from "../PortalExample";
 
 const TarotManager = () => {
@@ -14,7 +8,7 @@ const TarotManager = () => {
   const tarotManager = {
     title: "Tarot Manager",
     description:
-      "!! EN CONSTRUCTION !! Gestionnaire de parties de tarot et classement général des joueurs",
+      "Gestionnaire de parties de tarot et classement général des joueurs",
     image: "./images/tarotManager.webp",
     github: "https://github.com/SylvainAlx/tarot-manager",
     web: "https://tarot-manager.vercel.app/",
@@ -45,14 +39,12 @@ const TarotManager = () => {
           <SiMongodb className="icon" />
           MongoDB
         </div>
-        <div className="techno">
-          <SiPwa className="icon" />
-          Progressive Web App
-        </div>
       </div>
       <div className="buttonContainer">
         <Button text="code source" name="github" id={tarotManager.github} />
-        {tarotManager.web && <Button text="voir" id={tarotManager.web} />}
+        {tarotManager.web && (
+          <Button text="voir le site" id={tarotManager.web} />
+        )}
       </div>
     </section>
   );

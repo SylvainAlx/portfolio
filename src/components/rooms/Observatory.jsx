@@ -156,7 +156,7 @@ const Observatory = () => {
                 <ul>
                   <li>
                     <b>Minecraft :</b> Bâtir, explorer, améliorer et
-                    expérimenter
+                    expérimenter, gestion d'une micronation virtuelle
                   </li>
                 </ul>
                 <div className="techno">

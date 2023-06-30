@@ -49,7 +49,12 @@ body {
         }
       }
     }
-    
+    .stripes {
+      width: 100%;
+      height: 10px;
+      background: url("/images/stripes.png");
+      opacity: 0.4 !important;
+    }
     .topHeader {
       display: flex;
       flex-direction: column;

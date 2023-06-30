@@ -41,7 +41,7 @@ const Portfolio = () => {
       </div>
       <div className="buttonContainer">
         <Button text="code source" name="github" id={portfolio.github} />
-        {portfolio.web && <Button text="voir" id={portfolio.web} />}
+        {portfolio.web && <Button text="voir le site" id={portfolio.web} />}
       </div>
     </section>
   );

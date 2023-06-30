@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Engine from "./components/rooms/Engine";
+import Stripes from "./components/Stripes";
 
 const App = () => {
   const width = window.innerWidth;
@@ -44,16 +45,25 @@ const App = () => {
     <div className="App">
       <Header />
       <main>
-        <Separator />
+        <Stripes />
         <Crew />
+        <Stripes />
         <Separator />
+        <Stripes />
         <Communication />
+        <Stripes />
         <Separator />
+        <Stripes />
         <Bridge />
+        <Stripes />
         <Separator />
+        <Stripes />
         <Engine />
+        <Stripes />
         <Separator />
+        <Stripes />
         <Observatory />
+        <Stripes />
       </main>
       <Footer />
     </div>
