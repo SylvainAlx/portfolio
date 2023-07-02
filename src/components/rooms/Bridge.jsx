@@ -5,7 +5,7 @@ import { AiFillFileText } from "react-icons/ai";
 const Bridge = () => {
   const handleClick = (e) => {
     window.open(
-      `./documents/CV_Sylvain_ALEXANDRE_developpeur_web.pdf`,
+      `./documents/CV_Sylvain_ALEXANDRE_developpeur_web_2023.07.02.pdf`,
       "_blank"
     );
   };
@@ -38,7 +38,7 @@ const Bridge = () => {
           </ul>
         </section>
         <section className="animated">
-          <h4>disponible pour un les postes suivants</h4>
+          <h4>disponible pour les postes suivants</h4>
           <ol className="list">
             <li>
               <b>{"< "}</b>developpeur Front-End<b>{" />"}</b>
