@@ -50,7 +50,7 @@ const Background = () => {
           MongoDB
         </div>
       </div>
-      <div className="buttonContainer">
+      <div className="buttonContainer animated">
         <Button text="code source" name="github" id={background.github} />
         {background.web && <Button text="voir" id={background.web} />}
       </div>

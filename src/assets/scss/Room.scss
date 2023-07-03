@@ -44,6 +44,7 @@
 
   h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
   p {
     width: 80%;
@@ -247,4 +248,8 @@
       }
     }
   }
+}
+
+#crew {
+  animation: fade 0.5s;
 }

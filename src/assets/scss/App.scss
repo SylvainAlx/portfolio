@@ -52,6 +52,7 @@ body {
     .topHeader {
       display: flex;
       flex-direction: column;
+      animation: fade 0.5s;
       h2 {
         margin: 0 auto;
         font-size: 4rem;

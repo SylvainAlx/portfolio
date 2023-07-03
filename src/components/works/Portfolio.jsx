@@ -39,7 +39,7 @@ const Portfolio = () => {
           GitHub Pages
         </div>
       </div>
-      <div className="buttonContainer">
+      <div className="buttonContainer animated">
         <Button text="code source" name="github" id={portfolio.github} />
         {portfolio.web && <Button text="voir le site" id={portfolio.web} />}
       </div>

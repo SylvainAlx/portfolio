@@ -40,7 +40,7 @@ const TarotManager = () => {
           MongoDB
         </div>
       </div>
-      <div className="buttonContainer">
+      <div className="buttonContainer animated">
         <Button text="code source" name="github" id={tarotManager.github} />
         {tarotManager.web && (
           <Button text="voir le site" id={tarotManager.web} />

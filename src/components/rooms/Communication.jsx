@@ -15,7 +15,7 @@ const Communication = () => {
         roomName="Salle des communications"
         description="Me contacter"
       />
-      <div className="buttonContainer">
+      <div className="buttonContainer animated">
         <Button text="email" name="mail" id="sylval49@gmail.com" />
         <Button
           text="GitHub"

@@ -26,15 +26,15 @@ const App = () => {
         }
       });
     };
-    if (width >= 1000) {
-      animatedElements.forEach((element) => {
-        element.classList.remove("animated");
-        element.classList.add("animate");
-      });
-    } else {
-      window.addEventListener("scroll", handleScroll);
-    }
-
+    // if (width >= 1000) {
+    //   animatedElements.forEach((element) => {
+    //     element.classList.remove("animated");
+    //     element.classList.add("animate");
+    //   });
+    // } else {
+    //   window.addEventListener("scroll", handleScroll);
+    // }
+    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
