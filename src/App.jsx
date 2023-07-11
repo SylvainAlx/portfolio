@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Engine from "./components/rooms/Engine";
+import Hold from "./components/rooms/Hold";
 
 const App = () => {
   const width = window.innerWidth;
@@ -49,6 +50,8 @@ const App = () => {
         <Communication />
         <Separator />
         <Bridge />
+        <Separator />
+        <Hold />
         <Separator />
         <Engine />
         <Separator />

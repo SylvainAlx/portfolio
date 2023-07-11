@@ -178,6 +178,12 @@ body {
       gap: 13px;
     }
 
+    .underConstruction {
+      width: 250px;
+      background-color: $bgcBlackAlpha;
+      border-radius: 10px;
+    }
+
 		.animated {
       opacity: 0;
       transform: translateX(-50px);

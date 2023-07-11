@@ -9,7 +9,7 @@ const Engine = () => {
       <RoomHeader
         image="/images/engine.webp"
         roomName="Salle des machines"
-        description="Mes réalisations"
+        description="Projets personnels"
       />
       <div className="sectionContainer">
         <Background />

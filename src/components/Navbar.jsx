@@ -42,9 +42,13 @@ const Navbar = () => {
           <img src="./images/bridge.webp" />
           Qualifications
         </a>
+        <a href="#hold" onClick={handleNavigationClick}>
+          <img src="./images/hold.webp" />
+          Références
+        </a>
         <a href="#engine" onClick={handleNavigationClick}>
           <img src="./images/engine.webp" />
-          Réalisations
+          Projets personnels
         </a>
         {/* <a href="#laboratory" onClick={handleNavigationClick}>
           <img src="./images/laboratory.webp" />

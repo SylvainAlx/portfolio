@@ -113,6 +113,12 @@
         b {
           color: $text2;
         }
+        .button {
+          width: max-content;
+          color: $text1;
+          display: inline-block;
+          text-decoration: none;
+        }
       }
     }
     .techno {

@@ -1,11 +1,12 @@
 import RoomHeader from "../RoomHeader";
 import "../../assets/scss/Room.scss";
 import { AiFillFileText } from "react-icons/ai";
+import { BiLinkExternal } from "react-icons/bi";
 
 const Bridge = () => {
   const handleClick = (e) => {
     window.open(
-      `./documents/CV_Sylvain_ALEXANDRE_developpeur_web_2023.07.02.pdf`,
+      `./documents/CV_Sylvain_ALEXANDRE_developpeur_web_2023.07.11.pdf`,
       "_blank"
     );
   };
@@ -21,7 +22,16 @@ const Bridge = () => {
           <h4>d'où je viens</h4>
           <ul className="list">
             <li>
-              <b>2023</b>- BAC+2 Developpeur web full-stack
+              <b>2023</b>- BAC+2 Développeur intégrateur en réalisation
+              d’applications web{" "}
+              <a
+                className="button"
+                href="https://diplome.3wa.fr/alexandre-sylvain"
+                target="_blank"
+              >
+                voir
+                <BiLinkExternal />
+              </a>
             </li>
             <li>
               <b>2017-2022</b>- Assistant d'éducation
@@ -45,6 +55,9 @@ const Bridge = () => {
             </li>
             <li>
               <b>{"< "}</b>intégrateur web<b>{" />"}</b>
+            </li>
+            <li>
+              <b>{"< "}</b>developpeur Back-End<b>{" />"}</b>
             </li>
             <li>
               <b>{"< "}</b>développeur web fullstack<b>{" />"}</b>
