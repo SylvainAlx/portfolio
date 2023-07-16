@@ -2,8 +2,10 @@ import RoomHeader from "../RoomHeader";
 import "../../assets/scss/Room.scss";
 import { AiFillFileText } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
+import { speak } from "../../store";
 
 const Bridge = () => {
+  const langage = speak.use();
   const handleClick = (e) => {
     window.open(
       `./documents/CV_Sylvain_ALEXANDRE_developpeur_web_2023.07.11.pdf`,
@@ -14,60 +16,111 @@ const Bridge = () => {
     <div className="room animated" id="bridge">
       <RoomHeader
         image="/images/bridge.webp"
-        roomName="Salle de contrôle"
+        roomName={langage == "french" ? "Salle de contrôle" : "Control room"}
         description="Qualifications"
       />
       <div className="sectionContainer">
         <section className="animated">
-          <h4>d'où je viens</h4>
-          <ul className="list">
-            <li>
-              <b>2023</b>- BAC+2 Développeur intégrateur en réalisation
-              d’applications web{" "}
-              <a
-                className="button"
-                href="https://diplome.3wa.fr/alexandre-sylvain"
-                target="_blank"
-              >
-                voir
-                <BiLinkExternal />
-              </a>
-            </li>
-            <li>
-              <b>2017-2022</b>- Assistant d'éducation
-            </li>
-            <li>
-              <b>2017-2019</b>- Photographe freelance
-            </li>
-            <li>
-              <b>2011-2016</b>- Technicien Canal+
-            </li>
-            <li>
-              <b>2010</b>- BAC+2 Audiovisuel
-            </li>
-          </ul>
+          {langage === "french" ? (
+            <h4>d'où je viens</h4>
+          ) : (
+            <h4>Where I come from</h4>
+          )}
+          {langage === "french" ? (
+            <ul className="list">
+              <li>
+                <b>2023</b>- BAC+2 Développeur intégrateur en réalisation
+                d’applications web{" "}
+                <a
+                  className="button"
+                  href="https://diplome.3wa.fr/alexandre-sylvain"
+                  target="_blank"
+                >
+                  voir
+                  <BiLinkExternal />
+                </a>
+              </li>
+              <li>
+                <b>2017-2022</b>- Assistant d'éducation
+              </li>
+              <li>
+                <b>2017-2019</b>- Photographe freelance
+              </li>
+              <li>
+                <b>2011-2016</b>- Technicien Canal+
+              </li>
+              <li>
+                <b>2010</b>- BAC+2 Audiovisuel
+              </li>
+            </ul>
+          ) : (
+            <ul className="list">
+              <li>
+                <b>2023</b>- Bachelor's degree in full-stack web developpement{" "}
+                <a
+                  className="button"
+                  href="https://diplome.3wa.fr/alexandre-sylvain"
+                  target="_blank"
+                >
+                  voir
+                  <BiLinkExternal />
+                </a>
+              </li>
+              <li>
+                <b>2017-2022</b>- Teacher's aide
+              </li>
+              <li>
+                <b>2017-2019</b>- Freelance photographer
+              </li>
+              <li>
+                <b>2011-2016</b>- TV technical expert (Canal+)
+              </li>
+              <li>
+                <b>2010</b>- Bachelor's degree in audio-visual
+              </li>
+            </ul>
+          )}
         </section>
         <section className="animated">
-          <h4>disponible pour les postes suivants</h4>
-          <ol className="list">
-            <li>
-              <b>{"< "}</b>developpeur Front-End<b>{" />"}</b>
-            </li>
-            <li>
-              <b>{"< "}</b>intégrateur web<b>{" />"}</b>
-            </li>
-            <li>
-              <b>{"< "}</b>developpeur Back-End<b>{" />"}</b>
-            </li>
-            <li>
-              <b>{"< "}</b>développeur web fullstack<b>{" />"}</b>
-            </li>
-          </ol>
+          {langage === "french" ? (
+            <>
+              <h4>disponible pour les postes suivants</h4>
+              <ol className="list">
+                <li>
+                  <b>{"< "}</b>developpeur Front-End<b>{" />"}</b>
+                </li>
+                <li>
+                  <b>{"< "}</b>intégrateur web<b>{" />"}</b>
+                </li>
+                <li>
+                  <b>{"< "}</b>developpeur Back-End<b>{" />"}</b>
+                </li>
+                <li>
+                  <b>{"< "}</b>développeur web fullstack<b>{" />"}</b>
+                </li>
+              </ol>
+            </>
+          ) : (
+            <>
+              <h4>Available for</h4>
+              <ol className="list">
+                <li>
+                  <b>{"< "}</b>Front-End developper<b>{" />"}</b>
+                </li>
+                <li>
+                  <b>{"< "}</b>Back-End developper<b>{" />"}</b>
+                </li>
+                <li>
+                  <b>{"< "}</b>Fullstack web developper<b>{" />"}</b>
+                </li>
+              </ol>
+            </>
+          )}
         </section>
       </div>
       <div className="button animated" onClick={handleClick}>
         <AiFillFileText />
-        télécharger mon CV
+        {langage === "french" ? "télécharger mon CV" : "download resume"}
       </div>
     </div>
   );

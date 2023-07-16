@@ -14,7 +14,7 @@ const MultiversGame = () => {
   const multiversGame = {
     title: "Multivers Game",
     description: "Escape game à domicile",
-    image: "",
+    image: "./images/multiversGame.webp",
     github: "",
     web: "",
   };
@@ -23,6 +23,11 @@ const MultiversGame = () => {
       <h4>{multiversGame.title}</h4>
       <p>{multiversGame.description}</p>
       <UnderConstruction />
+      <PortalExample
+        work={multiversGame}
+        zoomImage={zoomImage}
+        setZoomImage={setZoomImage}
+      />
       <div className="technos animated">
         <div className="techno">
           <SiNextdotjs className="icon" />

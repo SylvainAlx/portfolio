@@ -1,7 +1,10 @@
 import RoomHeader from "../RoomHeader";
 import Button from "../Button";
+import { speak } from "../../store";
 
 const Communication = () => {
+  const width = window.innerWidth;
+  const langage = speak.use();
   const handleClick = (e) => {
     const link = e.currentTarget.getAttribute("id");
     const name = e.currentTarget.getAttribute("name");
@@ -9,11 +12,15 @@ const Communication = () => {
     name !== null ? window.open(`mailto:${link}`) : window.open(link, "_blank");
   };
   return (
-    <div className="room animated" id="communication">
+    <div className={`room ${width < 500 && "animated"}`} id="communication">
       <RoomHeader
         image="/images/communication.webp"
-        roomName="Salle des communications"
-        description="Me contacter"
+        roomName={
+          langage === "french"
+            ? "Salle des communications"
+            : "Communication room"
+        }
+        description={langage === "french" ? "Me contacter" : "Contact me"}
       />
       <div className="buttonContainer animated">
         <Button text="email" name="mail" id="sylval49@gmail.com" />

@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
-import { ImMenu } from "react-icons/im";
+import { useState } from "react";
 import { FaSpaceShuttle } from "react-icons/fa";
+import { speak } from "../store";
 
 const Navbar = () => {
+  const langage = speak.use();
   const [showNav, setShowNav] = useState(false);
 
   const handleNavigationClick = (event) => {
@@ -32,7 +33,8 @@ const Navbar = () => {
         className={showNav ? "show" : "hidden"}
       >
         <a href="#crew" onClick={handleNavigationClick}>
-          <img src="./images/portrait.webp" />À propos
+          <img src="./images/portrait.webp" />
+          {langage === "french" ? "À propos" : "About me"}
         </a>
         <a href="#communication" onClick={handleNavigationClick}>
           <img src="./images/communication.webp" />
@@ -44,23 +46,15 @@ const Navbar = () => {
         </a>
         <a href="#hold" onClick={handleNavigationClick}>
           <img src="./images/hold.webp" />
-          Références
+          {langage === "french" ? "Références" : "References"}
         </a>
         <a href="#engine" onClick={handleNavigationClick}>
           <img src="./images/engine.webp" />
-          Projets personnels
+          {langage === "french" ? "Projets personnels" : "Personal projects"}
         </a>
-        {/* <a href="#laboratory" onClick={handleNavigationClick}>
-          <img src="./images/laboratory.webp" />
-          En cours d'apprentissage
-        </a> */}
-        {/* <a href="#photography" onClick={handleNavigationClick}>
-          <img src="./images/photo.webp" />
-          Pratique de la photographie
-        </a> */}
         <a href="#observatory" onClick={handleNavigationClick}>
           <img src="./images/observatory.webp" />
-          Mes passions
+          Passions
         </a>
       </nav>
     </div>

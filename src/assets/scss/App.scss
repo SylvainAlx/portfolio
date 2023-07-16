@@ -53,6 +53,12 @@ body {
       display: flex;
       flex-direction: column;
       animation: fade 0.5s;
+      b {
+        text-align: center;
+        color: red;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
       h2 {
         margin: 0 auto;
         font-size: 4rem;
@@ -62,6 +68,23 @@ body {
       p {
         font-size: 23px;
         margin: 10px auto 0;
+      }
+      .speakContainer {
+        z-index: 99;
+        position: fixed;
+        right: 5px;
+        top: 5px;
+        display: flex;
+        gap: 5px;
+        span {
+          transition: all 0.5s;
+          border-radius: 50px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .gray {
+          filter: grayscale(90%);
+        }
       }
       .navbar {
         z-index: 100;
@@ -182,6 +205,7 @@ body {
       width: 250px;
       background-color: $bgcBlackAlpha;
       border-radius: 10px;
+      margin-bottom: 10px;
     }
 
 		.animated {
