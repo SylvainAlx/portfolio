@@ -4,15 +4,17 @@
 
 .room {
   width: 100%;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  overflow: hidden;
+  // overflow: hidden;
   background-color:$bgcBlackAlpha;
   backdrop-filter: blur(1px);
   transition: all 0.8s ease;
+  border-top: 1px solid $bgc4;
+  border-bottom: 1px solid $bgc4;
   
   header {
     width: 100%;
@@ -21,13 +23,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
     h5 {
       padding: 0 10px;
-      margin: 10px auto;
-      font-size: 1.2rem;
+      margin: -30px 0 10px 0;
+      font-size: 1.1rem;
       text-align: center;
-      border-radius: 50px;
       color: $bgc4;
 
     }
@@ -54,6 +56,7 @@
     width: 150px;
     height: 150px;
     margin-right: 10px;
+    margin-top: 20px;
     
     img {
       width: 100%;

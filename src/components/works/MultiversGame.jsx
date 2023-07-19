@@ -9,11 +9,12 @@ import {
 import PortalExample from "../PortalExample";
 import UnderConstruction from "../UnderConstruction";
 
-const MultiversGame = () => {
+const MultiversGame = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
   const multiversGame = {
     title: "Multivers Game",
-    description: "Escape game à domicile",
+    description:
+      langage === "french" ? "Escape games à domicile" : "Home escape games",
     image: "./images/multiversGame.webp",
     github: "",
     web: "",
@@ -22,7 +23,7 @@ const MultiversGame = () => {
     <section className="work animated">
       <h4>{multiversGame.title}</h4>
       <p>{multiversGame.description}</p>
-      <UnderConstruction />
+      <UnderConstruction langage={langage} />
       <PortalExample
         work={multiversGame}
         zoomImage={zoomImage}

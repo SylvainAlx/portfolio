@@ -5,6 +5,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import { speak } from "../../store";
 
 const Bridge = () => {
+  const width = window.innerWidth;
   const langage = speak.use();
   const handleClick = (e) => {
     window.open(
@@ -13,14 +14,14 @@ const Bridge = () => {
     );
   };
   return (
-    <div className="room animated" id="bridge">
+    <div className={`room ${width < 500 ? "animated" : ""}`} id="bridge">
       <RoomHeader
         image="/images/bridge.webp"
         roomName={langage == "french" ? "Salle de contrôle" : "Control room"}
         description="Qualifications"
       />
       <div className="sectionContainer">
-        <section className="animated">
+        <section className={width < 500 ? "animated" : ""}>
           {langage === "french" ? (
             <h4>d'où je viens</h4>
           ) : (
@@ -81,7 +82,7 @@ const Bridge = () => {
             </ul>
           )}
         </section>
-        <section className="animated">
+        <section className={width < 500 ? "animated" : ""}>
           {langage === "french" ? (
             <>
               <h4>disponible pour les postes suivants</h4>
@@ -118,7 +119,10 @@ const Bridge = () => {
           )}
         </section>
       </div>
-      <div className="button animated" onClick={handleClick}>
+      <div
+        className={`button ${width < 500 ? "animated" : ""}`}
+        onClick={handleClick}
+      >
         <AiFillFileText />
         {langage === "french" ? "télécharger mon CV" : "download resume"}
       </div>

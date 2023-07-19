@@ -12,7 +12,7 @@ const Communication = () => {
     name !== null ? window.open(`mailto:${link}`) : window.open(link, "_blank");
   };
   return (
-    <div className={`room ${width < 500 && "animated"}`} id="communication">
+    <div className={`room ${width < 500 ? "animated" : ""}`} id="communication">
       <RoomHeader
         image="/images/communication.webp"
         roomName={
@@ -22,7 +22,7 @@ const Communication = () => {
         }
         description={langage === "french" ? "Me contacter" : "Contact me"}
       />
-      <div className="buttonContainer animated">
+      <div className={`buttonContainer ${width < 500 ? "animated" : ""}`}>
         <Button text="email" name="mail" id="sylval49@gmail.com" />
         <Button
           text="GitHub"
