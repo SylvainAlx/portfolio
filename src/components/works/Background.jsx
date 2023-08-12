@@ -6,23 +6,29 @@ import {
   SiNodedotjs,
   SiRedux,
 } from "react-icons/si";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PortalExample from "../PortalExample";
 
-const Background = () => {
+const Background = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
   const background = {
     title: "Background",
-    description:
-      "Outil d'aide à la création d'univers fictionnels (“worldbuilding”)",
+    description() {
+      if (langage === "french") {
+        return "Outil d'aide à la création d'univers fictionnels (“worldbuilding”)";
+      } else {
+        return "Help tool for the creation of fictional universes (“worldbuilding”)";
+      }
+    },
     image: "./images/background.webp",
     github: "https://github.com/SylvainAlx/background",
     web: "",
   };
+
   return (
     <section className="work animated">
       <h4>{background.title}</h4>
-      <p>{background.description}</p>
+      <p>{background.description()}</p>
       <PortalExample
         work={background}
         zoomImage={zoomImage}

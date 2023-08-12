@@ -5,8 +5,10 @@ import {
   AiFillEye,
 } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
+import { speak } from "../store";
 
 const Button = (props) => {
+  const langage = speak.use();
   const handleClick = (e) => {
     const link = e.currentTarget.getAttribute("id");
     const name = e.currentTarget.getAttribute("name");
@@ -27,6 +29,19 @@ const Button = (props) => {
   } else {
     Icon = AiFillEye;
   }
+  const translate = () => {
+    if (langage !== "french") {
+      if (props.text === "code source") {
+        return "source code";
+      } else if (props.text === "voir le site") {
+        return "website";
+      } else {
+        return props.text;
+      }
+    } else {
+      return props.text;
+    }
+  };
 
   return (
     <div
@@ -36,7 +51,7 @@ const Button = (props) => {
       onClick={handleClick}
     >
       <Icon />
-      {props.text}
+      {translate()}
     </div>
   );
 };

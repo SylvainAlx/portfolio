@@ -23,12 +23,20 @@ const Bridge = () => {
       <div className="sectionContainer">
         <section className={width < 500 ? "animated" : ""}>
           {langage === "french" ? (
-            <h4>d'où je viens</h4>
+            <h4>D'où je viens</h4>
           ) : (
             <h4>Where I come from</h4>
           )}
           {langage === "french" ? (
             <ul className="list">
+              <li>
+                <b>MAINTENANT</b>- Développeur logiciel web à{" "}
+                <b>
+                  <a href="https://smart-industry-myscore.fr/" target="_blank">
+                    Atelog
+                  </a>
+                </b>
+              </li>
               <li>
                 <b>2023</b>- BAC+2 Développeur intégrateur en réalisation
                 d’applications web{" "}
@@ -56,6 +64,14 @@ const Bridge = () => {
             </ul>
           ) : (
             <ul className="list">
+              <li>
+                <b>NOW</b>- Software developer at{" "}
+                <b>
+                  <a href="https://smart-industry-myscore.fr/" target="_blank">
+                    Atelog
+                  </a>
+                </b>
+              </li>
               <li>
                 <b>2023</b>- Bachelor's degree in full-stack web developpement{" "}
                 <a
@@ -85,7 +101,7 @@ const Bridge = () => {
         <section className={width < 500 ? "animated" : ""}>
           {langage === "french" ? (
             <>
-              <h4>disponible pour les postes suivants</h4>
+              <h4>Qualifié pour les postes suivants</h4>
               <ol className="list">
                 <li>
                   <b>{"< "}</b>developpeur Front-End<b>{" />"}</b>
@@ -103,7 +119,7 @@ const Bridge = () => {
             </>
           ) : (
             <>
-              <h4>Available for</h4>
+              <h4>Qualified for</h4>
               <ol className="list">
                 <li>
                   <b>{"< "}</b>Front-End developper<b>{" />"}</b>

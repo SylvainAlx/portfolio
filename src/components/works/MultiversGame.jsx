@@ -42,10 +42,10 @@ const MultiversGame = ({ langage }) => {
           <SiTailwindcss className="icon" />
           Tailwind CSS
         </div>
-        <div className="techno">
+        {/* <div className="techno">
           <SiPostgresql className="icon" />
           PostgreSQL
-        </div>
+        </div> */}
       </div>
       <div className="buttonContainer animated"></div>
     </section>
