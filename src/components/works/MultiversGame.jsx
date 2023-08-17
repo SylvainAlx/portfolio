@@ -5,6 +5,7 @@ import {
   SiVercel,
   SiTailwindcss,
   SiPostgresql,
+  SiGooglecloud,
 } from "react-icons/si";
 import PortalExample from "../PortalExample";
 import UnderConstruction from "../UnderConstruction";
@@ -23,7 +24,7 @@ const MultiversGame = ({ langage }) => {
     <section className="work animated">
       <h4>{multiversGame.title}</h4>
       <p>{multiversGame.description}</p>
-      <UnderConstruction langage={langage} />
+
       <PortalExample
         work={multiversGame}
         zoomImage={zoomImage}
@@ -42,12 +43,14 @@ const MultiversGame = ({ langage }) => {
           <SiTailwindcss className="icon" />
           Tailwind CSS
         </div>
-        {/* <div className="techno">
-          <SiPostgresql className="icon" />
-          PostgreSQL
-        </div> */}
+        <div className="techno">
+          <SiGooglecloud className="icon" />
+          Google Cloud
+        </div>
       </div>
-      <div className="buttonContainer animated"></div>
+      <div className="buttonContainer animated">
+        <UnderConstruction langage={langage} />
+      </div>
     </section>
   );
 };

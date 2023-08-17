@@ -31,11 +31,14 @@ const Bridge = () => {
             <ul className="list">
               <li>
                 <b>MAINTENANT</b>- Développeur logiciel web à{" "}
-                <b>
-                  <a href="https://smart-industry-myscore.fr/" target="_blank">
-                    Atelog
-                  </a>
-                </b>
+                <a
+                  className="button"
+                  href="https://smart-industry-myscore.fr/"
+                  target="_blank"
+                >
+                  Atelog
+                  <BiLinkExternal />
+                </a>
               </li>
               <li>
                 <b>2023</b>- BAC+2 Développeur intégrateur en réalisation
@@ -66,11 +69,14 @@ const Bridge = () => {
             <ul className="list">
               <li>
                 <b>NOW</b>- Software developer at{" "}
-                <b>
-                  <a href="https://smart-industry-myscore.fr/" target="_blank">
-                    Atelog
-                  </a>
-                </b>
+                <a
+                  className="button"
+                  href="https://smart-industry-myscore.fr/"
+                  target="_blank"
+                >
+                  Atelog
+                  <BiLinkExternal />
+                </a>
               </li>
               <li>
                 <b>2023</b>- Bachelor's degree in full-stack web developpement{" "}
