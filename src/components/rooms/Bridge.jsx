@@ -3,7 +3,7 @@ import "../../assets/scss/Room.scss";
 import { AiFillFileText } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { speak } from "../../store";
-import {SiAngular, SiNestjs, SiDelphi
+import {SiAngular, SiNestjs, SiDelphi, SiMicrosoftsqlserver
 } from "react-icons/si";
 
 const Bridge = () => {
@@ -49,6 +49,10 @@ const Bridge = () => {
                 <div className="techno">
                   <SiDelphi className="icon" />
                   Delphi
+                </div>
+                <div className="techno">
+                  <SiMicrosoftsqlserver className="icon" />
+                  SQL Server
                 </div>
               </div>  
         </section>

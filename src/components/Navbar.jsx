@@ -42,7 +42,7 @@ const Navbar = () => {
         </a>
         <a href="#bridge" onClick={handleNavigationClick}>
           <img src="./images/bridge.webp" />
-          Qualifications
+          {langage === "french" ? "Parcours" : "Background"}
         </a>
         <a href="#hold" onClick={handleNavigationClick}>
           <img src="./images/hold.webp" />
