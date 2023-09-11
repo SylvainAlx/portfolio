@@ -3,6 +3,8 @@ import "../../assets/scss/Room.scss";
 import { AiFillFileText } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { speak } from "../../store";
+import {SiAngular, SiNestjs, SiDelphi
+} from "react-icons/si";
 
 const Bridge = () => {
   const width = window.innerWidth;
@@ -18,9 +20,38 @@ const Bridge = () => {
       <RoomHeader
         image="/images/bridge.webp"
         roomName={langage == "french" ? "Salle de contrôle" : "Control room"}
-        description="Qualifications"
+        description={langage == "french" ? "Parcours" : "Background"}
       />
       <div className="sectionContainer">
+      <section className={width < 500 ? "animated" : ""}>
+          
+            
+            {langage === "french" ? (
+              <>
+                <h4>Actuellement</h4>
+                <h3>Développeur logiciel web - <a href="https://smart-industry-myscore.fr/" target="_blank">Atelog MyScore</a></h3>
+              </>
+              ) : (
+                <>
+                  <h4>Now</h4>
+                  <h3>Software developer - <a href="https://smart-industry-myscore.fr/" target="_blank">Atelog MyScore</a></h3>
+                </>
+              )}
+              <div className="technos animated">
+                <div className="techno">
+                  <SiAngular className="icon" />
+                  Angular
+                </div>
+                <div className="techno">
+                  <SiNestjs className="icon" />
+                  Nest.js
+                </div>
+                <div className="techno">
+                  <SiDelphi className="icon" />
+                  Delphi
+                </div>
+              </div>  
+        </section>
         <section className={width < 500 ? "animated" : ""}>
           {langage === "french" ? (
             <h4>D'où je viens</h4>
@@ -29,17 +60,6 @@ const Bridge = () => {
           )}
           {langage === "french" ? (
             <ul className="list">
-              <li>
-                <b>MAINTENANT</b>- Développeur logiciel web à{" "}
-                <a
-                  className="button"
-                  href="https://smart-industry-myscore.fr/"
-                  target="_blank"
-                >
-                  Atelog
-                  <BiLinkExternal />
-                </a>
-              </li>
               <li>
                 <b>2023</b>- BAC+2 Développeur intégrateur en réalisation
                 d’applications web{" "}
@@ -68,17 +88,6 @@ const Bridge = () => {
           ) : (
             <ul className="list">
               <li>
-                <b>NOW</b>- Software developer at{" "}
-                <a
-                  className="button"
-                  href="https://smart-industry-myscore.fr/"
-                  target="_blank"
-                >
-                  Atelog
-                  <BiLinkExternal />
-                </a>
-              </li>
-              <li>
                 <b>2023</b>- Bachelor's degree in full-stack web developpement{" "}
                 <a
                   className="button"
@@ -102,42 +111,6 @@ const Bridge = () => {
                 <b>2010</b>- Bachelor's degree in audio-visual
               </li>
             </ul>
-          )}
-        </section>
-        <section className={width < 500 ? "animated" : ""}>
-          {langage === "french" ? (
-            <>
-              <h4>Qualifié pour les postes suivants</h4>
-              <ol className="list">
-                <li>
-                  <b>{"< "}</b>developpeur Front-End<b>{" />"}</b>
-                </li>
-                <li>
-                  <b>{"< "}</b>intégrateur web<b>{" />"}</b>
-                </li>
-                <li>
-                  <b>{"< "}</b>developpeur Back-End<b>{" />"}</b>
-                </li>
-                <li>
-                  <b>{"< "}</b>développeur web fullstack<b>{" />"}</b>
-                </li>
-              </ol>
-            </>
-          ) : (
-            <>
-              <h4>Qualified for</h4>
-              <ol className="list">
-                <li>
-                  <b>{"< "}</b>Front-End developper<b>{" />"}</b>
-                </li>
-                <li>
-                  <b>{"< "}</b>Back-End developper<b>{" />"}</b>
-                </li>
-                <li>
-                  <b>{"< "}</b>Fullstack web developper<b>{" />"}</b>
-                </li>
-              </ol>
-            </>
           )}
         </section>
       </div>
