@@ -3,7 +3,11 @@ import "../../assets/scss/Room.scss";
 import { AiFillFileText } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { speak } from "../../store";
-import {SiAngular, SiNestjs, SiDelphi, SiMicrosoftsqlserver
+import {
+  SiAngular,
+  SiNestjs,
+  SiDelphi,
+  SiMicrosoftsqlserver,
 } from "react-icons/si";
 
 const Bridge = () => {
@@ -23,38 +27,46 @@ const Bridge = () => {
         description={langage == "french" ? "Parcours" : "Background"}
       />
       <div className="sectionContainer">
-      <section className={width < 500 ? "animated" : ""}>
-          
-            
-            {langage === "french" ? (
-              <>
-                <h4>Actuellement</h4>
-                <h3>Développeur logiciel web - <a href="https://smart-industry-myscore.fr/" target="_blank">Atelog MyScore</a></h3>
-              </>
-              ) : (
-                <>
-                  <h4>Now</h4>
-                  <h3>Software developer - <a href="https://smart-industry-myscore.fr/" target="_blank">Atelog MyScore</a></h3>
-                </>
-              )}
-              <div className="technos animated">
-                <div className="techno">
-                  <SiAngular className="icon" />
-                  Angular
-                </div>
-                <div className="techno">
-                  <SiNestjs className="icon" />
-                  Nest.js
-                </div>
-                <div className="techno">
-                  <SiDelphi className="icon" />
-                  Delphi
-                </div>
-                <div className="techno">
-                  <SiMicrosoftsqlserver className="icon" />
-                  SQL Server
-                </div>
-              </div>  
+        <section className={width < 500 ? "animated" : ""}>
+          {langage === "french" ? (
+            <>
+              <h4>Actuellement</h4>
+              <h3>
+                Développeur logiciel web -{" "}
+                <a href="https://smart-industry-myscore.fr/" target="_blank">
+                  Atelog MyScore
+                </a>
+              </h3>
+            </>
+          ) : (
+            <>
+              <h4>Now</h4>
+              <h3>
+                Software developer -{" "}
+                <a href="https://smart-industry-myscore.fr/" target="_blank">
+                  Atelog MyScore
+                </a>
+              </h3>
+            </>
+          )}
+          <div className="technos animated">
+            <div className="techno">
+              <SiAngular className="icon" />
+              Angular
+            </div>
+            <div className="techno">
+              <SiNestjs className="icon" />
+              Nest.js
+            </div>
+            <div className="techno">
+              <SiDelphi className="icon" />
+              Delphi
+            </div>
+            <div className="techno">
+              <SiMicrosoftsqlserver className="icon" />
+              SQL Server
+            </div>
+          </div>
         </section>
         <section className={width < 500 ? "animated" : ""}>
           {langage === "french" ? (
@@ -118,13 +130,13 @@ const Bridge = () => {
           )}
         </section>
       </div>
-      <div
+      {/* <div
         className={`button ${width < 500 ? "animated" : ""}`}
         onClick={handleClick}
       >
         <AiFillFileText />
         {langage === "french" ? "télécharger mon CV" : "download resume"}
-      </div>
+      </div> */}
     </div>
   );
 };

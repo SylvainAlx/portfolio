@@ -14,9 +14,9 @@ const Crew = () => {
         description="Sylvain ALEXANDRE"
       />
       {langage === "french" ? (
-        <h1>Développeur web, mais pas uniquement !</h1>
+        <h1>Développeur web & logiciel</h1>
       ) : (
-        <h1>Not only a web developper !</h1>
+        <h1>Web & software developper</h1>
       )}
 
       <div className="buttonContainer">
