@@ -8,6 +8,7 @@ import {
   SiNestjs,
   SiDelphi,
   SiMicrosoftsqlserver,
+  SiGitlab,
 } from "react-icons/si";
 
 const Bridge = () => {
@@ -51,20 +52,24 @@ const Bridge = () => {
           )}
           <div className="technos animated">
             <div className="techno">
-              <SiAngular className="icon" />
-              Angular
-            </div>
-            <div className="techno">
-              <SiNestjs className="icon" />
-              Nest.js
-            </div>
-            <div className="techno">
               <SiDelphi className="icon" />
               Delphi
             </div>
             <div className="techno">
               <SiMicrosoftsqlserver className="icon" />
               SQL Server
+            </div>
+            <div className="techno">
+              <SiGitlab className="icon" />
+              GitLab
+            </div>
+            <div className="techno">
+              <SiAngular className="icon" />
+              Angular
+            </div>
+            <div className="techno">
+              <SiNestjs className="icon" />
+              Nest.js
             </div>
           </div>
         </section>

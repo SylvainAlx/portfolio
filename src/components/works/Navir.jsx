@@ -1,46 +1,57 @@
 import { useState } from "react";
 import Button from "../Button";
 import {
-  SiNextdotjs,
   SiTailwindcss,
-  SiPostgresql,
-  SiGooglecloud,
+  SiMongodb,
+  SiReact,
+  SiNodedotjs,
+  SiTypescript,
 } from "react-icons/si";
 import PortalExample from "../PortalExample";
 import UnderConstruction from "../UnderConstruction";
 
-const MultiversGame = ({ langage }) => {
+const Navir = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
-  const multiversGame = {
-    title: "Multivers Game",
+  const navir = {
+    title: "Navir",
     description:
-      langage === "french" ? "Escape games à domicile" : "Home escape games",
-    image: "./images/multiversGame.webp",
+      langage === "french"
+        ? "La plateforme des nations virtuelles"
+        : "Network of virtual nations",
+    image: "./images/navir.png",
     github: "",
     web: "",
   };
   return (
     <section className="work animated">
-      <h4>{multiversGame.title}</h4>
-      <p>{multiversGame.description}</p>
+      <h4>{navir.title}</h4>
+      <p>{navir.description}</p>
 
       <PortalExample
-        work={multiversGame}
+        work={navir}
         zoomImage={zoomImage}
         setZoomImage={setZoomImage}
       />
       <div className="technos animated">
         <div className="techno">
-          <SiNextdotjs className="icon" />
-          Next.js
+          <SiReact className="icon" />
+          React
         </div>
         <div className="techno">
           <SiTailwindcss className="icon" />
           Tailwind CSS
         </div>
         <div className="techno">
-          <SiGooglecloud className="icon" />
-          Google Cloud
+          <SiTypescript className="icon" />
+          TypeScript
+        </div>
+        <div className="techno">
+          <SiNodedotjs className="icon" />
+          Node.js
+        </div>
+        <div className="techno">
+          <SiMongodb className="icon" />
+          MongoDB
         </div>
       </div>
       <div className="buttonContainer animated">
@@ -50,4 +61,4 @@ const MultiversGame = ({ langage }) => {
   );
 };
 
-export default MultiversGame;
+export default Navir;

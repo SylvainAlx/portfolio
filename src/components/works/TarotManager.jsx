@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../Button";
-import { SiSass, SiNextdotjs, SiMongodb, SiVercel } from "react-icons/si";
+import { SiSass, SiNextdotjs, SiMongodb } from "react-icons/si";
 import PortalExample from "../PortalExample";
 
 const TarotManager = () => {
@@ -26,10 +26,6 @@ const TarotManager = () => {
         <div className="techno">
           <SiNextdotjs className="icon" />
           Next.js
-        </div>
-        <div className="techno">
-          <SiVercel className="icon" />
-          Vercel
         </div>
         <div className="techno">
           <SiSass className="icon" />
