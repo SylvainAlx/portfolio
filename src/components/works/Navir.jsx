@@ -13,12 +13,12 @@ import UnderConstruction from "../UnderConstruction";
 const Navir = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
   const navir = {
-    title: "Navir",
+    title: "Projet Archipel",
     description:
       langage === "french"
-        ? "La plateforme des nations virtuelles"
+        ? "Le réseau des nations virtuelles"
         : "Network of virtual nations",
-    image: "./images/navir.png",
+    image: "./images/archipel.webp",
     github: "",
     web: "",
   };
