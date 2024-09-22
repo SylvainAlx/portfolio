@@ -12,7 +12,7 @@ import UnderConstruction from "../UnderConstruction";
 const MultiversGame = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
   const multiversGame = {
-    title: "Multivers Game",
+    title: "Moult'Univers Game",
     description:
       langage === "french" ? "Escape games à domicile" : "Home escape games",
     image: "./images/multiversGame.webp",
