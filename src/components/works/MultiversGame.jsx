@@ -1,13 +1,7 @@
 import { useState } from "react";
 import Button from "../Button";
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiPostgresql,
-  SiGooglecloud,
-} from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiGooglecloud } from "react-icons/si";
 import PortalExample from "../PortalExample";
-import UnderConstruction from "../UnderConstruction";
 
 const MultiversGame = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -17,7 +11,7 @@ const MultiversGame = ({ langage }) => {
       langage === "french" ? "Escape games à domicile" : "Home escape games",
     image: "./images/multiversGame.webp",
     github: "",
-    web: "",
+    web: "https://www.moultunivers-game.fr",
   };
   return (
     <section className="work animated">
@@ -44,7 +38,9 @@ const MultiversGame = ({ langage }) => {
         </div>
       </div>
       <div className="buttonContainer animated">
-        <UnderConstruction langage={langage} />
+        {multiversGame.web && (
+          <Button text="voir le site" id={multiversGame.web} />
+        )}
       </div>
     </section>
   );
