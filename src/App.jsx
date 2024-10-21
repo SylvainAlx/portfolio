@@ -50,8 +50,8 @@ const App = () => {
         <Communication />
         <Separator />
         <Bridge />
-        <Separator />
-        <Hold />
+        {/* <Separator /> */}
+        {/* <Hold /> */}
         <Separator />
         <Engine />
         <Separator />

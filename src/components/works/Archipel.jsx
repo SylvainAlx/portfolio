@@ -1,18 +1,19 @@
 import { useState } from "react";
-import Button from "../Button";
 import {
   SiTailwindcss,
   SiMongodb,
   SiReact,
   SiNodedotjs,
   SiTypescript,
+  SiI18Next,
+  SiVite,
 } from "react-icons/si";
 import PortalExample from "../PortalExample";
 import UnderConstruction from "../UnderConstruction";
 
-const Navir = ({ langage }) => {
+const Archipel = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
-  const navir = {
+  const archipel = {
     title: "Réseau Archipel",
     description:
       langage === "french"
@@ -24,11 +25,11 @@ const Navir = ({ langage }) => {
   };
   return (
     <section className="work animated">
-      <h4>{navir.title}</h4>
-      <p>{navir.description}</p>
+      <h4>{archipel.title}</h4>
+      <p>{archipel.description}</p>
 
       <PortalExample
-        work={navir}
+        work={archipel}
         zoomImage={zoomImage}
         setZoomImage={setZoomImage}
       />
@@ -38,12 +39,20 @@ const Navir = ({ langage }) => {
           React
         </div>
         <div className="techno">
+          <SiVite className="icon" />
+          Vite
+        </div>
+        <div className="techno">
           <SiTailwindcss className="icon" />
           Tailwind CSS
         </div>
         <div className="techno">
           <SiTypescript className="icon" />
           TypeScript
+        </div>
+        <div className="techno">
+          <SiI18Next className="icon" />
+          I18Next
         </div>
         <div className="techno">
           <SiNodedotjs className="icon" />
@@ -61,4 +70,4 @@ const Navir = ({ langage }) => {
   );
 };
 
-export default Navir;
+export default Archipel;

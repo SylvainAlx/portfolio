@@ -1,6 +1,6 @@
 import RoomHeader from "../RoomHeader";
-import MultiversGame from "../works/MultiversGame";
-import Navir from "../works/Navir";
+// import MultiversGame from "../works/MultiversGame";
+// import Navir from "../works/Navir";
 import { speak } from "../../store";
 
 const Hold = () => {
@@ -15,8 +15,8 @@ const Hold = () => {
         }
       />
       <div className="sectionContainer">
-        <MultiversGame langage={langage} />
-        <Navir langage={langage} />
+        {/* <MultiversGame langage={langage} />
+        <Navir langage={langage} /> */}
       </div>
     </div>
   );

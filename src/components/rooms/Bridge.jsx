@@ -28,71 +28,97 @@ const Bridge = () => {
         description={langage == "french" ? "Parcours" : "Background"}
       />
       <div className="sectionContainer">
-        <section className={width < 500 ? "animated" : ""}>
+        <section
+          className={`${
+            width < 500 ? "animated" : ""
+          } flex flex-col items-center`}
+        >
           {langage === "french" ? (
-            <>
-              <h4>Actuellement</h4>
-              <h3>
-                Développeur logiciel web -{" "}
-                <a href="https://smart-industry-myscore.fr/" target="_blank">
-                  Atelog MyScore
-                </a>
-              </h3>
-            </>
+            <h4>Informatique</h4>
           ) : (
-            <>
-              <h4>Now</h4>
-              <h3>
-                Software developer -{" "}
-                <a href="https://smart-industry-myscore.fr/" target="_blank">
-                  Atelog MyScore
-                </a>
-              </h3>
-            </>
+            <h4>Computer science</h4>
           )}
-          <div className="technos animated">
-            <div className="techno">
-              <SiDelphi className="icon" />
-              Delphi
-            </div>
-            <div className="techno">
-              <SiMicrosoftsqlserver className="icon" />
-              SQL Server
-            </div>
-            <div className="techno">
-              <SiGitlab className="icon" />
-              GitLab
-            </div>
-            <div className="techno">
-              <SiAngular className="icon" />
-              Angular
-            </div>
-            <div className="techno">
-              <SiNestjs className="icon" />
-              Nest.js
-            </div>
-          </div>
-        </section>
-        <section className={width < 500 ? "animated" : ""}>
-          {langage === "french" ? (
-            <h4>D'où je viens</h4>
-          ) : (
-            <h4>Where I come from</h4>
-          )}
-          {langage === "french" ? (
-            <ul className="list">
+          <ul className="list">
+            {langage === "french" ? (
               <li>
-                <b>2023</b>- BAC+2 Développeur intégrateur en réalisation
-                d’applications web{" "}
+                <b>2023-2024</b>{" "}
+                <span>
+                  {" "}
+                  -{" "}
+                  <a href="https://smart-industry-myscore.fr/" target="_blank">
+                    Atelog MyScore
+                  </a>{" "}
+                  - Développeur logiciel web
+                </span>
+              </li>
+            ) : (
+              <li>
+                <b>2023-2024</b>
+                <span>
+                  {" "}
+                  -
+                  <a href="https://smart-industry-myscore.fr/" target="_blank">
+                    Atelog MyScore
+                  </a>{" "}
+                  - Software engineer
+                </span>
+              </li>
+            )}
+            <div className="technos animated">
+              <div className="techno">
+                <SiDelphi className="icon" />
+                Delphi
+              </div>
+              <div className="techno">
+                <SiMicrosoftsqlserver className="icon" />
+                SQL Server
+              </div>
+              <div className="techno">
+                <SiGitlab className="icon" />
+                GitLab
+              </div>
+              <div className="techno">
+                <SiAngular className="icon" />
+                Angular
+              </div>
+              <div className="techno">
+                <SiNestjs className="icon" />
+                Nest.js
+              </div>
+            </div>
+          </ul>
+          <ul className="list">
+            <li>
+              {langage === "french" ? (
+                <span>
+                  <b>2023</b> - BAC+2 Développeur intégrateur en réalisation
+                </span>
+              ) : (
+                <span>
+                  <b>2023</b> - Bachelor's degree in full-stack web
+                  developpement
+                </span>
+              )}
+              <div>
                 <a
                   className="button"
                   href="https://diplome.3wa.fr/alexandre-sylvain"
                   target="_blank"
                 >
-                  voir
                   <BiLinkExternal />
                 </a>
-              </li>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section className={width < 500 ? "animated" : ""}>
+          {langage === "french" ? (
+            <h4>Avant ma reconversion</h4>
+          ) : (
+            <h4>Before my career change</h4>
+          )}
+          {langage === "french" ? (
+            <ul className="list">
               <li>
                 <b>2017-2022</b>- Assistant d'éducation
               </li>
@@ -108,17 +134,6 @@ const Bridge = () => {
             </ul>
           ) : (
             <ul className="list">
-              <li>
-                <b>2023</b>- Bachelor's degree in full-stack web developpement{" "}
-                <a
-                  className="button"
-                  href="https://diplome.3wa.fr/alexandre-sylvain"
-                  target="_blank"
-                >
-                  voir
-                  <BiLinkExternal />
-                </a>
-              </li>
               <li>
                 <b>2017-2022</b>- Teacher's aide
               </li>

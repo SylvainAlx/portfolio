@@ -23,7 +23,7 @@ const Communication = () => {
         description={langage === "french" ? "Me contacter" : "Contact me"}
       />
       <div className={`buttonContainer ${width < 500 ? "animated" : ""}`}>
-        <Button text="email" name="mail" id="sylval49@gmail.com" />
+        <Button text="email" name="mail" id="sylvainalx.dev@gmail.com" />
         <Button
           text="GitHub"
           name="github"
@@ -36,8 +36,8 @@ const Communication = () => {
         />
         <Button
           name="place"
-          id="https://www.google.fr/maps/place/Angers/"
-          text="Angers, France"
+          id="https://www.google.fr/maps/place/Loire-Authion/"
+          text="Loire-Authion (49), France"
         />
       </div>
     </div>
