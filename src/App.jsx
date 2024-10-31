@@ -4,22 +4,20 @@ import Communication from "./components/rooms/Communication";
 import Crew from "./components/rooms/Crew";
 import Observatory from "./components/rooms/Observatory";
 import "./assets/scss/App.scss";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Engine from "./components/rooms/Engine";
-import Hold from "./components/rooms/Hold";
+// import Hold from "./components/rooms/Hold";
 
 const App = () => {
-  const width = window.innerWidth;
-
+  const animatedElementsRef = useRef();
   useEffect(() => {
-    const animatedElements = document.querySelectorAll(".animated");
+    animatedElementsRef.current = document.querySelectorAll(".animated");
     const handleScroll = () => {
-      animatedElements.forEach((element) => {
+      animatedElementsRef.current.forEach((element) => {
         const elementTop = element.getBoundingClientRect().top;
         const elementBottom = element.getBoundingClientRect().bottom;
-
         if (elementTop < window.innerHeight && elementBottom > 0) {
           element.classList.add("animate");
         } else {
@@ -27,20 +25,11 @@ const App = () => {
         }
       });
     };
-    // if (width >= 1000) {
-    //   animatedElements.forEach((element) => {
-    //     element.classList.remove("animated");
-    //     element.classList.add("animate");
-    //   });
-    // } else {
-    //   window.addEventListener("scroll", handleScroll);
-    // }
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <div className="App">
       <Header />

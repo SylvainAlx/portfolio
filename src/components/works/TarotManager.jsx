@@ -3,12 +3,14 @@ import Button from "../Button";
 import { SiSass, SiNextdotjs, SiMongodb } from "react-icons/si";
 import PortalExample from "../PortalExample";
 
-const TarotManager = () => {
+const TarotManager = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
   const tarotManager = {
     title: "Tarot Manager",
     description:
-      "Gestionnaire de parties de tarot et classement général des joueurs",
+      langage === "french"
+        ? "Gestionnaire de parties de tarot et classement général des joueurs"
+        : "Tarot game manager and overall player ranking system",
     image: "./images/tarotManager.webp",
     github: "https://github.com/SylvainAlx/tarot-manager",
     web: "https://tarot-manager.vercel.app/",

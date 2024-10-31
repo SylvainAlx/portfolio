@@ -7,15 +7,14 @@ const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
 
   const handleNavigationClick = (event) => {
-    event.preventDefault(); // Empêche le comportement par défaut du lien
-
+    event.preventDefault();
     const targetId = event.target.getAttribute("href");
     const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: "smooth", // Défilement fluide
-        block: "start", // Défilement jusqu'au début de l'élément
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -50,7 +49,7 @@ const Navbar = () => {
         </a> */}
         <a href="#engine" onClick={handleNavigationClick}>
           <img src="./images/engine.webp" />
-          {langage === "french" ? "Projets" : "Projects"}
+          {langage === "french" ? "Réalisations" : "Accomplishments"}
         </a>
         <a href="#observatory" onClick={handleNavigationClick}>
           <img src="./images/observatory.webp" />

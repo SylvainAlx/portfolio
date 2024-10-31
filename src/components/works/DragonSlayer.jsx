@@ -3,11 +3,14 @@ import { SiJavascript, SiHtml5, SiCss3 } from "react-icons/si";
 import { useState } from "react";
 import PortalExample from "../PortalExample";
 
-const DragonSlayer = () => {
+const DragonSlayer = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
   const dragonSlayer = {
     title: "Dragon Slayer",
-    description: "Petit jeu à base de lancés de dés",
+    description:
+      langage === "french"
+        ? "Petit jeu à base de lancés de dés"
+        : "Little dice-based game",
     image: "./images/dragon-slayer.webp",
     github: "https://github.com/SylvainAlx/dragon-slayer",
     web: "https://sylvainalx.github.io/dragon-slayer",

@@ -3,11 +3,11 @@ import { SiSass, SiReact, SiVite } from "react-icons/si";
 import { useState } from "react";
 import PortalExample from "../PortalExample";
 
-const Portfolio = () => {
+const Portfolio = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
   const portfolio = {
     title: "Portfolio",
-    description: "Vous êtes dessus !",
+    description: langage === "french" ? "Vous êtes dessus !" : "You're on it !",
     image: "./images/portfolio.webp",
     github: "https://github.com/SylvainAlx/portfolio",
     web: "https://sylvainalx.github.io/portfolio/",

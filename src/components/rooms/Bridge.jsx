@@ -14,9 +14,9 @@ import {
 const Bridge = () => {
   const width = window.innerWidth;
   const langage = speak.use();
-  const handleClick = (e) => {
+  const handleClick = () => {
     window.open(
-      `./documents/CV_Sylvain_ALEXANDRE_developpeur_web_2023.07.11.pdf`,
+      `./documents/CV_Sylvain_ALEXANDRE_developpeur_web_2024.10.31.pdf`,
       "_blank"
     );
   };
@@ -41,27 +41,46 @@ const Bridge = () => {
           <ul className="list">
             {langage === "french" ? (
               <li>
-                <b>2023-2024</b>{" "}
                 <span>
-                  {" "}
-                  -{" "}
+                  <b>2023-2024</b>
                   <a href="https://smart-industry-myscore.fr/" target="_blank">
                     Atelog MyScore
-                  </a>{" "}
-                  - Développeur logiciel web
+                  </a>
                 </span>
+                <div>Développeur logiciel</div>
+                <p>
+                  Création d’un logiciel pour récupérer et traiter des données
+                  IOT et OPC
+                </p>
+                <p>
+                  Maintenance d’un logiciel WMS & collaboration sur une
+                  application web de MES
+                </p>
+                <p>Requête en base de données</p>
+                <p>
+                  Écriture de tests unitaires, de documentations et de cahier
+                  des charges
+                </p>
               </li>
             ) : (
               <li>
-                <b>2023-2024</b>
                 <span>
-                  {" "}
-                  -
+                  <b>2023-2024</b>
                   <a href="https://smart-industry-myscore.fr/" target="_blank">
                     Atelog MyScore
-                  </a>{" "}
-                  - Software engineer
+                  </a>
                 </span>
+                <div>Software engineer</div>
+                <p>
+                  Development of a software to retrieve and process IOT and OPC
+                  data
+                </p>
+                <p>
+                  Maintenance of a WMS software & collaboration on a MES web
+                  application
+                </p>
+                <p>Database querying</p>
+                <p>Writing unit tests, documentation, and specifications</p>
               </li>
             )}
             <div className="technos animated">
@@ -90,14 +109,18 @@ const Bridge = () => {
           <ul className="list">
             <li>
               {langage === "french" ? (
-                <span>
-                  <b>2023</b> - BAC+2 Développeur intégrateur en réalisation
-                </span>
+                <>
+                  <b>2023</b>
+                  <p>
+                    BAC+2 Développeur intégrateur en réalisation d’applications
+                    web
+                  </p>
+                </>
               ) : (
-                <span>
-                  <b>2023</b> - Bachelor's degree in full-stack web
-                  developpement
-                </span>
+                <>
+                  <b>2023</b>
+                  <p>Bachelor's degree in full-stack web developpement</p>
+                </>
               )}
               <div>
                 <a
@@ -120,43 +143,51 @@ const Bridge = () => {
           {langage === "french" ? (
             <ul className="list">
               <li>
-                <b>2017-2022</b>- Assistant d'éducation
+                <b>2017-2022</b>
+                <div>Assistant d'éducation</div>
               </li>
               <li>
-                <b>2017-2019</b>- Photographe freelance
+                <b>2017-2019</b>
+                <div>Photographe freelance</div>
               </li>
               <li>
-                <b>2011-2016</b>- Technicien Canal+
+                <b>2011-2016</b>
+                <div>Technicien Canal+</div>
               </li>
               <li>
-                <b>2010</b>- BAC+2 Audiovisuel
+                <b>2010</b>
+                <div>BAC+2 Audiovisuel</div>
               </li>
             </ul>
           ) : (
             <ul className="list">
               <li>
-                <b>2017-2022</b>- Teacher's aide
+                <b>2017-2022</b>
+                <div>Teacher's aide</div>
               </li>
               <li>
-                <b>2017-2019</b>- Freelance photographer
+                <b>2017-2019</b>
+                <div>Freelance photographer</div>
               </li>
               <li>
-                <b>2011-2016</b>- TV technical expert (Canal+)
+                <b>2011-2016</b>
+                <div>TV technical expert (Canal+)</div>
               </li>
               <li>
-                <b>2010</b>- Bachelor's degree in audio-visual
+                <b>2010</b>
+                <div>Bachelor's degree in audio-visual</div>
               </li>
             </ul>
           )}
         </section>
       </div>
-      {/* <div
+      <div
         className={`button ${width < 500 ? "animated" : ""}`}
         onClick={handleClick}
       >
         <AiFillFileText />
         {langage === "french" ? "télécharger mon CV" : "download resume"}
-      </div> */}
+      </div>
     </div>
   );
 };

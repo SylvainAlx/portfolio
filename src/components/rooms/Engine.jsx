@@ -14,7 +14,7 @@ const Engine = () => {
       <RoomHeader
         image="/images/engine.webp"
         roomName={langage === "french" ? "Salle des machines" : "Engine room"}
-        description={langage === "french" ? "Projets" : "Projects"}
+        description={langage === "french" ? "Réalisations" : "Accomplishments"}
       />
       <div className="sectionContainer">
         <Archipel langage={langage} />

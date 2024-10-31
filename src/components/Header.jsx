@@ -14,7 +14,7 @@ const Header = () => {
       )}
       <h2>PORTFOLIO</h2>
       {langage === "english" && (
-        <b>Only 50% of the website has been translated so far</b>
+        <b>Only 70% of the website has been translated so far</b>
       )}
       <Navbar />
     </header>

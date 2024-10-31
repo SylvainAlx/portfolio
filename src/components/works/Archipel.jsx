@@ -14,11 +14,11 @@ import UnderConstruction from "../UnderConstruction";
 const Archipel = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
   const archipel = {
-    title: "Réseau Archipel",
+    title: "Archipel",
     description:
       langage === "french"
-        ? "Le réseau des nations virtuelles"
-        : "Network of virtual nations",
+        ? "Citoyens des micronations & nations virtuelles"
+        : "Citizens of micronations & virtual nations",
     image: "./images/archipel.webp",
     github: "",
     web: "",

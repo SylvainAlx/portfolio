@@ -114,12 +114,29 @@
       font-weight: unset;
     }
     .list {
-      padding: 0;
+      width: 100%;
+      padding: 5px;
+      background-color: $bgcAlphaPlus;
+      border-radius: 5px;     
+      span {
+        display: flex;
+        gap: 10px;
+      }
       li {
         font-size: 1.2rem;
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         b {
           color: $text2;
+        }
+        p {
+          margin: 0;
+          font-size: 18px;
+          width: 100%;
+          text-align: center;
         }
         .button {
           width: max-content;
