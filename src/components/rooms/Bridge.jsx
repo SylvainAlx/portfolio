@@ -47,7 +47,7 @@ const Bridge = () => {
                     Atelog MyScore
                   </a>
                 </span>
-                <div>Développeur logiciel</div>
+                <strong>Développeur logiciel</strong>
                 <p>
                   Création d’un logiciel pour récupérer et traiter des données
                   IOT et OPC
@@ -70,7 +70,7 @@ const Bridge = () => {
                     Atelog MyScore
                   </a>
                 </span>
-                <div>Software engineer</div>
+                <strong>Software engineer</strong>
                 <p>
                   Development of a software to retrieve and process IOT and OPC
                   data

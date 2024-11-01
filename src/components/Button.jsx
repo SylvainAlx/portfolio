@@ -44,14 +44,9 @@ const Button = (props) => {
   };
 
   return (
-    <div
-      className="button"
-      name={props.name}
-      id={props.id}
-      onClick={handleClick}
-    >
+    <div className="button" id={props.id} onClick={handleClick}>
       <Icon />
-      {translate()}
+      <div>{translate()}</div>
     </div>
   );
 };

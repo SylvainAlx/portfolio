@@ -118,6 +118,10 @@
       padding: 5px;
       background-color: $bgcAlphaPlus;
       border-radius: 5px;     
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
       span {
         display: flex;
         gap: 10px;
@@ -128,7 +132,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         b {
           color: $text2;
         }
@@ -254,6 +258,7 @@
     .work {
       display: flex;
       flex-direction: column;
+      gap: 10px;
       padding-bottom: 10px;
       margin-bottom: 10px;
       h4 {
@@ -263,6 +268,7 @@
         font-size: 20px;
         text-align: center;
         color: $bgc4;
+        margin: 0;
       }
       img {
         width: 150px;
