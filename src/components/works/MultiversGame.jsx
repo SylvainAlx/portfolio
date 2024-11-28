@@ -8,7 +8,9 @@ const MultiversGame = ({ langage }) => {
   const multiversGame = {
     title: "Moult'Univers Game",
     description:
-      langage === "french" ? "Escape games à domicile" : "Home escape games",
+      langage === "french"
+        ? "Escape game & Huis Clos à domicile"
+        : "Home escape games",
     image: "./images/multiversGame.webp",
     github: "",
     web: "https://www.moultunivers-game.fr",

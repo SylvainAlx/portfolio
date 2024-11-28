@@ -17,12 +17,13 @@ const Engine = () => {
         description={langage === "french" ? "Réalisations" : "Accomplishments"}
       />
       <div className="sectionContainer">
-        <Archipel langage={langage} />
-        <Portfolio langage={langage} />
         <MultiversGame langage={langage} />
-        <Background langage={langage} />
+        <Portfolio langage={langage} />
+        <Archipel langage={langage} />
+
+        {/* <Background langage={langage} />
         <TarotManager langage={langage} />
-        <DragonSlayer langage={langage} />
+        <DragonSlayer langage={langage} /> */}
       </div>
     </div>
   );
