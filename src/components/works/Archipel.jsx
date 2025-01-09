@@ -10,6 +10,7 @@ import {
 } from "react-icons/si";
 import PortalExample from "../PortalExample";
 import UnderConstruction from "../UnderConstruction";
+import Button from "../Button";
 
 const Archipel = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -20,8 +21,8 @@ const Archipel = ({ langage }) => {
         ? "Citoyens des micronations & nations virtuelles"
         : "Citizens of micronations & virtual nations",
     image: "./images/archipel.webp",
-    github: "",
-    web: "",
+    github: "https://github.com/SylvainAlx/archipel",
+    web: "https://archipel.vercel.app/",
   };
   return (
     <section className="work animated">
@@ -65,6 +66,10 @@ const Archipel = ({ langage }) => {
       </div>
       <div className="buttonContainer animated">
         <UnderConstruction langage={langage} />
+      </div>
+      <div className="buttonContainer animated">
+        <Button text="code source" name="github" id={archipel.github} />
+        {archipel.web && <Button text="voir" id={archipel.web} />}
       </div>
     </section>
   );

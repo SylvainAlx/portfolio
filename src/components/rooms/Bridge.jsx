@@ -1,15 +1,10 @@
 import RoomHeader from "../RoomHeader";
 import "../../assets/scss/Room.scss";
 import { AiFillFileText } from "react-icons/ai";
-import { BiLinkExternal } from "react-icons/bi";
 import { speak } from "../../store";
-import {
-  SiAngular,
-  SiNestjs,
-  SiDelphi,
-  SiMicrosoftsqlserver,
-  SiGitlab,
-} from "react-icons/si";
+import Atelog2i from "../works/Atelog2i";
+import WWW_ACDEMY from "../works/3WA";
+import Freelance from "../works/freelance";
 
 const Bridge = () => {
   const width = window.innerWidth;
@@ -39,99 +34,9 @@ const Bridge = () => {
             <h4>Computer science</h4>
           )}
           <ul className="list">
-            {langage === "french" ? (
-              <li>
-                <span>
-                  <b>2023-2024</b>
-                  <a href="https://smart-industry-myscore.fr/" target="_blank">
-                    Atelog MyScore
-                  </a>
-                </span>
-                <strong>Développeur logiciel</strong>
-                <p>
-                  Création d’un logiciel pour récupérer et traiter des données
-                  IOT et OPC
-                </p>
-                <p>
-                  Maintenance d’un logiciel WMS & collaboration sur une
-                  application web de MES
-                </p>
-                <p>Requête en base de données</p>
-                <p>
-                  Écriture de tests unitaires, de documentations et de cahier
-                  des charges
-                </p>
-              </li>
-            ) : (
-              <li>
-                <span>
-                  <b>2023-2024</b>
-                  <a href="https://smart-industry-myscore.fr/" target="_blank">
-                    Atelog MyScore
-                  </a>
-                </span>
-                <strong>Software engineer</strong>
-                <p>
-                  Development of a software to retrieve and process IOT and OPC
-                  data
-                </p>
-                <p>
-                  Maintenance of a WMS software & collaboration on a MES web
-                  application
-                </p>
-                <p>Database querying</p>
-                <p>Writing unit tests, documentation, and specifications</p>
-              </li>
-            )}
-            <div className="technos animated">
-              <div className="techno">
-                <SiDelphi className="icon" />
-                Delphi
-              </div>
-              <div className="techno">
-                <SiMicrosoftsqlserver className="icon" />
-                SQL Server
-              </div>
-              <div className="techno">
-                <SiGitlab className="icon" />
-                GitLab
-              </div>
-              <div className="techno">
-                <SiAngular className="icon" />
-                Angular
-              </div>
-              <div className="techno">
-                <SiNestjs className="icon" />
-                Nest.js
-              </div>
-            </div>
-          </ul>
-          <ul className="list">
-            <li>
-              {langage === "french" ? (
-                <>
-                  <b>2023</b>
-                  <p>
-                    BAC+2 Développeur intégrateur en réalisation d’applications
-                    web
-                  </p>
-                </>
-              ) : (
-                <>
-                  <b>2023</b>
-                  <p>Bachelor's degree in full-stack web developpement</p>
-                </>
-              )}
-              <div>
-                <a
-                  className="button"
-                  href="https://diplome.3wa.fr/alexandre-sylvain"
-                  target="_blank"
-                >
-                  <BiLinkExternal />
-                </a>
-              </div>
-            </li>
+            <Freelance langage={langage} />
+            <Atelog2i langage={langage} />
+            <WWW_ACDEMY langage={langage} />
           </ul>
         </section>
         <section className={width < 500 ? "animated" : ""}>
@@ -142,38 +47,38 @@ const Bridge = () => {
           )}
           {langage === "french" ? (
             <ul className="list">
-              <li>
+              <li className="alignedItems">
                 <b>2017-2022</b>
                 <div>Assistant d'éducation</div>
               </li>
-              <li>
+              <li className="alignedItems">
                 <b>2017-2019</b>
                 <div>Photographe freelance</div>
               </li>
-              <li>
+              <li className="alignedItems">
                 <b>2011-2016</b>
                 <div>Technicien Canal+</div>
               </li>
-              <li>
+              <li className="alignedItems">
                 <b>2010</b>
                 <div>BAC+2 Audiovisuel</div>
               </li>
             </ul>
           ) : (
             <ul className="list">
-              <li>
+              <li className="alignedItems">
                 <b>2017-2022</b>
                 <div>Teacher's aide</div>
               </li>
-              <li>
+              <li className="alignedItems">
                 <b>2017-2019</b>
                 <div>Freelance photographer</div>
               </li>
-              <li>
+              <li className="alignedItems">
                 <b>2011-2016</b>
                 <div>TV technical expert (Canal+)</div>
               </li>
-              <li>
+              <li className="alignedItems">
                 <b>2010</b>
                 <div>Bachelor's degree in audio-visual</div>
               </li>
