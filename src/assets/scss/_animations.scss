@@ -1,4 +1,4 @@
-@import "_variables";
+@use "variables" as *;
 
 @keyframes slide {
   from {
@@ -27,7 +27,7 @@
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 
 @keyframes zoom {
   0% {
@@ -36,4 +36,4 @@
   100% {
     transform: scale(1.1);
   }
-} 
+}

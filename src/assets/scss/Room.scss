@@ -1,6 +1,6 @@
-@import "_variables";
-@import "_mixins";
-@import "_animations";
+@use "variables" as *;
+@use "mixins" as *;
+@use "animations" as *;
 
 .room {
   width: 100%;

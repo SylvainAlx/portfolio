@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {
+  SiPwa,
   SiTailwindcss,
   SiMongodb,
   SiReact,
@@ -36,6 +37,10 @@ const Archipel = ({ langage }) => {
       />
       <div className="technos animated">
         <div className="techno">
+          <SiPwa className="icon" />
+          Progressive Web App
+        </div>
+        <div className="techno">
           <SiReact className="icon" />
           React
         </div>
@@ -69,7 +74,7 @@ const Archipel = ({ langage }) => {
       </div>
       <div className="buttonContainer animated">
         <Button text="code source" name="github" id={archipel.github} />
-        {archipel.web && <Button text="voir" id={archipel.web} />}
+        {archipel.web && <Button text="voir le site" id={archipel.web} />}
       </div>
     </section>
   );

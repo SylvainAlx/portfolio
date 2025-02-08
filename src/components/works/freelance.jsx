@@ -4,6 +4,7 @@ import {
   SiTailwindcss,
   SiRust,
   SiSolidity,
+  SiPwa,
 } from "react-icons/si";
 
 const Freelance = ({ langage }) => {
@@ -29,6 +30,10 @@ const Freelance = ({ langage }) => {
         </>
       )}
       <div className="technos animated">
+        <div className="techno">
+          <SiPwa className="icon" />
+          Progressive Web App
+        </div>
         <div className="techno">
           <SiTailwindcss className="icon" />
           Tailwind CSS

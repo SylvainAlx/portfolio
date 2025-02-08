@@ -1,10 +1,5 @@
-import {
-  SiAngular,
-  SiNestjs,
-  SiDelphi,
-  SiMicrosoftsqlserver,
-  SiGitlab,
-} from "react-icons/si";
+import { SiAngular, SiNestjs, SiDelphi, SiGitlab } from "react-icons/si";
+import { DiMsqlServer } from "react-icons/di";
 
 const Atelog2i = ({ langage }) => {
   return (
@@ -58,7 +53,7 @@ const Atelog2i = ({ langage }) => {
           Delphi
         </div>
         <div className="techno">
-          <SiMicrosoftsqlserver className="icon" />
+          <DiMsqlServer className="icon" />
           SQL Server
         </div>
         <div className="techno">

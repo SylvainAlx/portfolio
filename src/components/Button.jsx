@@ -9,26 +9,32 @@ import { speak } from "../store";
 
 const Button = (props) => {
   const langage = speak.use();
-  const handleClick = (e) => {
-    const link = e.currentTarget.getAttribute("id");
-    const name = e.currentTarget.getAttribute("name");
-    name === "mail"
-      ? window.open(`mailto:${link}`)
-      : window.open(link, "_blank");
+
+  const handleClick = () => {
+    props.id.includes("@")
+      ? window.open(`mailto:${props.id}`)
+      : window.open(props.id, "_blank");
   };
 
   let Icon;
-  if (props.name === "mail") {
-    Icon = AiFillMail;
-  } else if (props.name === "github") {
-    Icon = AiFillGithub;
-  } else if (props.name === "linkedin") {
-    Icon = AiFillLinkedin;
-  } else if (props.name === "place") {
-    Icon = IoLocationSharp;
-  } else {
-    Icon = AiFillEye;
+  switch (props.name) {
+    case "mail":
+      Icon = AiFillMail;
+      break;
+    case "github":
+      Icon = AiFillGithub;
+      break;
+    case "linkedin":
+      Icon = AiFillLinkedin;
+      break;
+    case "place":
+      Icon = IoLocationSharp;
+      break;
+    default:
+      Icon = AiFillEye;
+      break;
   }
+
   const translate = () => {
     if (langage !== "french") {
       if (props.text === "code source") {

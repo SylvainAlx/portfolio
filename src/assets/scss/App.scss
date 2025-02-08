@@ -1,7 +1,6 @@
-@import "_variables";
-@import "_mixins";
-@import "_animations";
-
+@use "variables" as *;
+@use "mixins" as *;
+@use "animations" as *;
 
 body {
 	margin: 0 auto;
@@ -255,3 +254,9 @@ body {
     }
 	}
 }
+
+@mixin laptop {
+  @media screen and (min-width: 1920px){
+      @content;
+  }
+};

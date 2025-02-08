@@ -33,6 +33,11 @@ const Crew = () => {
           <br />
           Étant partisan du <em>"show, don't tell"</em>, les <b>technologies</b>{" "}
           que j'utilise sont précisées uniquement là où elles sont employées.
+          <br />
+          Je garde en tête qu'être développeur est avant tout être capable de
+          solutionner des problèmes et que le code n'est que l'outils et non la
+          finalité.
+          <br />
           Bonne visite !
         </p>
       ) : (
@@ -41,7 +46,12 @@ const Crew = () => {
           Portfolio. You will find <b>my qualifications</b> as a developer,{" "}
           <b>my achievements</b>, as well as some of <b>my passions</b>. Being a
           supporter of <em>"show, don't tell"</em>, the <b>technologies</b> I
-          use are only specified where they are employed. Enjoy your visit!
+          use are only specified where they are employed.
+          <br />
+          I keep in mind that being a developer is, above all, about solving
+          problems, with code as a tool, not the end goal.
+          <br />
+          Enjoy your visit!
         </p>
       )}
     </div>

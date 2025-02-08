@@ -43,10 +43,6 @@ const Navbar = () => {
           <img src="./images/bridge.webp" />
           {langage === "french" ? "Parcours" : "Background"}
         </a>
-        {/* <a href="#hold" onClick={handleNavigationClick}>
-          <img src="./images/hold.webp" />
-          {langage === "french" ? "Références" : "References"}
-        </a> */}
         <a href="#engine" onClick={handleNavigationClick}>
           <img src="./images/engine.webp" />
           {langage === "french" ? "Réalisations" : "Accomplishments"}

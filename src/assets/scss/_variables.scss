@@ -1,22 +1,19 @@
-// @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+$text1: #ffffff !default;
+$text2: #00ce22 !default;
 
-$text1: #ffffff;
-$text2: #00ce22;
-$bgc1 : #20202093;
-$bgc2 : #6e6e6e;
-$bgc3: #8f0089;
-$bgc4: rgb(0, 167, 189);
-$bgc2alpha : #6e6e6e53;
-$bgcAlphaPlus : #3030309a;
-$bgcBlackAlpha: #0000003a;
-$border1 : #444;
-$border2 : solid 1px #000000;
-$box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+$bgc1 : #20202093 !default;
+$bgc2 : #6e6e6e !default;
+$bgc3: #8f0089 !default;
+$bgc4: rgb(0, 167, 189) !default;
 
-// $font1 : 'Roboto Mono', monospace;
-// $font2: 'Cutive Mono', monospace;
-$font3: 'Oswald', sans-serif;
-$font4 : 'Rajdhani', sans-serif;
+$bgc2alpha : #6e6e6e53 !default;
+$bgcAlphaPlus : #3030309a !default;
+$bgcBlackAlpha: #0000003a !default;
+
+$border1 : #444 !default;
+$border2 : solid 1px #000000 !default;
+
+$box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !default;
+
+$font3: 'Oswald', sans-serif !default;
+$font4 : 'Rajdhani', sans-serif !default;

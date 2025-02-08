@@ -5,12 +5,7 @@ import { speak } from "../../store";
 const Communication = () => {
   const width = window.innerWidth;
   const langage = speak.use();
-  const handleClick = (e) => {
-    const link = e.currentTarget.getAttribute("id");
-    const name = e.currentTarget.getAttribute("name");
-    console.log(name);
-    name !== null ? window.open(`mailto:${link}`) : window.open(link, "_blank");
-  };
+
   return (
     <div className={`room ${width < 500 ? "animated" : ""}`} id="communication">
       <RoomHeader
