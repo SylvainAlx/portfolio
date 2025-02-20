@@ -13,7 +13,7 @@ const Freelance = ({ langage }) => {
       {langage === "french" ? (
         <>
           <b>2025</b>
-          <strong>Développeur autodidacte</strong>
+          <strong>Développeur freelance</strong>
           <p>
             Élaboration d'applications web et pratique de nouveaux languages de
             programmation

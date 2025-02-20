@@ -26,30 +26,40 @@ const Crew = () => {
       </div>
       {langage === "french" ? (
         <p>
-          Je vous propose une présentation originale à <em>"bord"</em> de mon
-          Portfolio réalisé par mes soins. Vous y trouverez{" "}
-          <b>mes qualifications</b> en tant que développeur,{" "}
-          <b>mes réalisations</b> ainsi que certaines de <b>mes passions</b>.
+          Développeur au profil hybride !
           <br />
-          Étant partisan du <em>"show, don't tell"</em>, les <b>technologies</b>{" "}
-          que j'utilise sont précisées uniquement là où elles sont employées.
+          Ma formation m'a fait rentrer dans le métier via des technologies
+          plutôt récentes (React, Node.js, MongoDB), et ma première expérience
+          est venue compléter mes <b>compétences en ingénierie logiciel</b> avec
+          des langages bas niveau (Delphi) et des <b>exigences</b> en matière de
+          test et de stabilité.
           <br />
-          Je garde en tête qu'être développeur est avant tout être capable de
-          solutionner des problèmes et que le code n'est que l'outils et non la
-          finalité.
+          Ces deux facettes de ma casquette tech me permettent d'appréhender un
+          problème avec un <b>regard moderne et rigoureux</b> afin de proposer
+          une <b>solution efficace et maintenable</b>.
+          <br />
+          J'ai également acquis des compétences en Next.js et Rust suite à mon
+          intérêt grandissant pour le <b>développement blockchain</b> et le Web3
+          au sens large.
           <br />
           Bonne visite !
         </p>
       ) : (
         <p>
-          I offer you an original presentation <em>"aboard"</em> my self-made
-          Portfolio. You will find <b>my qualifications</b> as a developer,{" "}
-          <b>my achievements</b>, as well as some of <b>my passions</b>. Being a
-          supporter of <em>"show, don't tell"</em>, the <b>technologies</b> I
-          use are only specified where they are employed.
+          Developer with a hybrid profile!
           <br />
-          I keep in mind that being a developer is, above all, about solving
-          problems, with code as a tool, not the end goal.
+          My education introduced me to the field through relatively recent
+          technologies (React, Node.js, MongoDB), and my first experience
+          further strengthened my <b>software engineering skills</b> with
+          low-level languages (Delphi) and <b>requirements</b> in terms of
+          testing and stability.
+          <br />
+          These two facets of my tech background allow me to approach a problem
+          with a <b>modern and rigorous perspective</b> in order to provide an{" "}
+          <b>efficient and maintainable solution</b>.
+          <br />I have also acquired skills in Next.js and Rust due to my
+          growing interest in <b>blockchain development</b> and Web3 in a
+          broader sense.
           <br />
           Enjoy your visit!
         </p>
