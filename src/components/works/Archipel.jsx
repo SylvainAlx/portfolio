@@ -10,7 +10,6 @@ import {
   SiVite,
 } from "react-icons/si";
 import PortalExample from "../PortalExample";
-import UnderConstruction from "../UnderConstruction";
 import Button from "../Button";
 
 const Archipel = ({ langage }) => {
@@ -23,7 +22,7 @@ const Archipel = ({ langage }) => {
         : "Citizens of micronations & virtual nations",
     image: "./images/archipel.webp",
     github: "https://github.com/SylvainAlx/archipel",
-    web: "https://archipel.vercel.app/",
+    web: "https://archipel-app.com/",
   };
   return (
     <section className="work animated">
@@ -68,9 +67,6 @@ const Archipel = ({ langage }) => {
           <SiMongodb className="icon" />
           MongoDB
         </div>
-      </div>
-      <div className="buttonContainer animated">
-        <UnderConstruction langage={langage} />
       </div>
       <div className="buttonContainer animated">
         <Button text="code source" name="github" id={archipel.github} />
