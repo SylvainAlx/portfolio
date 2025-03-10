@@ -15,8 +15,8 @@ const Freelance = ({ langage }) => {
           <b>2025</b>
           <strong>Développeur freelance</strong>
           <p>
-            Élaboration d'applications web et pratique de nouveaux languages de
-            programmation
+            Élaboration d&apos;applications web et pratique de nouveaux
+            languages de programmation
           </p>
         </>
       ) : (

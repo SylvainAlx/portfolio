@@ -8,7 +8,11 @@ const Atelog2i = ({ langage }) => {
         <>
           <span>
             <b>2023-2024</b>
-            <a href="https://smart-industry-myscore.fr/" target="_blank">
+            <a
+              href="https://smart-industry-myscore.fr/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Atelog MyScore
             </a>
           </span>
@@ -31,7 +35,11 @@ const Atelog2i = ({ langage }) => {
         <>
           <span>
             <b>2023-2024</b>
-            <a href="https://smart-industry-myscore.fr/" target="_blank">
+            <a
+              href="https://smart-industry-myscore.fr/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Atelog MyScore
             </a>
           </span>

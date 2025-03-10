@@ -28,19 +28,20 @@ const Crew = () => {
         <p>
           Développeur au profil hybride !
           <br />
-          Ma formation m'a fait rentrer dans le métier via des technologies
+          Ma formation m&apos;a fait rentrer dans le métier via des technologies
           plutôt récentes (React, Node.js, MongoDB), et ma première expérience
           est venue compléter mes <b>compétences en ingénierie logiciel</b> avec
           des langages bas niveau (Delphi) et des <b>exigences</b> en matière de
           test et de stabilité.
           <br />
-          Ces deux facettes de ma casquette tech me permettent d'appréhender un
-          problème avec un <b>regard moderne et rigoureux</b> afin de proposer
-          une <b>solution efficace et maintenable</b>.
+          Ces deux facettes de ma casquette tech me permettent
+          d&apos;appréhender un problème avec un{" "}
+          <b>regard moderne et rigoureux</b> afin de proposer une{" "}
+          <b>solution efficace et maintenable</b>.
           <br />
-          J'ai également acquis des compétences en Next.js et Rust suite à mon
-          intérêt grandissant pour le <b>développement blockchain</b> et le Web3
-          au sens large.
+          J&apos;ai également acquis des compétences en Next.js et Rust suite à
+          mon intérêt grandissant pour le <b>développement blockchain</b> et le
+          Web3 au sens large.
           <br />
           Bonne visite !
         </p>

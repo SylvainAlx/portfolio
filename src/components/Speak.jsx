@@ -1,6 +1,5 @@
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { change, speak } from "../store.js";
-import { FaLanguage } from "react-icons/fa";
 
 const Speak = () => {
   const langage = speak.use();

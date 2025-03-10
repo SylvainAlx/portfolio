@@ -49,7 +49,7 @@ const Bridge = () => {
             <ul className="list">
               <li className="alignedItems">
                 <b>2017-2022</b>
-                <div>Assistant d'éducation</div>
+                <div>Assistant d&apos;éducation</div>
               </li>
               <li className="alignedItems">
                 <b>2017-2019</b>
@@ -68,7 +68,7 @@ const Bridge = () => {
             <ul className="list">
               <li className="alignedItems">
                 <b>2017-2022</b>
-                <div>Teacher's aide</div>
+                <div>Teacher&apos;s aide</div>
               </li>
               <li className="alignedItems">
                 <b>2017-2019</b>
@@ -80,7 +80,7 @@ const Bridge = () => {
               </li>
               <li className="alignedItems">
                 <b>2010</b>
-                <div>Bachelor's degree in audio-visual</div>
+                <div>Bachelor&apos;s degree in audio-visual</div>
               </li>
             </ul>
           )}
