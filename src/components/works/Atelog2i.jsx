@@ -9,14 +9,14 @@ const Atelog2i = ({ langage }) => {
           <span>
             <b>2023-2024</b>
             <a
-              href="https://smart-industry-myscore.fr/"
+              href="https://www.atelog-software.com/"
               target="_blank"
               rel="noreferrer"
             >
               Atelog MyScore
             </a>
           </span>
-          <strong>Développeur logiciel</strong>
+          <h5>Développeur logiciel</h5>
           <p>
             Création d’un logiciel pour récupérer et traiter des données IOT et
             OPC
@@ -43,7 +43,7 @@ const Atelog2i = ({ langage }) => {
               Atelog MyScore
             </a>
           </span>
-          <strong>Software engineer</strong>
+          <h5>Software engineer</h5>
           <p>
             Development of a software to retrieve and process IOT and OPC data
           </p>

@@ -40,8 +40,13 @@
     }
   }
 
-  b {
+  b, strong {
     color: $text2;
+  }
+
+  h5 {
+    font-size: large;
+    margin: auto;
   }
 
   a {
@@ -151,7 +156,6 @@
         .button {
           width: max-content;
           color: $text1;
-          display: inline-block;
           text-decoration: none;
         }
       }

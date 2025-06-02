@@ -1,19 +1,19 @@
 import {
   SiTypescript,
-  SiReact,
   SiTailwindcss,
-  SiRust,
-  SiSolidity,
+  SiNextdotjs,
   SiPwa,
+  SiAstro,
+  SiRust,
 } from "react-icons/si";
 
-const Freelance = ({ langage }) => {
+const TechWatch = ({ langage }) => {
   return (
     <li className="alignedItems">
       {langage === "french" ? (
         <>
-          <b>2025</b>
-          <strong>Développeur freelance</strong>
+          <b>en cours</b>
+          <h5>Veille technologique</h5>
           <p>
             Élaboration d&apos;applications web et pratique de nouveaux
             languages de programmation
@@ -21,8 +21,8 @@ const Freelance = ({ langage }) => {
         </>
       ) : (
         <>
-          <b>2025</b>
-          <strong>Freelance developper</strong>
+          <b>under way</b>
+          <h5>Technology watch</h5>
           <p>
             Development of web applications and practice of new programming
             languages
@@ -43,20 +43,20 @@ const Freelance = ({ langage }) => {
           TypeScript
         </div>
         <div className="techno">
-          <SiReact className="icon" />
-          React
+          <SiNextdotjs className="icon" />
+          Next.js
+        </div>
+        <div className="techno">
+          <SiAstro className="icon" />
+          Astro
         </div>
         <div className="techno">
           <SiRust className="icon" />
           Rust
-        </div>
-        <div className="techno">
-          <SiSolidity className="icon" />
-          Solidity
         </div>
       </div>
     </li>
   );
 };
 
-export default Freelance;
+export default TechWatch;

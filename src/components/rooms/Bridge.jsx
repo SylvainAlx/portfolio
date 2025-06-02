@@ -1,20 +1,14 @@
 import RoomHeader from "../RoomHeader";
 import "../../assets/scss/Room.scss";
-import { AiFillFileText } from "react-icons/ai";
 import { speak } from "../../store";
 import Atelog2i from "../works/Atelog2i";
 import WWW_ACDEMY from "../works/3WA";
-import Freelance from "../works/freelance";
+import TechWatch from "../works/TechWatch";
 
 const Bridge = () => {
   const width = window.innerWidth;
   const langage = speak.use();
-  const handleClick = () => {
-    window.open(
-      `./documents/CV_Sylvain_ALEXANDRE_developpeur_web_2024.10.31.pdf`,
-      "_blank"
-    );
-  };
+
   return (
     <div className={`room ${width < 500 ? "animated" : ""}`} id="bridge">
       <RoomHeader
@@ -34,7 +28,7 @@ const Bridge = () => {
             <h4>Computer science</h4>
           )}
           <ul className="list">
-            <Freelance langage={langage} />
+            <TechWatch langage={langage} />
             <Atelog2i langage={langage} />
             <WWW_ACDEMY langage={langage} />
           </ul>
@@ -85,13 +79,6 @@ const Bridge = () => {
             </ul>
           )}
         </section>
-      </div>
-      <div
-        className={`button ${width < 500 ? "animated" : ""}`}
-        onClick={handleClick}
-      >
-        <AiFillFileText />
-        {langage === "french" ? "télécharger mon CV" : "download resume"}
       </div>
     </div>
   );

@@ -30,9 +30,10 @@ const Crew = () => {
           <br />
           Ma formation m&apos;a fait rentrer dans le métier via des technologies
           plutôt récentes (React, Node.js, MongoDB), et ma première expérience
-          est venue compléter mes <b>compétences en ingénierie logiciel</b> avec
-          des langages bas niveau (Delphi) et des <b>exigences</b> en matière de
-          test et de stabilité.
+          est venue compléter mes compétences en{" "}
+          <strong>développement informatique</strong> avec des langages bas
+          niveau (Delphi) et des <b>exigences</b> en matière de test et de
+          stabilité.
           <br />
           Ces deux facettes de ma casquette tech me permettent
           d&apos;appréhender un problème avec un{" "}
