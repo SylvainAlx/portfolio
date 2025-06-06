@@ -8,6 +8,7 @@ import {
   SiAdobeaudition,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+import { SiGodotengine, SiUnity } from "react-icons/si";
 import Hashtag from "../Hashtag";
 
 const Observatory = () => {
@@ -147,9 +148,19 @@ const Observatory = () => {
                   expérimenter
                 </li>
               </ul>
-              <div className="techno">
-                <FaJava className="icon" />
-                Java (plugins)
+              <div className="technos">
+                <div className="techno">
+                  <FaJava className="icon" />
+                  Java (plugins)
+                </div>
+                <div className="techno">
+                  <SiGodotengine className="icon" />
+                  Godot
+                </div>
+                <div className="techno">
+                  <SiUnity className="icon" />
+                  Unitiy
+                </div>
               </div>
             </section>
           </>
