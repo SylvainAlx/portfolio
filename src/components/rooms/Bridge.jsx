@@ -4,6 +4,14 @@ import { speak } from "../../store";
 import Atelog2i from "../works/Atelog2i";
 import WWW_ACDEMY from "../works/3WA";
 import TechWatch from "../works/TechWatch";
+import {
+  SiAdobephotoshop,
+  SiAdobelightroom,
+  SiAdobepremierepro,
+  SiProtools,
+  SiAdobeaudition,
+} from "react-icons/si";
+import Techno from "../Techno";
 
 const Bridge = () => {
   const width = window.innerWidth;
@@ -39,45 +47,65 @@ const Bridge = () => {
           ) : (
             <h4>Before my career change</h4>
           )}
-          {langage === "french" ? (
-            <ul className="list">
-              <li className="alignedItems">
-                <b>2017-2022</b>
+
+          <ul className="list">
+            <li className="alignedItems">
+              <b>2017-2022</b>
+              {langage === "french" ? (
                 <div>Assistant d&apos;éducation</div>
-              </li>
-              <li className="alignedItems">
-                <b>2017-2019</b>
-                <div>Photographe freelance</div>
-              </li>
-              <li className="alignedItems">
-                <b>2011-2016</b>
-                <div>Technicien Canal+</div>
-              </li>
-              <li className="alignedItems">
-                <b>2010</b>
-                <div>BAC+2 Audiovisuel</div>
-              </li>
-            </ul>
-          ) : (
-            <ul className="list">
-              <li className="alignedItems">
-                <b>2017-2022</b>
+              ) : (
                 <div>Teacher&apos;s aide</div>
-              </li>
-              <li className="alignedItems">
-                <b>2017-2019</b>
+              )}
+            </li>
+            <li className="alignedItems">
+              <b>2017-2019</b>
+              {langage === "french" ? (
+                <div>Photographe freelance</div>
+              ) : (
                 <div>Freelance photographer</div>
-              </li>
-              <li className="alignedItems">
-                <b>2011-2016</b>
+              )}
+              <div className="technos">
+                <Techno rank={2}>
+                  <SiAdobephotoshop className="icon" />
+                  Adobe Photoshop
+                </Techno>
+                <Techno rank={3}>
+                  <SiAdobelightroom className="icon" />
+                  Adobe Lightroom
+                </Techno>
+                <Techno rank={2}>
+                  <SiAdobepremierepro className="icon" />
+                  Adobe Premiere
+                </Techno>
+              </div>
+            </li>
+            <li className="alignedItems">
+              <b>2011-2016</b>
+              {langage === "french" ? (
+                <div>Technicien Canal+</div>
+              ) : (
                 <div>TV technical expert (Canal+)</div>
-              </li>
-              <li className="alignedItems">
-                <b>2010</b>
+              )}
+            </li>
+            <li className="alignedItems">
+              <b>2010</b>
+              {langage === "french" ? (
+                <div>BAC+2 Audiovisuel</div>
+              ) : (
                 <div>Bachelor&apos;s degree in audio-visual</div>
-              </li>
-            </ul>
-          )}
+              )}
+              <div className="technos">
+                <Techno rank={3}>
+                  <SiProtools className="icon" />
+                  Avid ProTools
+                </Techno>
+                <Techno rank={2}>
+                  <SiAdobeaudition className="icon" />
+                  Adobe Audition
+                </Techno>
+              </div>
+            </li>
+          </ul>
         </section>
       </div>
     </div>

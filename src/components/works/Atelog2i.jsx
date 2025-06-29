@@ -1,5 +1,6 @@
 import { SiAngular, SiNestjs, SiDelphi, SiGitlab } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
+import Techno from "../Techno";
 
 const Atelog2i = ({ langage }) => {
   return (
@@ -56,26 +57,26 @@ const Atelog2i = ({ langage }) => {
         </>
       )}
       <div className="technos animated">
-        <div className="techno">
+        <Techno rank={3}>
           <SiDelphi className="icon" />
           Delphi
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <DiMsqlServer className="icon" />
           SQL Server
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <SiGitlab className="icon" />
           GitLab
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={1}>
           <SiAngular className="icon" />
           Angular
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={1}>
           <SiNestjs className="icon" />
           Nest.js
-        </div>
+        </Techno>
       </div>
     </li>
   );

@@ -6,6 +6,7 @@ import {
   SiAstro,
   SiRust,
 } from "react-icons/si";
+import Techno from "../Techno";
 
 const TechWatch = ({ langage }) => {
   return (
@@ -30,30 +31,30 @@ const TechWatch = ({ langage }) => {
         </>
       )}
       <div className="technos animated">
-        <div className="techno">
+        <Techno rank={2}>
           <SiPwa className="icon" />
           Progressive Web App
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiTailwindcss className="icon" />
           Tailwind CSS
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <SiTypescript className="icon" />
           TypeScript
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiNextdotjs className="icon" />
           Next.js
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <SiAstro className="icon" />
           Astro
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={1}>
           <SiRust className="icon" />
           Rust
-        </div>
+        </Techno>
       </div>
     </li>
   );

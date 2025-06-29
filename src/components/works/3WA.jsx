@@ -1,5 +1,6 @@
 import { BiLinkExternal } from "react-icons/bi";
 import { SiReact, SiNodedotjs, SiMongodb } from "react-icons/si";
+import Techno from "../Techno";
 
 const WWW_ACDEMY = ({ langage }) => {
   return (
@@ -18,18 +19,18 @@ const WWW_ACDEMY = ({ langage }) => {
         </>
       )}
       <div className="technos animated">
-        <div className="techno">
+        <Techno rank={3}>
           <SiReact className="icon" />
           React
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <SiNodedotjs className="icon" />
           Node.js
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiMongodb className="icon" />
           MongoDB
-        </div>
+        </Techno>
       </div>
       <a
         className="button"

@@ -1,12 +1,5 @@
 import Hobby from "../Hobby";
 import RoomHeader from "../RoomHeader";
-import {
-  SiAdobephotoshop,
-  SiAdobelightroom,
-  SiAdobepremierepro,
-  SiProtools,
-  SiAdobeaudition,
-} from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { SiGodotengine, SiUnity } from "react-icons/si";
 import Hashtag from "../Hashtag";
@@ -42,20 +35,6 @@ const Observatory = () => {
                   pour voir les moindres détails
                 </li>
               </ul>
-              <div className="technos">
-                <div className="techno">
-                  <SiAdobephotoshop className="icon" />
-                  Adobe Photoshop
-                </div>
-                <div className="techno">
-                  <SiAdobelightroom className="icon" />
-                  Adobe Lightroom
-                </div>
-                <div className="techno">
-                  <SiAdobepremierepro className="icon" />
-                  Adobe Premiere
-                </div>
-              </div>
             </section>
           </>
         </Hobby>
@@ -78,16 +57,6 @@ const Observatory = () => {
                   <b>Instruments :</b> Guitare & piano
                 </li>
               </ul>
-              <div className="technos">
-                <div className="techno">
-                  <SiProtools className="icon" />
-                  Avid ProTools
-                </div>
-                <div className="techno">
-                  <SiAdobeaudition className="icon" />
-                  Adobe Audition
-                </div>
-              </div>
             </section>
           </>
         </Hobby>
