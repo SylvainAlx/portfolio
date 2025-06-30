@@ -98,6 +98,7 @@ body {
         }
         .gray {
           filter: grayscale(90%);
+          opacity: 0.4;
         }
       }
       .navbar {
@@ -113,15 +114,16 @@ body {
           align-items: center;
           justify-content: center;
           font-size: 30px;
-          color: $bgc4;
+          color: $bgc3;
           transition: all 0.3s;
           transform: rotate(-90deg);
           &:hover {
             cursor: pointer;
+            color: $bgc4;
           }
         }
         .active {
-          color: $bgc3;
+          color: $bgc4;
           transform: rotate(-180deg);
         }
         .show {
@@ -134,13 +136,13 @@ body {
         }
         nav {
           padding: 10px;
-          min-width: 200px;
+          // min-width: 200px;
           border-radius: 5px;
           display: flex;
           flex-direction: column;
           gap: 10px;
           justify-content: space-around;
-          background-color: $bgc3;
+          background-color: $bgc4;
           transition: all 0.3s;
           
           a {
@@ -171,7 +173,7 @@ body {
         }
       }
     }
-    .Separator {
+    .separator {
       margin: 20px 20px 50px 20px;
       display: flex;
       flex-direction: column;
@@ -181,6 +183,14 @@ body {
       color: $bgc4;
       @include laptop {
         display: none;
+      }
+
+      .gear {
+        width: 30px;
+        height: 30px;
+        color: $bgc4;
+        transition: transform 0.8s ease;
+        transform-origin: center;
       }
     }
     .scroll {
@@ -252,29 +262,27 @@ body {
       align-items: center;
       font-size: 0.8rem;
     }
-	}
-  .rank {
-    position: absolute;
-    top: 0;
-    left: 20%;
+    .rank {
+      position: absolute;
+      top: 0;
+      left: 20%;
+      @include mobile {
+        left: 10%;
+      }
 
-    .star {
-      width: 10px;
-      height: 10px;
-      background-color: $bgcBlackAlpha;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: $bgc4;
-      transition: all 0.3s;
+      .star {
+        width: 10px;
+        height: 10px;
+        font-size: small;
+        background-color: $bgcBlackAlpha;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: $bgc4;
+        transition: all 0.3s;
+      }
     }
-  }
+	}
 }
-
-@mixin laptop {
-  @media screen and (min-width: 1920px){
-      @content;
-  }
-};

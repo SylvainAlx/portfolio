@@ -31,7 +31,7 @@ const Crew = () => {
           Ma formation m&apos;a fait rentrer dans le métier via des technologies
           plutôt récentes (React, Node.js, MongoDB), et ma première expérience
           est venue compléter mes compétences en{" "}
-          <strong>développement informatique</strong> avec des langages bas
+          <strong>développement informatique</strong> avec des langages plus bas
           niveau (Delphi) et des <b>exigences</b> en matière de test et de
           stabilité.
           <br />
@@ -52,7 +52,7 @@ const Crew = () => {
           <br />
           My education introduced me to the field through relatively recent
           technologies (React, Node.js, MongoDB), and my first experience
-          further strengthened my <b>software engineering skills</b> with
+          further strengthened my <b>software engineering skills</b> with more
           low-level languages (Delphi) and <b>requirements</b> in terms of
           testing and stability.
           <br />

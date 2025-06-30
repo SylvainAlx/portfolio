@@ -1,46 +1,30 @@
-import Separator from "./components/Separator";
 import Bridge from "./components/rooms/Bridge";
 import Communication from "./components/rooms/Communication";
 import Crew from "./components/rooms/Crew";
 import Observatory from "./components/rooms/Observatory";
 import "./assets/scss/App.scss";
-import { useEffect, useRef } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Engine from "./components/rooms/Engine";
+import Gear from "./components/Gear";
+
+import useScrollAnimation from "./hooks/useScrollAnimation";
 
 const App = () => {
-  const animatedElementsRef = useRef();
-  useEffect(() => {
-    animatedElementsRef.current = document.querySelectorAll(".animated");
-    const handleScroll = () => {
-      animatedElementsRef.current.forEach((element) => {
-        const elementTop = element.getBoundingClientRect().top;
-        const elementBottom = element.getBoundingClientRect().bottom;
-        if (elementTop < window.innerHeight && elementBottom > 0) {
-          element.classList.add("animate");
-        } else {
-          element.classList.remove("animate");
-        }
-      });
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  useScrollAnimation();
+
   return (
     <div className="App">
       <Header />
       <main>
         <Crew />
-        <Separator />
+        <Gear />
         <Communication />
-        <Separator />
+        <Gear />
         <Bridge />
-        <Separator />
+        <Gear />
         <Engine />
-        <Separator />
+        <Gear />
         <Observatory />
       </main>
       <Footer />

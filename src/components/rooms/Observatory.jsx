@@ -77,22 +77,23 @@ const Observatory = () => {
           </>
         </Hobby>
 
-        <Hobby title="Jardinage" image="./images/planet4.webp">
+        <Hobby title="Nature" image="./images/planet4.webp">
           <>
             <section>
               <div className="buttonContainer">
+                <Hashtag content="observation" />
                 <Hashtag content="conscience écologique" />
                 <Hashtag content="patience & persévérance" />
                 <Hashtag content="travail physique" />
               </div>
               <ul>
                 <li>
-                  <b>Potager :</b> Semer, planter, voir croître, récolter,
-                  composter
+                  <b>Ballade à pied ou à vélo :</b> se perdre, découvrir, se
+                  détendre
                 </li>
                 <li>
-                  <b>Poulailler :</b> Soigner, entretenir, limiter les déchets
-                  alimentaires
+                  <b>Potager :</b> Semer, planter, voir croître, récolter,
+                  composter
                 </li>
                 <li>
                   <b>Bricolage :</b> Réparer, contruire, améliorer, recycler
