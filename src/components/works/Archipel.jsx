@@ -9,8 +9,9 @@ import {
   SiI18Next,
   SiVite,
 } from "react-icons/si";
-import PortalExample from "../PortalExample";
+import Modal from "../Modal";
 import Button from "../Button";
+import Techno from "../Techno";
 
 const Archipel = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -29,44 +30,44 @@ const Archipel = ({ langage }) => {
       <h4>{archipel.title}</h4>
       <p>{archipel.description}</p>
 
-      <PortalExample
+      <Modal
         work={archipel}
         zoomImage={zoomImage}
         setZoomImage={setZoomImage}
       />
       <div className="technos animated">
-        <div className="techno">
+        <Techno rank={2}>
           <SiPwa className="icon" />
           Progressive Web App
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <SiReact className="icon" />
           React
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiVite className="icon" />
           Vite
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiTailwindcss className="icon" />
           Tailwind CSS
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <SiTypescript className="icon" />
           TypeScript
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <SiI18Next className="icon" />
           I18Next
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={3}>
           <SiNodedotjs className="icon" />
           Node.js
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiMongodb className="icon" />
           MongoDB
-        </div>
+        </Techno>
       </div>
       <div className="buttonContainer animated">
         <Button text="code source" name="github" id={archipel.github} />

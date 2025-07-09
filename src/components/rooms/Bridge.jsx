@@ -52,17 +52,43 @@ const Bridge = () => {
             <li className="alignedItems">
               <b>2017-2022</b>
               {langage === "french" ? (
-                <div>Assistant d&apos;éducation</div>
+                <>
+                  <h5>Assistant d&apos;éducation</h5>
+                  <p>
+                    Accompagnement et surveillance de lycéens en journée et à
+                    l&apos;internat, gestion de vie scolaire et mise en place
+                    d&apos;ateliers.
+                  </p>
+                </>
               ) : (
-                <div>Teacher&apos;s aide</div>
+                <>
+                  <h5>Teacher&apos;s aide</h5>
+                  <p>
+                    Supervision and support of high school students during the
+                    day and at the boarding school, school life management, and
+                    organization of workshops.
+                  </p>
+                </>
               )}
             </li>
             <li className="alignedItems">
               <b>2017-2019</b>
               {langage === "french" ? (
-                <div>Photographe freelance</div>
+                <>
+                  <h5>Photographe freelance</h5>
+                  <p>
+                    Prodution de photographies lors de mariages ou autres
+                    évenements, retouches et édition d&apos;images.
+                  </p>
+                </>
               ) : (
-                <div>Freelance photographer</div>
+                <>
+                  <h5>Freelance photographer</h5>
+                  <p>
+                    Production of photographs during weddings or other events,
+                    image retouching and editing.
+                  </p>
+                </>
               )}
               <div className="technos">
                 <Techno rank={2}>
@@ -82,17 +108,42 @@ const Bridge = () => {
             <li className="alignedItems">
               <b>2011-2016</b>
               {langage === "french" ? (
-                <div>Technicien Canal+</div>
+                <>
+                  <h5>Technicien Canal+</h5>
+                  <p>
+                    Compréhension des pannes et dépannage du matériel client au
+                    niveau 2 (expert technique).
+                  </p>
+                </>
               ) : (
-                <div>TV technical expert (Canal+)</div>
+                <>
+                  <h5>TV technical expert (Canal+)</h5>
+                  <p>
+                    Understanding of faults and troubleshooting of customer
+                    equipment at level 2 (technical expert).
+                  </p>
+                </>
               )}
             </li>
             <li className="alignedItems">
               <b>2010</b>
               {langage === "french" ? (
-                <div>BAC+2 Audiovisuel</div>
+                <>
+                  <h5>BAC+2 Audiovisuel</h5>
+                  <p>
+                    Apprentissage de la sonorisation, de la captation et de
+                    l&apos;édition audio dans tout type de contexte (concert,
+                    télévision, cinéma).
+                  </p>
+                </>
               ) : (
-                <div>Bachelor&apos;s degree in audio-visual</div>
+                <>
+                  <h5>Bachelor&apos;s degree in audio-visual</h5>
+                  <p>
+                    Learning about sound engineering, audio capture, and editing
+                    in various contexts (concerts, television, cinema).
+                  </p>
+                </>
               )}
               <div className="technos">
                 <Techno rank={3}>

@@ -1,7 +1,8 @@
 import Button from "../Button";
 import { SiSass, SiReact, SiVite } from "react-icons/si";
 import { useState } from "react";
-import PortalExample from "../PortalExample";
+import Modal from "../Modal";
+import Techno from "../Techno";
 
 const Portfolio = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -16,24 +17,24 @@ const Portfolio = ({ langage }) => {
     <section className="work animated">
       <h4>{portfolio.title}</h4>
       <p>{portfolio.description}</p>
-      <PortalExample
+      <Modal
         work={portfolio}
         zoomImage={zoomImage}
         setZoomImage={setZoomImage}
       />
       <div className="technos animated">
-        <div className="techno">
+        <Techno rank={3}>
           <SiReact className="icon" />
           React
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiSass className="icon" />
           SASS
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiVite className="icon" />
           Vite
-        </div>
+        </Techno>
       </div>
       <div className="buttonContainer animated">
         <Button text="code source" name="github" id={portfolio.github} />

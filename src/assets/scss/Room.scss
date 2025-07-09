@@ -75,22 +75,7 @@
       border-radius: 50%;
     }
   }
-  .hashtag {
-    margin-top: 5px;
-    padding: 1px 10px;
-    border-radius: 50px;
-    font-size: 1rem;
-    background-color: $bgc2alpha;
-    &:hover {
-      cursor: default;
-      .hashtagIcon {
-        color: $text2;
-      }
-    }
-    .hashtagIcon {
-      transition: all 0.3s;
-    }
-  }
+  
   .technos {
     width: 100%;
     display: flex;

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Button from "../Button";
 import { SiNextdotjs, SiTailwindcss, SiGooglecloud } from "react-icons/si";
-import PortalExample from "../PortalExample";
+import Modal from "../Modal";
+import Techno from "../Techno";
 
 const MultiversGame = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -20,24 +21,24 @@ const MultiversGame = ({ langage }) => {
       <h4>{multiversGame.title}</h4>
       <p>{multiversGame.description}</p>
 
-      <PortalExample
+      <Modal
         work={multiversGame}
         zoomImage={zoomImage}
         setZoomImage={setZoomImage}
       />
       <div className="technos animated">
-        <div className="techno">
+        <Techno rank={2}>
           <SiNextdotjs className="icon" />
           Next.js
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={2}>
           <SiTailwindcss className="icon" />
           Tailwind CSS
-        </div>
-        <div className="techno">
+        </Techno>
+        <Techno rank={1}>
           <SiGooglecloud className="icon" />
           Google Cloud
-        </div>
+        </Techno>
       </div>
       <div className="buttonContainer animated">
         {multiversGame.web && (

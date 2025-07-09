@@ -4,7 +4,7 @@ const Hashtag = (props) => {
   return (
     <div className="hashtag">
       <IoIosFlask className="hashtagIcon" />
-      {props.content}
+      <span>{props.content}</span>
     </div>
   );
 };

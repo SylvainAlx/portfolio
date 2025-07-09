@@ -14,6 +14,7 @@ body {
 		// flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    
     .modal {
       position: fixed;
       z-index: 10;
@@ -189,7 +190,7 @@ body {
         width: 30px;
         height: 30px;
         color: $bgc4;
-        transition: transform 0.8s ease;
+        transition: transform 0.8s ease-out;
         transform-origin: center;
       }
     }
@@ -229,7 +230,7 @@ body {
     .underConstruction {
       text-align: center;
       width: 250px;
-      background-color: $bgcBlackAlpha;
+      background-color: $bgc2;
       border-radius: 10px;
       margin-bottom: 10px;
       font-size: 1.4rem;
@@ -281,6 +282,26 @@ body {
         justify-content: center;
         font-size: 1.2rem;
         color: $bgc4;
+        transition: all 0.3s;
+      }
+    }
+
+    .hashtag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+      padding: 1px 10px;
+      border-radius: 50px;
+      font-size: 1rem;
+      background-color: $bgc2alpha;
+      &:hover {
+        cursor: default;
+        .hashtagIcon {
+          color: $text2;
+        }
+      }
+      .hashtagIcon {
         transition: all 0.3s;
       }
     }
