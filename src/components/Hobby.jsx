@@ -11,7 +11,7 @@ const Hobby = ({ title, image, children }) => {
         onClick={() => setShowDescription(!showDescription)}
         className="planet"
       >
-        <img src={image} alt={`planète ${title}`} />
+        <img src={image} alt={`planète ${title}`} loading="lazy" />
         {showDescription && <div className="spinner"></div>}
         {!showDescription && (
           <div className="clicker">

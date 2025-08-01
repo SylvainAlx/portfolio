@@ -4,15 +4,15 @@ import { SiExpo, SiTypescript, SiSupabase, SiPostgresql } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import Button from "../Button";
 
-const OfflineTracker = ({ langage }) => {
+const Offliner = ({ langage }) => {
   const offlineTracker = {
-    title: "Offline Tracker",
+    title: "Offliner",
     description:
       langage === "french"
         ? "L'application mobile qui compte et encourage le temps passé hors ligne"
         : "The mobile app that counts and encourages time spent offline",
     image: "",
-    github: "https://github.com/SylvainAlx/offline-tracker",
+    github: "https://github.com/SylvainAlx/offliner",
     web: "",
   };
   return (
@@ -52,4 +52,4 @@ const OfflineTracker = ({ langage }) => {
   );
 };
 
-export default OfflineTracker;
+export default Offliner;

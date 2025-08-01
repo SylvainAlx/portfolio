@@ -32,23 +32,23 @@ const Navbar = () => {
         className={showNav ? "show" : "hidden"}
       >
         <a href="#crew" onClick={handleNavigationClick}>
-          <img src="./images/portrait.webp" />
+          <img src="./images/portrait.webp" alt="Portrait" loading="lazy" />
           {langage === "french" ? "À propos" : "About me"}
         </a>
         <a href="#communication" onClick={handleNavigationClick}>
-          <img src="./images/communication.webp" />
+          <img src="./images/communication.webp" alt="Communication" loading="lazy" />
           Contact
         </a>
         <a href="#bridge" onClick={handleNavigationClick}>
-          <img src="./images/bridge.webp" />
+          <img src="./images/bridge.webp" alt="Bridge" loading="lazy" />
           {langage === "french" ? "Parcours" : "Background"}
         </a>
         <a href="#engine" onClick={handleNavigationClick}>
-          <img src="./images/engine.webp" />
+          <img src="./images/engine.webp" alt="Engine" loading="lazy" />
           {langage === "french" ? "Réalisations" : "Accomplishments"}
         </a>
         <a href="#observatory" onClick={handleNavigationClick}>
-          <img src="./images/observatory.webp" />
+          <img src="./images/observatory.webp" alt="Observatory" loading="lazy" />
           Passions
         </a>
       </nav>

@@ -10,11 +10,13 @@ export default function Modal({ work }) {
         onClick={() => setShowModal(true)}
         src={work.image}
         alt={`image ${work.title}`}
+        loading="lazy"
       />
       {showModal &&
         createPortal(
           <ModalContent
             image={work.image}
+            title={work.title}
             onClose={() => setShowModal(false)}
           />,
           document.querySelector(".App")

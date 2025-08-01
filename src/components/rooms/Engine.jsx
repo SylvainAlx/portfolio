@@ -3,7 +3,7 @@ import Portfolio from "../works/Portfolio";
 import MultiversGame from "../works/MultiversGame";
 import Archipel from "../works/Archipel";
 import { speak } from "../../store";
-import OfflineTracker from "../works/OfflineTracker";
+import Offliner from "../works/Offliner";
 
 const Engine = () => {
   const langage = speak.use();
@@ -22,7 +22,7 @@ const Engine = () => {
         <Archipel langage={langage} />
         <MultiversGame langage={langage} />
         <Portfolio langage={langage} />
-        <OfflineTracker langage={langage} />
+        <Offliner langage={langage} />
       </div>
     </div>
   );
