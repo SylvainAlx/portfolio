@@ -15,7 +15,13 @@ const ALX = ({ langage }) => {
         <>
           <span>
             <b>depuis 2025</b>
-            <a href="#">ALX Solutions Numériques</a>
+            <a
+              href="https://alx-solutions-numeriques.fr/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ALX Solutions Numériques
+            </a>
           </span>
           <h5>Développeur web et formateur indépendant</h5>
           <p>
@@ -27,7 +33,13 @@ const ALX = ({ langage }) => {
         <>
           <span>
             <b>since 2025</b>
-            <a href="#">ALX Solutions Numériques</a>
+            <a
+              href="https://alx-solutions-numeriques.fr/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ALX Solutions Numériques
+            </a>
           </span>
           <h5>Independent web developer and trainer</h5>
           <p>

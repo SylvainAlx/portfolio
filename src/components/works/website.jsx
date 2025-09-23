@@ -1,7 +1,6 @@
 import Techno from "../Techno";
 import { useState } from "react";
-import UnderConstruction from "../UnderConstruction";
-import { SiAstro, SiTypescript } from "react-icons/si";
+import { SiAstro, SiTypescript, SiTailwindcss } from "react-icons/si";
 import Button from "../Button";
 import Modal from "../Modal";
 
@@ -15,7 +14,7 @@ const Website = ({ langage }) => {
         : "Independent web developer and trainer",
     image: "./images/website.webp",
     github: "",
-    web: "",
+    web: "https://alx-solutions-numeriques.fr/",
   };
   return (
     <section className="work animated">
@@ -32,8 +31,11 @@ const Website = ({ langage }) => {
           <SiAstro className="icon" />
           Astro
         </Techno>
+        <Techno rank={2}>
+          <SiTailwindcss className="icon" />
+          Tailwind CSS
+        </Techno>
       </div>
-      <UnderConstruction langage={langage} />
       <div className="buttonContainer animated">
         {website.web && <Button text="voir le site" id={website.web} />}
       </div>

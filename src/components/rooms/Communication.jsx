@@ -18,7 +18,11 @@ const Communication = () => {
         description={langage === "french" ? "Me contacter" : "Contact me"}
       />
       <div className={`buttonContainer ${width < 500 ? "animated" : ""}`}>
-        <Button text="email" name="mail" id="sylvainalx.dev@gmail.com" />
+        <Button
+          text="email"
+          name="mail"
+          id="contact@alx-solutions-numeriques.fr"
+        />
         <Button
           text="GitHub"
           name="github"
