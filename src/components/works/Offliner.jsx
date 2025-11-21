@@ -5,6 +5,7 @@ import { SiExpo, SiTypescript, SiSupabase, SiAstro } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import Button from "../Button";
 import Modal from "../Modal";
+import SEOSchema from "../SEOSchema";
 
 const Offliner = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -18,8 +19,29 @@ const Offliner = ({ langage }) => {
     github: "",
     web: "",
   };
+
+  const offlinerSchema = {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    name: "Offliner",
+    description: "Application mobile qui compte et encourage le temps passé hors ligne, développée avec React Native et Expo",
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: ["iOS", "Android"],
+    author: {
+      "@type": "Person",
+      "@id": "https://sylvainalx.github.io/portfolio/#person"
+    },
+    programmingLanguage: ["TypeScript", "React Native"],
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR"
+    }
+  };
+
   return (
     <section className="work animated">
+      <SEOSchema schema={offlinerSchema} />
       <h4>{offlineTracker.title}</h4>
       <p>{offlineTracker.description}</p>
       <Modal

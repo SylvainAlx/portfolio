@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <p>
         {new Date().getFullYear()} | Sylvain Alexandre | illustrations : Dall-E
         2 & &quot;pixel-planet-generator&quot;

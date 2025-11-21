@@ -3,6 +3,7 @@ import { useState } from "react";
 import { SiAstro, SiTypescript, SiTailwindcss } from "react-icons/si";
 import Button from "../Button";
 import Modal from "../Modal";
+import SEOSchema from "../SEOSchema";
 
 const Website = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -16,8 +17,23 @@ const Website = ({ langage }) => {
     github: "",
     web: "https://alx-solutions-numeriques.fr/",
   };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "ALX Solutions Numériques",
+    description: "Site web professionnel de Sylvain Alexandre, développeur web et formateur indépendant, développé avec Astro et TypeScript",
+    url: website.web,
+    author: {
+      "@type": "Person",
+      "@id": "https://sylvainalx.github.io/portfolio/#person"
+    },
+    inLanguage: "fr-FR"
+  };
+
   return (
     <section className="work animated">
+      <SEOSchema schema={websiteSchema} />
       <h4>{website.title}</h4>
       <p>{website.description}</p>
       <Modal work={website} zoomImage={zoomImage} setZoomImage={setZoomImage} />

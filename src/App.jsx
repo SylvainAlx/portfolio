@@ -1,34 +1,23 @@
-import Bridge from "./components/rooms/Bridge";
-import Communication from "./components/rooms/Communication";
-import Crew from "./components/rooms/Crew";
-import Observatory from "./components/rooms/Observatory";
-import "./assets/scss/App.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Engine from "./components/rooms/Engine";
-import Gear from "./components/Gear";
-
-import useScrollAnimation from "./hooks/useScrollAnimation";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ScrollToTop from "./components/ScrollToTop";
+import PersonSchema from "./components/PersonSchema";
 
 const App = () => {
-  useScrollAnimation();
-
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Crew />
-        <Gear />
-        <Communication />
-        <Gear />
-        <Bridge />
-        <Gear />
-        <Engine />
-        <Gear />
-        <Observatory />
-      </main>
-      <Footer />
-    </div>
+    <Router basename="/portfolio/">
+      <PersonSchema />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Router>
   );
 };
 

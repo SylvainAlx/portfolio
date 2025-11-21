@@ -3,6 +3,7 @@ import Button from "../Button";
 import { SiNextdotjs, SiTailwindcss, SiGooglecloud } from "react-icons/si";
 import Modal from "../Modal";
 import Techno from "../Techno";
+import SEOSchema from "../SEOSchema";
 
 const MultiversGame = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -16,8 +17,23 @@ const MultiversGame = ({ langage }) => {
     github: "",
     web: "https://www.moultunivers-game.fr",
   };
+
+  const multiversGameSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Moult'Univers Game",
+    description: "Site web pour une entreprise d'escape game et huis clos à domicile, développé avec Next.js",
+    url: multiversGame.web,
+    author: {
+      "@type": "Person",
+      "@id": "https://sylvainalx.github.io/portfolio/#person"
+    },
+    inLanguage: "fr-FR"
+  };
+
   return (
     <section className="work animated">
+      <SEOSchema schema={multiversGameSchema} />
       <h4>{multiversGame.title}</h4>
       <p>{multiversGame.description}</p>
 

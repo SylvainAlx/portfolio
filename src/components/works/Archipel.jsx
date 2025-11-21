@@ -12,6 +12,7 @@ import {
 import Modal from "../Modal";
 import Button from "../Button";
 import Techno from "../Techno";
+import SEOSchema from "../SEOSchema";
 
 const Archipel = ({ langage }) => {
   const [zoomImage, setZoomImage] = useState(false);
@@ -25,8 +26,31 @@ const Archipel = ({ langage }) => {
     github: "https://github.com/SylvainAlx/archipel",
     web: "https://archipel-app.com/",
   };
+
+  const archipelSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Archipel",
+    description: "Progressive Web App pour les citoyens des micronations et nations virtuelles, développée avec React, TypeScript et MongoDB",
+    url: archipel.web,
+    applicationCategory: "WebApplication",
+    operatingSystem: "Web Browser",
+    author: {
+      "@type": "Person",
+      "@id": "https://sylvainalx.github.io/portfolio/#person"
+    },
+    programmingLanguage: ["JavaScript", "TypeScript", "React", "Node.js"],
+    codeRepository: archipel.github,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR"
+    }
+  };
+
   return (
     <section className="work animated">
+      <SEOSchema schema={archipelSchema} />
       <h4>{archipel.title}</h4>
       <p>{archipel.description}</p>
 

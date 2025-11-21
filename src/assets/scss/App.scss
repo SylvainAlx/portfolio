@@ -3,18 +3,19 @@
 @use "animations" as *;
 
 body {
-	margin: 0 auto;
+  margin: 0 auto;
   background: url("/images/space.png") fixed;
   color: $text1;
   font-family: $font3;
-	.App {
-    position:relative;
-		height: 100vh;
-		display: flex;
-		// flex-direction: column;
+
+  .App {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    // flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    
+
     .modal {
       position: fixed;
       z-index: 10;
@@ -28,6 +29,7 @@ body {
       align-items: center;
       animation: fade 0.5s ease-in;
       backdrop-filter: blur(4px);
+
       img {
         margin-top: 50px;
         text-align: center;
@@ -36,21 +38,29 @@ body {
         object-fit: contain;
         border: 3px solid $bgc4;
         border-radius: 10px;
+
         &:hover {
           cursor: zoom-out;
         }
-        
+
       }
+
       .close {
         position: fixed;
         bottom: 10%;
         color: $bgc4;
         font-size: 30px;
+
         &:hover {
           cursor: pointer;
         }
       }
     }
+
+    .footer {
+      width: 100%;
+    }
+
     main {
       @include laptop {
         width: 90%;
@@ -60,30 +70,35 @@ body {
         justify-content: space-between;
         gap: 50px;
       }
-      
+
     }
+
     .topHeader {
       width: 100%;
       display: flex;
       flex-direction: column;
       animation: fade 0.5s;
       margin-bottom: 30px;
+
       b {
         text-align: center;
         color: red;
         font-size: 1.1rem;
         margin-bottom: 10px;
       }
+
       h2 {
         margin: 0 auto;
         font-size: 4rem;
         font-family: $font4;
         animation: 1s slide;
       }
+
       p {
         font-size: 23px;
         margin: 10px auto 0;
       }
+
       .speakContainer {
         z-index: 99;
         position: fixed;
@@ -91,22 +106,26 @@ body {
         top: 5px;
         display: flex;
         gap: 5px;
+
         span {
           transition: all 0.5s;
           border-radius: 50px;
           font-size: 20px;
           cursor: pointer;
         }
+
         .gray {
           filter: grayscale(90%);
           opacity: 0.4;
         }
       }
+
       .navbar {
         z-index: 100;
         position: fixed;
         top: 5px;
         left: 5px;
+
         .burgerMenu {
           width: 50px;
           height: 50px;
@@ -118,23 +137,28 @@ body {
           color: $bgc3;
           transition: all 0.3s;
           transform: rotate(-90deg);
+
           &:hover {
             cursor: pointer;
             color: $bgc4;
           }
         }
+
         .active {
           color: $bgc4;
           transform: rotate(-180deg);
         }
+
         .show {
           margin-left: 0;
           opacity: 1;
         }
+
         .hidden {
           margin-left: -200px;
           opacity: 0;
         }
+
         nav {
           padding: 10px;
           // min-width: 200px;
@@ -145,7 +169,7 @@ body {
           justify-content: space-around;
           background-color: $bgc4;
           transition: all 0.3s;
-          
+
           a {
             padding: 3px;
             display: flex;
@@ -155,25 +179,28 @@ body {
             text-decoration: none;
             font-size: 20px;
             transition: all 0.3s;
-            
+
             &:hover {
               background-color: $bgcBlackAlpha;
+
               img {
                 filter: none;
               }
-              
+
             }
+
             img {
               width: 30px;
               height: 30px;
               border-radius: 30px;
               filter: grayscale(100%);
-             
+
             }
           }
         }
       }
     }
+
     .separator {
       margin: 20px 20px 50px 20px;
       display: flex;
@@ -182,6 +209,7 @@ body {
       justify-content: center;
       font-size: 2rem;
       color: $bgc4;
+
       @include laptop {
         display: none;
       }
@@ -194,9 +222,11 @@ body {
         transform-origin: center;
       }
     }
+
     .scroll {
       transform: rotate(180deg);
     }
+
     .button {
       min-height: 30px;
       display: flex;
@@ -212,12 +242,14 @@ body {
       font-size: 1.2rem;
       font-family: $font3;
       transition: all 0.5s;
+
       &:hover {
         cursor: pointer;
         background-color: $text2;
       }
-      
+
     }
+
     .buttonContainer {
       max-width: 350px;
       margin: 10px 0;
@@ -227,6 +259,7 @@ body {
       justify-content: center;
       gap: 13px;
     }
+
     .underConstruction {
       text-align: center;
       width: 250px;
@@ -236,18 +269,22 @@ body {
       font-size: 1.4rem;
 
     }
-		.animated {
+
+    .animated {
       opacity: 0;
       transform: translateX(-50px);
       transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     }
+
     .animated.animate {
       opacity: 1;
       transform: translateX(0);
     }
+
     #crew {
       animation: fade 2s;
     }
+
     #bridge,
     #hold,
     #engine {
@@ -256,16 +293,19 @@ body {
         animation: fade 2s;
       }
     }
+
     footer {
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 0.8rem;
     }
+
     .rank {
       position: absolute;
       top: 0;
       left: 20%;
+
       @include mobile {
         left: 10%;
       }
@@ -294,15 +334,20 @@ body {
       border-radius: 50px;
       font-size: 1rem;
       background-color: $bgc2alpha;
+
       &:hover {
         cursor: default;
+
         .hashtagIcon {
           color: $text2;
         }
       }
+
       .hashtagIcon {
         transition: all 0.3s;
       }
     }
-	}
+
+
+  }
 }
