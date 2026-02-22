@@ -1,0 +1,179 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "animations" as *;
+
+.parking-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%);
+  position: relative;
+  overflow: hidden;
+  font-family: $font4;
+  color: $text1;
+
+  // Background decoration bubbles
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: $bgc3;
+    filter: blur(100px);
+    opacity: 0.2;
+    z-index: 0;
+    animation: pulse 10s infinite alternate;
+  }
+
+  &::before {
+    top: -50px;
+    left: -50px;
+  }
+
+  &::after {
+    bottom: -50px;
+    right: -50px;
+    background: $bgc4;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+    100% {
+      transform: scale(1.2) translate(50px, 50px);
+    }
+  }
+
+  .glass-card {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 3rem;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1);
+
+    header {
+      margin-bottom: 2rem;
+
+      h1 {
+        font-size: 3.5rem;
+        margin: 0;
+        background: linear-gradient(135deg, $text1 0%, $bgc4 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        letter-spacing: -1px;
+
+        @include mobile {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .description {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-family: $font3;
+    }
+
+    .main-cta {
+      margin-bottom: 3rem;
+
+      .button {
+        background: linear-gradient(135deg, $bgc3 0%, darken($bgc3, 10%) 100%);
+        padding: 1.2rem 2.5rem;
+        font-size: 1.3rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 20px rgba(143, 0, 137, 0.3);
+        width: fit-content;
+        margin: 0 auto;
+        border: none;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &:hover {
+          transform: translateY(-5px) scale(1.02);
+          box-shadow: 0 15px 30px rgba(143, 0, 137, 0.4);
+          background: linear-gradient(
+            135deg,
+            lighten($bgc3, 5%) 0%,
+            $bgc3 100%
+          );
+        }
+
+        &:active {
+          transform: translateY(-2px) scale(0.98);
+        }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+
+      .button {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+          border-color: $bgc4;
+          color: $bgc4;
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+    padding: 2rem;
+    opacity: 0.5;
+    font-size: 0.85rem;
+    color: $text1;
+    text-align: center;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -7,6 +7,7 @@ import {
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
 import PersonSchema from "./components/PersonSchema";
+import ParkingPage from "./pages/ParkingPage";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <PersonSchema />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<ParkingPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
